@@ -7,20 +7,7 @@ var FallItemPoolLogic = qc.CatchGame.FallItemPoolLogic = function() {
     var self = this;
 
     self.currentPool = [];
-    self.createArea = {
-        x:0,
-        y:-950,
-        width:640,
-        height:960,
-    };
-    self.fallingArea = {
-        x:0,
-        y:-10,
-        width:640,
-        height:1000,
-    };
-    self.addUpLine = self.createArea.y + self.createArea.height;
-    self.fallOutLine = self.fallingArea.y + self.fallingArea.height;
+    self.fallOutLine = qc.CatchGame.SEA_LEVEL;
     
 };
 FallItemPoolLogic.prototype = {};
@@ -30,13 +17,6 @@ Object.defineProperties(FallItemPoolLogic.prototype, {
 
 });
 
-//从新计算线段
-FallItemPoolLogic.prototype.recountLine = function() {
-    var self = this;
-
-    self.addUpLine = self.createArea.y + self.createArea.height;
-    self.fallOutLine = self.fallingArea.y + self.fallingArea.height;
-};
 
 //所有池中的对象全部偏移指定的数值
 FallItemPoolLogic.prototype.updateAllPoolObject = function(pos_diff) {
@@ -132,5 +112,7 @@ FallItemPoolLogic.prototype.delItemIndexArr = function(indexgroup) {
 };
 
 
-
+FallItemPoolLogic.prototype.getPool = function() {
+    return this.currentPool;
+};
 

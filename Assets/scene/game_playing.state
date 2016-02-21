@@ -113,6 +113,10 @@
             {
               "clazz": "qc.ScaleAdapter",
               "data": "0d6260d0-a774-4ddc-965b-c313ffeddc42"
+            },
+            {
+              "clazz": "qc.engine.UIManager",
+              "data": "1c13f0a6-e081-4e71-8b6e-25ae64d75359"
             }
           ],
           "position": [
@@ -368,7 +372,7 @@
                 ],
                 "name": [
                   7,
-                  "fallItemArea"
+                  "fallCreateArea"
                 ],
                 "ignoreDestroy": [
                   5,
@@ -399,12 +403,12 @@
                 "position": [
                   0,
                   0,
-                  7.944163584738817e-7,
-                  6.276636899116284e-8,
-                  7.944163584738817e-7,
-                  6.276636899116284e-8,
-                  100,
-                  100,
+                  30,
+                  -1000,
+                  30,
+                  -1000,
+                  580,
+                  960,
                   0,
                   0,
                   0,
@@ -443,101 +447,6 @@
                     "uuid": [
                       7,
                       "f3c3fa92-3264-4a68-843c-8c5dde72e310"
-                    ],
-                    "enable": true
-                  }
-                }
-              }
-            },
-            {
-              "class": "qc.Node",
-              "data": {
-                "uuid": "e8af81b3-c899-4ece-b619-a45184dbf34c",
-                "_prefab": [
-                  7,
-                  ""
-                ],
-                "__lock": [
-                  5,
-                  null
-                ],
-                "name": [
-                  7,
-                  "falliItemCreateArea"
-                ],
-                "ignoreDestroy": [
-                  5,
-                  false
-                ],
-                "alpha": [
-                  3,
-                  1
-                ],
-                "visible": [
-                  5,
-                  true
-                ],
-                "colorTint": [
-                  14,
-                  16777215
-                ],
-                "static": [
-                  5,
-                  false
-                ],
-                "scripts": [
-                  {
-                    "clazz": "qc.engine.ObjectAreaUI",
-                    "data": "95b01fc6-3d5d-4ce9-a6a4-567cee9eaaa8"
-                  }
-                ],
-                "position": [
-                  0,
-                  0,
-                  7.944163584738817e-7,
-                  6.276636899116284e-8,
-                  7.944163584738817e-7,
-                  6.276636899116284e-8,
-                  100,
-                  100,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "scaleX": [
-                  3,
-                  1.0000000313831932
-                ],
-                "scaleY": [
-                  3,
-                  1.0000000313831932
-                ],
-                "rotation": [
-                  3,
-                  0
-                ],
-                "interactive": [
-                  5,
-                  false
-                ],
-                "isFiltersThrough": [
-                  5,
-                  null
-                ],
-                "children": []
-              },
-              "__json": {
-                "95b01fc6-3d5d-4ce9-a6a4-567cee9eaaa8": {
-                  "class": "qc.engine.ObjectAreaUI",
-                  "data": {
-                    "uuid": [
-                      7,
-                      "95b01fc6-3d5d-4ce9-a6a4-567cee9eaaa8"
                     ],
                     "enable": true
                   }
@@ -1194,8 +1103,8 @@
                   6.276636899116284e-8,
                   7.944163584738817e-7,
                   6.276636899116284e-8,
-                  100,
-                  100,
+                  640,
+                  960,
                   0,
                   0,
                   0,
@@ -1240,14 +1149,8 @@
                       16,
                       "9158999a-63a7-4955-b919-065ff6a50690"
                     ],
-                    "FallAreaNode": [
-                      18,
-                      "a47c876b-4671-4b03-8fd7-1f1da214931b"
-                    ],
-                    "NewAreaNode": [
-                      18,
-                      "e8af81b3-c899-4ece-b619-a45184dbf34c"
-                    ]
+                    "FallAreaNode": null,
+                    "NewAreaNode": null
                   }
                 }
               }
@@ -1301,6 +1204,25 @@
               "enable": true,
               "FallItemAreaNode": null,
               "FallItemPoolNode": null
+            }
+          },
+          "1c13f0a6-e081-4e71-8b6e-25ae64d75359": {
+            "class": "qc.engine.UIManager",
+            "data": {
+              "uuid": [
+                7,
+                "1c13f0a6-e081-4e71-8b6e-25ae64d75359"
+              ],
+              "enable": true,
+              "FallPoolNode": [
+                18,
+                "0610d8e4-b699-4d4e-8236-4e00af35a6d9"
+              ],
+              "FallAreaNode": null,
+              "FallCreateAreaNode": [
+                18,
+                "a47c876b-4671-4b03-8fd7-1f1da214931b"
+              ]
             }
           }
         }

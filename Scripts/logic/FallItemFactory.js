@@ -16,15 +16,6 @@ var FallItemFactory = qc.CatchGame.FallItemFactory = function() {
     };
 
 
-    self.pool = [];
-
-    self.range = {
-        x: 0,
-        y: 0,
-        width: 640,
-        height: 960,
-    };
-
     self.tryUpTimes = 5;
 };
 FallItemFactory.prototype = {};
@@ -35,21 +26,19 @@ Object.defineProperties(FallItemFactory.prototype, {
 });
 
 //填充区域
-FallItemFactory.prototype.fillAreaPool = function(area) {
-    var self = this;
-    self.pool = self.getFillAreaPool(area);
-};
-
-//填充区域
-FallItemFactory.prototype.getFillAreaPool = function(area) {
+FallItemFactory.prototype.fillPoolWithArea = function(area,pool) {
     var self = this;
     var bigPool = [];
 
     //每个对象循环放置
     for (var i = 0; i < self.data.length; i++) {
-        var everyElement = self.data[i];//TODO: 
+        var everyElement = self.data[i];
 
-        bigPool = bigPool.concat(self.fillUP(everyElement,area,bigPool));
+        //以当前池已经拥有的对象和新建的对象为基础，创建新的元素
+        var newItems = self.fillUP(everyElement,area,bigPool.contact(pool))
+
+        //所有新增加的元素都应该放置在这，以备后续添加
+        bigPool = bigPool.concat(newItems);
     };
     return bigPool;
 };
