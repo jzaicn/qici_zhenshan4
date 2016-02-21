@@ -28,7 +28,7 @@ UIManager.prototype.awake = function() {
     //绑定对象池
     if (self.FallPoolNode) {
         self.fallPool = self.FallPoolNode.getScript("qc.engine.FallItemPoolUI");
-        self.fallPool.init(qc.CatchGame.fallitemPool);
+        qc.CatchGame.fallitemPool.init(self.fallPool);
     };
 
     //Gameinit
@@ -41,6 +41,8 @@ UIManager.prototype.awake = function() {
 };
 
 UIManager.prototype.createItems = function() {
+    var self = this;
+
     //获得游戏下落的区域
     var area = self.FallCreateArea.currentBox();
     var currentPool = qc.CatchGame.fallitemPool.getPool();
@@ -48,7 +50,7 @@ UIManager.prototype.createItems = function() {
     
     while(newItems.length > 0 ){
         var item = newItems.pop();
-        this.fallPool.additem(item);
+        qc.CatchGame.fallitemPool.additem(item);
     }
 };
 
@@ -57,9 +59,12 @@ UIManager.prototype.createItems = function() {
 
 
 UIManager.prototype.update = function() {
+    var self = this;
 	//TODO: 调用游戏类进行判断，游戏是否结束，是否碰撞得分，是否超出边界删除对象
     if (qc.CatchGame.isRunning()) {
-
+        self.fallPool.fallAll();
+        self.fallPool.fallOut();
+        self.fallPool.crashUp();
     };
 };
 

@@ -6,16 +6,16 @@ window.CatchGame = qc.CatchGame = {
 
     FALL_SPEED : 2,
 
-    SEA_LEVEL : 1000,
+    SEA_LEVEL : 800,
 
     DATA_SOURCE : [
-        { id: 3, icon: "3.png", score: 10, noRepeatRadius: 500, noOtherRadius: 100 },
+        { id: 3, icon: "3.png", score: 10, noRepeatRadius: 900, noOtherRadius: 900 },
         { id: 0, icon: "0.png", score: 10, noRepeatRadius: 300, noOtherRadius: 100 },
         { id: 1, icon: "1.png", score: 10, noRepeatRadius: 180, noOtherRadius: 100 },
         { id: 2, icon: "2.png", score: 10, noRepeatRadius: 180, noOtherRadius: 100 },
     ],
 
-    status : "stop",
+    status : "run",
 
     // 所有的操作指令集合
     operation: {},
@@ -51,7 +51,8 @@ qc.CatchGame.updateScore = function(v){
     //更新分数
 };
 
-qc.CatchGame.isCrash = function(pos,crashBox){
+qc.CatchGame.isCrash = function(pos){
+    var crash_box;
     return false;
 }
 

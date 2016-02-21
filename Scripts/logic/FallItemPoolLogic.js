@@ -17,6 +17,9 @@ Object.defineProperties(FallItemPoolLogic.prototype, {
 
 });
 
+FallItemPoolLogic.prototype.init = function(uiObj) {
+    this.uiObj = uiObj;
+};
 
 //所有池中的对象全部偏移指定的数值
 FallItemPoolLogic.prototype.updateAllPoolObject = function(pos_diff) {
@@ -39,28 +42,31 @@ FallItemPoolLogic.prototype.checkFalloutPoolObject = function() {
     //处理位置偏移
     var check_fallout = function(operaPool,index,value){
         if (value.y > self.fallOutLine) {
+            var effect = value.o.getScript("qc.engine.FallItemUI");
+            effect.onCrash();
             indexgroup.push(index);
         };
     };
     doPoolObject(self.currentPool,check_fallout);
-
-    return indexgroup;
+    self.delItemIndexArr(indexgroup);
 };
 
 //返回发生碰撞的物品index数组
-FallItemPoolLogic.prototype.checkCrashPoolObject = function(crashBox) {
+FallItemPoolLogic.prototype.checkCrashPoolObject = function() {
     var self = this;
     var indexgroup = [];
 
     //处理位置偏移
     var check_crash = function(operaPool,index,value){
-        if (qc.CatchGame.isCrash({x:value.x,y:value.y},crashBox)) {
+        if (qc.CatchGame.isCrash({x:value.x,y:value.y})) {
+            var effect = value.o.getScript("qc.engine.FallItemUI");
+            effect.onCrash();
             indexgroup.push(index);
+            console.log("score:",value.score);
         };
     };
     doPoolObject(self.currentPool,check_crash);
-
-    return indexgroup;
+    self.delItemIndexArr(indexgroup);
 };
 
 //增加元素
@@ -68,6 +74,8 @@ FallItemPoolLogic.prototype.additem = function(item) {
     var self = this;
     
     self.currentPool.push(item);
+
+    self.uiObj.additem(item);
 };
 
 //增加元素数组
@@ -76,6 +84,7 @@ FallItemPoolLogic.prototype.additems = function(items) {
     
     for (var i = 0; i < items.length; i++) {
         self.currentPool.push(items[i]);
+        self.uiObj.additem(item);
     };
     
 };
@@ -84,7 +93,7 @@ FallItemPoolLogic.prototype.additems = function(items) {
 FallItemPoolLogic.prototype.delItem = function(item) {
     var self = this;
     
-    self.currentPool.remove(item);
+    self.currentPool.remove(item);//TODO: 更改ui部分
 };
 
 //删除元素数组

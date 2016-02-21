@@ -8,28 +8,39 @@ var FallItemLogic = qc.CatchGame.FallItemLogic = function() {
 
     self.icon = "";
     self.id = "";
-    self.x = 0;
-    self.y = 0;
+    self._x = 0;
+    self._y = 0;
     self.noRepeatRadius = 0;
     self.noOtherRadius = 0;
     self.score = 0;
+    self.o = null;
 };
 FallItemLogic.prototype = {};
 FallItemLogic.prototype.constructor = FallItemLogic;
 
 Object.defineProperties(FallItemLogic.prototype, {
-    pos: {
+    x: {
         get: function() {
-            return {
-                x: this._pos.x,
-                y: this._pos.y,
-            };
+            return this._x;
         },
         set: function(v) {
-            this.x = v.x;
-            this.y = v.y;
+            this._x = v;
+            if (this.o) {
+                this.o.x = v;
+            };
         }
     },
+    y: {
+        get: function(){
+            return this._y;
+        },
+        set: function(v){
+            this._y = v;
+            if (this.o) {
+                this.o.y = v;
+            };
+        }
+    }
 });
 
 
@@ -57,7 +68,7 @@ FallItemLogic.prototype.initObj = function(Obj) {
 
 FallItemLogic.prototype.clone = function() {
     var self = this;
-    var obj = {};
+    var obj = new FallItemLogic();
 
     obj.icon = self.icon;
     obj.id = self.id;

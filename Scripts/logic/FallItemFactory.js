@@ -35,7 +35,7 @@ FallItemFactory.prototype.fillPoolWithArea = function(area,pool) {
         var everyElement = self.data[i];
 
         //以当前池已经拥有的对象和新建的对象为基础，创建新的元素
-        var newItems = self.fillUP(everyElement,area,bigPool.contact(pool))
+        var newItems = self.fillUP(everyElement,area,bigPool.concat(pool))
 
         //所有新增加的元素都应该放置在这，以备后续添加
         bigPool = bigPool.concat(newItems);
@@ -47,17 +47,17 @@ FallItemFactory.prototype.fillPoolWithArea = function(area,pool) {
 FallItemFactory.prototype.fillUP = function(everyElement,area,bigPool) {
     var self = this;
     var trytime = self.tryUpTimes;
-    var pool = bigPool;
+    var pool = [];
 
     while (true) {
         //随机位置
         var pos_random = {
-            x: Math.random() * area.width - area.x,
-            y: Math.random() * area.height - area.y,
+            x: Math.random() * area.width + area.x,
+            y: Math.random() * area.height + area.y,
         };
 
         //该位置没有元素，或者没有同ID元素
-        if (self.putCheck(everyElement.id, pos_random , pool)) {
+        if (self.putCheck(everyElement.id, pos_random , pool.concat(bigPool))) {
             //放置成功,退出循环
             everyElement.x=pos_random.x;
             everyElement.y=pos_random.y;

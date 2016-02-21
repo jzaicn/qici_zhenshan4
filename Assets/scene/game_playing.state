@@ -404,9 +404,9 @@
                   0,
                   0,
                   30,
-                  -1000,
+                  0,
                   30,
-                  -1000,
+                  0,
                   580,
                   960,
                   0,
@@ -1093,7 +1093,7 @@
                 "scripts": [
                   {
                     "clazz": "qc.engine.FallItemPoolUI",
-                    "data": "d68970f7-4586-4261-bcac-9e8c306dc13e"
+                    "data": "02979aef-c93a-4fc8-9ede-4cb05e8d957c"
                   }
                 ],
                 "position": [
@@ -1151,6 +1151,20 @@
                     ],
                     "FallAreaNode": null,
                     "NewAreaNode": null
+                  }
+                },
+                "02979aef-c93a-4fc8-9ede-4cb05e8d957c": {
+                  "class": "qc.engine.FallItemPoolUI",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "02979aef-c93a-4fc8-9ede-4cb05e8d957c"
+                    ],
+                    "enable": true,
+                    "FallItemPrefab": [
+                      16,
+                      "9158999a-63a7-4955-b919-065ff6a50690"
+                    ]
                   }
                 }
               }

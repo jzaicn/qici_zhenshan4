@@ -5,7 +5,7 @@ var FallItemPoolUI = qc.defineBehaviour('qc.engine.FallItemPoolUI', qc.Behaviour
 
     var self = this;
 
-    var fallSpeed = qc.CatchGame.FALL_SPEED;
+    self.fallSpeed = qc.CatchGame.FALL_SPEED;
 }, {
     FallItemPrefab: qc.Serializer.PREFAB,
 });
@@ -22,43 +22,40 @@ FallItemPoolUI.prototype.update = function() {
     //TODO: 更新自己池子里面元素下落坐标
 };
 
-FallItemPoolUI.prototype.init = function(fallItemPoolLogicObj) {
-    var self = this;
-    //UI绑定逻辑对象
-    self.poolObj = fallItemPoolLogicObj;
-};
-
 //外部传入fallmodel，这里创建图形，同时在逻辑对象创建匹配的对象
 FallItemPoolUI.prototype.additem = function(datainfo) {
     var self = this,
         o = self.gameObject;
 
-    //添加逻辑对象
-    self.poolObj.additem(datainfo);
-
     //添加UI对象
-    var testScript = self.game.add.clone(self.testPrefab, o);
-    testScript.frame = datainfo.icon;
-    testScript.x = datainfo.x;
-    testScript.y = datainfo.y;
+    var fallitem = self.game.add.clone(self.FallItemPrefab, o);
+    fallitem.frame = datainfo.icon;
+    fallitem.x = datainfo.x;
+    fallitem.y = datainfo.y;
+    fallitem.visable = true;
+
+    datainfo.o = fallitem;
+};
+
+FallItemPoolUI.prototype.fallAll = function() {
+    var self = this;
+    qc.CatchGame.fallitemPool.updateAllPoolObject({
+        x:0,
+        y:self.fallSpeed,
+    });
+};
+
+FallItemPoolUI.prototype.fallOut = function() {
+    var self = this;
+    qc.CatchGame.fallitemPool.checkFalloutPoolObject();
+};
+
+FallItemPoolUI.prototype.crashUp = function() {
+    var self = this;
+    qc.CatchGame.fallitemPool.checkCrashPoolObject();
 };
 
 
 
 
 
-
-
-
-
-
-// //删除指定元素
-// FallItemPoolUI.prototype.remove = function(data) {
-//     // body...
-// };
-
-
-
-// FallItemPoolUI.prototype.fallAll = function() {
-//     // body...
-// };
