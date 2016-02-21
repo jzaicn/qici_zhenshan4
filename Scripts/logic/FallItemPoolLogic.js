@@ -7,6 +7,8 @@ var FallItemPoolLogic = qc.CatchGame.FallItemPoolLogic = function() {
     var self = this;
 
     self.currentPool = [];
+
+    self.raiseLine = qc.CatchGame.RAISE_LEVEL;
     self.fallOutLine = qc.CatchGame.SEA_LEVEL;
     
 };
@@ -125,3 +127,16 @@ FallItemPoolLogic.prototype.getPool = function() {
     return this.currentPool;
 };
 
+
+FallItemPoolLogic.prototype.checkPoolNeedNew = function() {
+    var self = this;
+    if (self.currentPool.length > 0) {
+        if (self.currentPool[self.currentPool.length -1].y > self.raiseLine) {
+            return true;
+        };
+    }
+    else{
+        return true;
+    };
+    return false;
+};

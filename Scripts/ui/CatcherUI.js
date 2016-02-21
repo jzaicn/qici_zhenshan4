@@ -50,6 +50,7 @@ CatcherUI.prototype.awake = function() {
     if (self.AreaNode) {
         self.Area = self.AreaNode.getScript("qc.engine.ObjectAreaUI");
         self.moveing_area = self.Area.currentBox();
+        self.AreaNode.visable = false;
     }
 
     //获取名下检测区域
@@ -57,6 +58,7 @@ CatcherUI.prototype.awake = function() {
     if (self.CheckAreaNode) {
         self.CheckArea = self.CheckAreaNode.getScript("qc.engine.ObjectAreaUI");
         detectArea = self.CheckArea.currentBox();
+        self.CheckAreaNode.visable = false;
         detectArea.x += o.x;
         detectArea.y += o.y;
     }

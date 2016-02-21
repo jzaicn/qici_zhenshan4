@@ -6,7 +6,8 @@ window.CatchGame = qc.CatchGame = {
 
     FALL_SPEED : 2,
 
-    SEA_LEVEL : 800,
+    RAISE_LEVEL : -20,
+    SEA_LEVEL : 980,
 
     DATA_SOURCE : [
         { id: 3, icon: "3.png", score: 10, noRepeatRadius: 500, noOtherRadius: 200 },
