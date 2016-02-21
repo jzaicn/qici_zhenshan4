@@ -48,14 +48,14 @@ CatcherUI.prototype.awake = function() {
 
     //获取鼠标移动的范围
     if (self.AreaNode) {
-        self.Area = self.AreaNode.getScript("qc.engine.CatcherAreaUI");
+        self.Area = self.AreaNode.getScript("qc.engine.ObjectAreaUI");
         self.moveing_area = self.Area.currentBox();
     }
 
     //获取名下检测区域
     var detectArea = {};
     if (self.CheckAreaNode) {
-        self.CheckArea = self.CheckAreaNode.getScript("qc.engine.CatcherDetectAreaUI");
+        self.CheckArea = self.CheckAreaNode.getScript("qc.engine.ObjectAreaUI");
         detectArea = self.CheckArea.currentBox();
         detectArea.x += o.x;
         detectArea.y += o.y;

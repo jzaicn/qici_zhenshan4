@@ -29,11 +29,24 @@ FallItemPoolUI.prototype.update = function() {
     //TODO: 更新自己池子里面元素下落坐标
 };
 
+FallItemPoolUI.prototype.init = function(fallItemPoolLogicObj) {
+    //UI绑定逻辑对象
+    this.poolObj = fallItemPoolLogicObj;
+
+    //逻辑对象范围设置
+
+
+
+};
+
+
+
 //删除指定元素
 FallItemPoolUI.prototype.remove = function(data) {
     // body...
 };
 
+//外部传入fallmodel，这里创建图形，同时在逻辑对象创建匹配的对象
 FallItemPoolUI.prototype.add = function(datainfo) {
     var self = this,
         o = self.gameObject;

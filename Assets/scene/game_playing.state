@@ -113,10 +113,6 @@
             {
               "clazz": "qc.ScaleAdapter",
               "data": "0d6260d0-a774-4ddc-965b-c313ffeddc42"
-            },
-            {
-              "clazz": "qc.engine.CatchGameUI",
-              "data": "239cb0e7-f64e-451c-82e2-09abab7d9285"
             }
           ],
           "position": [
@@ -196,8 +192,8 @@
                 ],
                 "scripts": [
                   {
-                    "clazz": "qc.engine.CatcherAreaUI",
-                    "data": "de81549c-bbaa-4c18-befb-056472e4459f"
+                    "clazz": "qc.engine.ObjectAreaUI",
+                    "data": "04944d41-1127-4882-bde4-3837e014e800"
                   }
                 ],
                 "position": [
@@ -250,6 +246,16 @@
                     ],
                     "enable": true
                   }
+                },
+                "04944d41-1127-4882-bde4-3837e014e800": {
+                  "class": "qc.engine.ObjectAreaUI",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "04944d41-1127-4882-bde4-3837e014e800"
+                    ],
+                    "enable": true
+                  }
                 }
               }
             },
@@ -289,7 +295,12 @@
                   5,
                   false
                 ],
-                "scripts": [],
+                "scripts": [
+                  {
+                    "clazz": "qc.engine.ObjectAreaUI",
+                    "data": "9f394eae-0047-41c6-9513-7bbe1336100a"
+                  }
+                ],
                 "position": [
                   0,
                   0,
@@ -329,6 +340,18 @@
                   null
                 ],
                 "children": []
+              },
+              "__json": {
+                "9f394eae-0047-41c6-9513-7bbe1336100a": {
+                  "class": "qc.engine.ObjectAreaUI",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "9f394eae-0047-41c6-9513-7bbe1336100a"
+                    ],
+                    "enable": true
+                  }
+                }
               }
             },
             {
@@ -361,13 +384,18 @@
                 ],
                 "colorTint": [
                   14,
-                  4294967295
+                  16777215
                 ],
                 "static": [
                   5,
                   false
                 ],
-                "scripts": [],
+                "scripts": [
+                  {
+                    "clazz": "qc.engine.ObjectAreaUI",
+                    "data": "f3c3fa92-3264-4a68-843c-8c5dde72e310"
+                  }
+                ],
                 "position": [
                   0,
                   0,
@@ -407,6 +435,18 @@
                   null
                 ],
                 "children": []
+              },
+              "__json": {
+                "f3c3fa92-3264-4a68-843c-8c5dde72e310": {
+                  "class": "qc.engine.ObjectAreaUI",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "f3c3fa92-3264-4a68-843c-8c5dde72e310"
+                    ],
+                    "enable": true
+                  }
+                }
               }
             },
             {
@@ -439,13 +479,18 @@
                 ],
                 "colorTint": [
                   14,
-                  4294967295
+                  16777215
                 ],
                 "static": [
                   5,
                   false
                 ],
-                "scripts": [],
+                "scripts": [
+                  {
+                    "clazz": "qc.engine.ObjectAreaUI",
+                    "data": "95b01fc6-3d5d-4ce9-a6a4-567cee9eaaa8"
+                  }
+                ],
                 "position": [
                   0,
                   0,
@@ -485,6 +530,18 @@
                   null
                 ],
                 "children": []
+              },
+              "__json": {
+                "95b01fc6-3d5d-4ce9-a6a4-567cee9eaaa8": {
+                  "class": "qc.engine.ObjectAreaUI",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "95b01fc6-3d5d-4ce9-a6a4-567cee9eaaa8"
+                    ],
+                    "enable": true
+                  }
+                }
               }
             },
             {
@@ -990,8 +1047,8 @@
                       ],
                       "scripts": [
                         {
-                          "clazz": "qc.engine.CatcherDetectAreaUI",
-                          "data": "60ab53b2-a772-456a-a111-2343eb3d1e2b"
+                          "clazz": "qc.engine.ObjectAreaUI",
+                          "data": "ae912c40-43d9-44e3-b0a5-1a7ff3d7e748"
                         }
                       ],
                       "position": [
@@ -1041,6 +1098,16 @@
                           "uuid": [
                             7,
                             "60ab53b2-a772-456a-a111-2343eb3d1e2b"
+                          ],
+                          "enable": true
+                        }
+                      },
+                      "ae912c40-43d9-44e3-b0a5-1a7ff3d7e748": {
+                        "class": "qc.engine.ObjectAreaUI",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "ae912c40-43d9-44e3-b0a5-1a7ff3d7e748"
                           ],
                           "enable": true
                         }
@@ -1108,7 +1175,7 @@
                 ],
                 "colorTint": [
                   14,
-                  4294967295
+                  16777215
                 ],
                 "static": [
                   5,

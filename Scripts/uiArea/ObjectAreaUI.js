@@ -1,8 +1,8 @@
-var FallItemAreaUI = qc.defineBehaviour('qc.engine.FallItemAreaUI', qc.Behaviour, function() {
+var ObjectAreaUI = qc.defineBehaviour('qc.engine.ObjectAreaUI', qc.Behaviour, function() {
 
 }, {});
 
-FallItemAreaUI.prototype.currentBox = function() {
+ObjectAreaUI.prototype.currentBox = function() {
     var self = this,
         o = self.gameObject;
 
