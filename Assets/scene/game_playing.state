@@ -159,6 +159,335 @@
           ],
           "children": [
             {
+              "class": "qc.Node",
+              "data": {
+                "uuid": "c16103de-6b49-4a9b-a253-971c1350bd8d",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "catcherArea"
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [
+                  {
+                    "clazz": "qc.engine.CatcherAreaUI",
+                    "data": "de81549c-bbaa-4c18-befb-056472e4459f"
+                  }
+                ],
+                "position": [
+                  0,
+                  0,
+                  -190,
+                  670,
+                  -190,
+                  670,
+                  750,
+                  260,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  1
+                ],
+                "scaleY": [
+                  3,
+                  1
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": []
+              },
+              "__json": {
+                "de81549c-bbaa-4c18-befb-056472e4459f": {
+                  "class": "qc.engine.CatcherAreaUI",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "de81549c-bbaa-4c18-befb-056472e4459f"
+                    ],
+                    "enable": true
+                  }
+                }
+              }
+            },
+            {
+              "class": "qc.Node",
+              "data": {
+                "uuid": "ba49aa84-63aa-4a71-8e04-9bb41be1e014",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "world"
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [],
+                "position": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  640,
+                  960,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  1
+                ],
+                "scaleY": [
+                  3,
+                  1
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": []
+              }
+            },
+            {
+              "class": "qc.Node",
+              "data": {
+                "uuid": "a47c876b-4671-4b03-8fd7-1f1da214931b",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "fallItemArea"
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  4294967295
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [],
+                "position": [
+                  0,
+                  0,
+                  7.944163584738817e-7,
+                  6.276636899116284e-8,
+                  7.944163584738817e-7,
+                  6.276636899116284e-8,
+                  100,
+                  100,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  1.0000000313831932
+                ],
+                "scaleY": [
+                  3,
+                  1.0000000313831932
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": []
+              }
+            },
+            {
+              "class": "qc.Node",
+              "data": {
+                "uuid": "e8af81b3-c899-4ece-b619-a45184dbf34c",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "falliItemCreateArea"
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  4294967295
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [],
+                "position": [
+                  0,
+                  0,
+                  7.944163584738817e-7,
+                  6.276636899116284e-8,
+                  7.944163584738817e-7,
+                  6.276636899116284e-8,
+                  100,
+                  100,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  1.0000000313831932
+                ],
+                "scaleY": [
+                  3,
+                  1.0000000313831932
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": []
+              }
+            },
+            {
               "class": "qc.UIImage",
               "data": {
                 "uuid": "416461f5-bdb7-4cd0-b2e0-e94f75d0d25d",
@@ -244,84 +573,6 @@
                   3,
                   0
                 ]
-              }
-            },
-            {
-              "class": "qc.Node",
-              "data": {
-                "uuid": "ba49aa84-63aa-4a71-8e04-9bb41be1e014",
-                "_prefab": [
-                  7,
-                  ""
-                ],
-                "__lock": [
-                  5,
-                  null
-                ],
-                "name": [
-                  7,
-                  "world"
-                ],
-                "ignoreDestroy": [
-                  5,
-                  false
-                ],
-                "alpha": [
-                  3,
-                  1
-                ],
-                "visible": [
-                  5,
-                  true
-                ],
-                "colorTint": [
-                  14,
-                  16777215
-                ],
-                "static": [
-                  5,
-                  false
-                ],
-                "scripts": [],
-                "position": [
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  640,
-                  960,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "scaleX": [
-                  3,
-                  1
-                ],
-                "scaleY": [
-                  3,
-                  1
-                ],
-                "rotation": [
-                  3,
-                  0
-                ],
-                "interactive": [
-                  5,
-                  false
-                ],
-                "isFiltersThrough": [
-                  5,
-                  null
-                ],
-                "children": []
               }
             },
             {
@@ -830,7 +1081,7 @@
             {
               "class": "qc.Node",
               "data": {
-                "uuid": "c16103de-6b49-4a9b-a253-971c1350bd8d",
+                "uuid": "0610d8e4-b699-4d4e-8236-4e00af35a6d9",
                 "_prefab": [
                   7,
                   ""
@@ -841,7 +1092,7 @@
                 ],
                 "name": [
                   7,
-                  "catcherArea"
+                  "fallingPool"
                 ],
                 "ignoreDestroy": [
                   5,
@@ -857,7 +1108,7 @@
                 ],
                 "colorTint": [
                   14,
-                  16777215
+                  4294967295
                 ],
                 "static": [
                   5,
@@ -865,19 +1116,19 @@
                 ],
                 "scripts": [
                   {
-                    "clazz": "qc.engine.CatcherAreaUI",
-                    "data": "de81549c-bbaa-4c18-befb-056472e4459f"
+                    "clazz": "qc.engine.FallItemPoolUI",
+                    "data": "d68970f7-4586-4261-bcac-9e8c306dc13e"
                   }
                 ],
                 "position": [
                   0,
                   0,
-                  -190,
-                  670,
-                  -190,
-                  670,
-                  750,
-                  260,
+                  7.944163584738817e-7,
+                  6.276636899116284e-8,
+                  7.944163584738817e-7,
+                  6.276636899116284e-8,
+                  100,
+                  100,
                   0,
                   0,
                   0,
@@ -889,11 +1140,11 @@
                 ],
                 "scaleX": [
                   3,
-                  1
+                  1.0000000313831932
                 ],
                 "scaleY": [
                   3,
-                  1
+                  1.0000000313831932
                 ],
                 "rotation": [
                   3,
@@ -910,14 +1161,26 @@
                 "children": []
               },
               "__json": {
-                "de81549c-bbaa-4c18-befb-056472e4459f": {
-                  "class": "qc.engine.CatcherAreaUI",
+                "d68970f7-4586-4261-bcac-9e8c306dc13e": {
+                  "class": "qc.engine.FallItemPoolUI",
                   "data": {
                     "uuid": [
                       7,
-                      "de81549c-bbaa-4c18-befb-056472e4459f"
+                      "d68970f7-4586-4261-bcac-9e8c306dc13e"
                     ],
-                    "enable": true
+                    "enable": true,
+                    "FallItemPrefab": [
+                      16,
+                      "9158999a-63a7-4955-b919-065ff6a50690"
+                    ],
+                    "FallAreaNode": [
+                      18,
+                      "a47c876b-4671-4b03-8fd7-1f1da214931b"
+                    ],
+                    "NewAreaNode": [
+                      18,
+                      "e8af81b3-c899-4ece-b619-a45184dbf34c"
+                    ]
                   }
                 }
               }

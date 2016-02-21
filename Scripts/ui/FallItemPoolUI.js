@@ -8,6 +8,8 @@ var FallItemPoolUI = qc.defineBehaviour('qc.engine.FallItemPoolUI', qc.Behaviour
     var fallSpeed = qc.CatchGame.FALL_SPEED;
 }, {
     FallItemPrefab: qc.Serializer.PREFAB,
+    FallAreaNode: qc.Serializer.NODE,
+    NewAreaNode: qc.Serializer.NODE,
 });
 
 
