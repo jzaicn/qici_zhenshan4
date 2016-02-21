@@ -15,7 +15,7 @@
   },
   "backgroundColor": 4671303,
   "runInBackground": true,
-  "antialias": true,
+  "antialias": false,
   "renderer": "Auto",
   "transparent": false,
   "developerMode": false,

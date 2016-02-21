@@ -43,7 +43,7 @@ FallItemPoolLogic.prototype.checkFalloutPoolObject = function() {
     var check_fallout = function(operaPool,index,value){
         if (value.y > self.fallOutLine) {
             var effect = value.o.getScript("qc.engine.FallItemUI");
-            effect.onCrash();
+            effect.onFallout();
             indexgroup.push(index);
         };
     };

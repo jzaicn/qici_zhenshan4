@@ -40,6 +40,18 @@ FallItemFactory.prototype.fillPoolWithArea = function(area,pool) {
         //所有新增加的元素都应该放置在这，以备后续添加
         bigPool = bigPool.concat(newItems);
     };
+    //先排序，方便后续使用
+    bigPool.sort(function(a, b) {
+        if (a.y>=b.y) {
+            return 1;
+        }
+        else {
+            if (a.x>=b.x) {
+                return 1;
+            };
+        };
+        return -1; 
+    });
     return bigPool;
 };
 

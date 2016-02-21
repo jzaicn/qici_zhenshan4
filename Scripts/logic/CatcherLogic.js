@@ -43,13 +43,9 @@ CatcherLogic.prototype.updateBox = function() {
 	self.detectArea.y = self.y - self._countOffset.y ;
 };
 
-//更新detectArea位置
-CatcherLogic.prototype.updateBoxX = function() {
+CatcherLogic.prototype.getDetectBox = function() {
     var self = this;
-    self.detectArea.x = self.x - self._countOffset.x ;
-};
-//更新detectArea位置
-CatcherLogic.prototype.updateBoxY = function() {
-    var self = this;
-    self.detectArea.y = self.y - self._countOffset.y ;
+    self.updateBox();
+
+    return self.detectArea;
 };

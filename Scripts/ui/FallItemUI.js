@@ -77,6 +77,7 @@ FallItemUI.prototype.onCrash = function() {
     if (self.testPrefab) {
         var testScript = self.game.add.clone(self.testPrefab, self.gameObject.parent);
         self.test = testScript.getScript("qc.engine.ScoreUI");
+        self.test.setPos(o.x,o.y);
     };
 
     var textScore = self.score > 0 ? "+"+self.score.toString() : self.score.toString();

@@ -88,12 +88,10 @@ CatcherUI.prototype.init = function(logicObj,detectArea) {
 //更新游戏实际逻辑对象位置
 CatcherUI.prototype.updateLogicX = function(v){
     this.logicObj.x = v;
-    this.logicObj.updateBoxX();
 }
 //更新游戏实际逻辑对象位置
 CatcherUI.prototype.updateLogicY = function(v){
     this.logicObj.y = v;
-    this.logicObj.updateBoxY();
 }
 
 /**

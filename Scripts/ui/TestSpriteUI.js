@@ -31,7 +31,7 @@ TestSpriteUI.prototype.update = function() {
 };
 
 TestSpriteUI.prototype.onClick = function(){
-    this.onCreatePoolFallItem();
+    this.onCreateOneFallItem()
 };
 
 TestSpriteUI.prototype.onCreatePoolFallItem = function() {
