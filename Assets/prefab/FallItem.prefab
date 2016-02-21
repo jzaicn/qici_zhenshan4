@@ -86,11 +86,11 @@
     "texture": [
       10,
       "Assets/atlas/fall.bin",
-      "357a6be6-64d7-4958-9c6d-c25ba5a4c991"
+      "1dd652f0-00dc-49f2-b045-3b58336d2e4e"
     ],
     "frame": [
       7,
-      "1.png"
+      "0.png"
     ],
     "defaultAnimation": [
       7,
@@ -266,9 +266,9 @@
       "key": "2be0761b-40f7-4b40-9c78-c8605e1fc357",
       "uuid": "2be0761b-40f7-4b40-9c78-c8605e1fc357"
     },
-    "357a6be6-64d7-4958-9c6d-c25ba5a4c991": {
+    "1dd652f0-00dc-49f2-b045-3b58336d2e4e": {
       "key": "Assets/atlas/fall.bin",
-      "uuid": "357a6be6-64d7-4958-9c6d-c25ba5a4c991"
+      "uuid": "1dd652f0-00dc-49f2-b045-3b58336d2e4e"
     }
   }
 }
