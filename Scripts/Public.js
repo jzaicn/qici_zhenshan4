@@ -45,3 +45,32 @@ window.checkPointInRadius = function (posCenter, radius, posOther) {
         return false;
     };
 }
+
+window.arrRemove = function(arr ,b) {
+    var a = arr.indexOf(b);
+    if (a >= 0) {
+        arr.splice(a, 1);
+        return true;
+    }
+    return false;
+}
+
+//类似于foreach
+window.doPoolObject = function(poolObj, func) {
+    for (var i = 0; i < poolObj.length; i++) {
+        if (func) {
+            func(poolObj, i, poolObj[i]);
+        };
+    };
+};
+
+//删除指定indexgroup的元素
+window.arrayDelIndexGroup = function(indexgroup, poolObj) {
+    indexgroup.sort(function(a, b) {
+        return a > b ? 1 : -1 });
+    for (var i = indexgroup.length - 1; i >= 0; i--) {
+        if (poolObj.length > indexgroup[i]) {
+            poolObj.splice(indexgroup[i], 1);
+        };
+    };
+}
