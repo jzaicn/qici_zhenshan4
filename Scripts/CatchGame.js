@@ -4,7 +4,7 @@
  */
 window.CatchGame = qc.CatchGame = {
 
-    FALL_SPEED : 6,
+    FALL_SPEED : 4,
 
     RAISE_LEVEL : -20,
     SEA_LEVEL : 980,
@@ -27,7 +27,7 @@ window.CatchGame = qc.CatchGame = {
         { id: 13, icon: "6.png", score: 5, noRepeatRadius: 500, noOtherRadius: 160 },
     ],
 
-    status : "run",
+    _status : "welcome",
 
     // 所有的操作指令集合
     operation: {},
@@ -37,7 +37,9 @@ window.CatchGame = qc.CatchGame = {
 qc.initGame = function(game) {
 
     // 全局通知事件
-    CatchGame.itemSignal = new qc.Signal();
+    CatchGame.itemSignal = new qc.Signal();//下落元素变化事件
+    CatchGame.statusSignal = new qc.Signal();//游戏状态变化
+
 
     // 初始化捕获者
     CatchGame.catcher = new qc.CatchGame.CatcherLogic();
@@ -52,24 +54,36 @@ qc.initGame = function(game) {
     CatchGame.speaker = new qc.CatchGame.SpeakerLogic();
 
     // 设置监听全局消息
-    CatchGame.itemSignal.add(qc.CatchGame.onItemSignal);
+    //CatchGame.itemSignal.add(qc.CatchGame.onItemSignal);
 };
+
+// Object.defineProperties(qc.CatchGame.prototype, {
+//     status: {
+//         get: function() { return this._status; },
+//         set: function(v) {
+//             this.statusSignal.dispatch(this._status,v);
+//             this._status = v;
+//         }
+//     }
+// });
+
 
 
 qc.CatchGame.onItemSignal = function(obj){
     //碰撞结果事件：碰撞加减分，碰撞提示语，碰撞特殊信息，碰撞游戏结束
     switch(obj.eventType){
-        case 1:
+        case 1://TODO: 统一成字符串
             qc.CatchGame.speaker.setScore(obj);
         default:
             break;
     }
 };
 
+//TODO: 复位游戏
 qc.CatchGame.restart = function(){
     var self = this;
     // 初始化捕获者
-    self.status = "run";
+    //self.status = "welcome";
 
     // 初始化下落物
 
@@ -86,10 +100,18 @@ qc.CatchGame.bandUIObj  = function(uiObj){
 qc.CatchGame.isRunning = function(){
     var self = this;
     switch(self.status){
-        case "run":
+        case "welcome":
+            return false;
+            break;
+        case "introduce":
+            return false;
+            break;
+        case "playing":
             return true;
             break;
-        case "stop":
+        case "reward":
+            return false;
+            break;
         default:
             return false;
     }
@@ -112,3 +134,101 @@ qc.CatchGame.isCrash = function(pos){
     };
     return false;
 }
+
+
+// //开始游戏
+// qc.CatchGame.prototype.setStart = function() {
+//     this.status = "playing";
+//     this.restart();
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// qc.CatchGame.getFaillingData = function(){
+//     var data = [
+//         //先分成大类
+//         //稀有物品类
+//         {
+//             isObject :true, //本元素是对象
+//             isRelative : false, //同一嵌套层次下是否使用相同index
+//             clazz : "稀有物品类",    //物品分类
+//             rate : 0.01,    //出现概率
+//             icon: [//包含元素
+//                 {
+//                     isObject :true,
+//                     isRelative :true,
+//                     icon:"10.png",  //使用图标 unido图标
+//                 },
+//             ],
+//             id: 0 ,
+//             score: 10,
+//             noRepeatRadius: 1500,
+//             noOtherRadius: 160,
+//             catching: [
+//                 {
+//                     isObject :true,
+//                     isRelative :true,
+//                     catching : [
+//                         "unido，是四大认证之一",
+//                     ],
+//                 },
+//             ],
+//             missing: [
+//                 {
+//                     isObject :true,
+//                     isRelative :true,
+//                     missing : [
+//                         "错过了unido认证等十年",
+//                     ],
+//                 },
+//             ],
+//         },
+//         //宝贵物品类
+//         {
+
+//         },
+//         //一般物品类
+//         {},
+//         //垃圾物品类
+//         {}，
+//         //非常垃圾物品类
+//         {},
+//     ];
+// };
+// qc.CatchGame.getFaillingDataTest = function(){
+//     data = getFaillingData();
+//     // 本元素是对象元素
+//     if (data.isObject === true) {
+
+//     };
+//     //本元素是相关元素，嵌套层次固定应该保持使用上个嵌套层次的序号
+//     if (data.isRelative === true) {
+
+//     };
+//     // 本元素是数组，应该取其中随机一个元素
+//     if (Array === typeof(data)) {
+        
+//         getRandomIndex();
+//     };
+// };

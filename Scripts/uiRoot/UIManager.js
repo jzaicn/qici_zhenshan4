@@ -5,11 +5,12 @@ var UIManager = qc.defineBehaviour('qc.engine.UIManager', qc.Behaviour, function
 
     var self = this;
 
-    var seaLevel = 0;
-
+    self.gameStatusChange = false;
 }, {
-    FallCreateAreaNode: qc.Serializer.NODE,
-    FallPoolNode: qc.Serializer.NODE,
+    WelcomeNode: qc.Serializer.NODE,
+    IntroduceNode: qc.Serializer.NODE,
+    PlayingNode: qc.Serializer.NODE,
+    RewardNode: qc.Serializer.NODE,
 });
 
 
@@ -17,56 +18,51 @@ UIManager.prototype.awake = function() {
     var self = this,
         o = self.gameObject;
 
-    // 查找下落区间
-    if (self.FallCreateAreaNode) {
-        self.FallCreateArea = self.FallCreateAreaNode.getScript("qc.engine.ObjectAreaUI");
-        self.FallCreateAreaNode.visable = false;
+    // 页面
+    if (self.WelcomeNode) {
+        //self.FallCreateArea = self.WelcomeNode.getScript("qc.engine.ObjectAreaUI");
+        self.WelcomeNode.visible = false;
     }
 
-    //绑定对象池
-    if (self.FallPoolNode) {
-        self.fallPool = self.FallPoolNode.getScript("qc.engine.FallItemPoolUI");
-        qc.CatchGame.fallitemPool.init(self.fallPool);
-    };
-
-    //Gameinit
-    qc.CatchGame.bandUIObj(self);
-
-};
-
-UIManager.prototype.createItems = function() {
-    var self = this;
-
-    //获得游戏下落的区域
-    var area = self.FallCreateArea.currentBox();
-    var currentPool = qc.CatchGame.fallitemPool.getPool();
-    var newItems = qc.CatchGame.fallitemFactory.fillPoolWithArea(area,currentPool);
-    
-    while(newItems.length > 0 ){
-        var item = newItems.pop();
-        qc.CatchGame.fallitemPool.additem(item);
+    // 页面
+    if (self.IntroduceNode) {
+        //self.FallCreateArea = self.IntroduceNode.getScript("qc.engine.ObjectAreaUI");
+        self.IntroduceNode.visible = true;
     }
+
+    // 页面
+    if (self.PlayingNode) {
+        //self.FallCreateArea = self.PlayingNode.getScript("qc.engine.ObjectAreaUI");
+        self.PlayingNode.visible = false;
+    }
+
+    // 页面
+    if (self.RewardNode) {
+        //self.FallCreateArea = self.RewardNode.getScript("qc.engine.ObjectAreaUI");
+        self.RewardNode.visible = false;
+    }
+
+    // qc.CatchGame.statusSignal.add(function(oldStatus, newStatus) {
+    //     var self = this;
+    //     self.gameStatusChange = true;
+    //     if (newStatus == "playing") {
+    //         self.WelcomeNode.visible = false;
+    //         self.IntroduceNode.visible = false;
+    //         self.PlayingNode.visible = true;
+    //         self.RewardNode.visible = false;
+    //     };
+    // });
+
 };
-
-
-
-
 
 UIManager.prototype.update = function() {
     var self = this;
-	//调用游戏类进行判断，游戏是否结束，是否碰撞得分，是否超出边界删除对象
-    if (qc.CatchGame.isRunning()) {
-        self.fallPool.fallAll();
-        self.fallPool.fallOut();//TODO: 考虑这个是不是移动到自定义计时器
-        self.fallPool.crashUp();
-        if (self.fallPool.need2Create()) {
-            self.createItems();
-        };
+    if (self.gameStatusChange) {
+        self.gameStatusChange = false;
     };
 };
 
 
 UIManager.prototype.shutdown = function() {
-	
-};
 
+};

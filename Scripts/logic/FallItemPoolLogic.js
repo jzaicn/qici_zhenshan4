@@ -101,7 +101,7 @@ FallItemPoolLogic.prototype.additems = function(items) {
 FallItemPoolLogic.prototype.delItem = function(item) {
     var self = this;
     
-    self.currentPool.remove(item);//TODO: 更改ui部分
+    self.currentPool.remove(item);
 };
 
 //删除元素数组

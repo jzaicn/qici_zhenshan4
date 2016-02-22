@@ -37,12 +37,12 @@
     "position": [
       0,
       0,
-      29.50373043526355,
-      25.982307214755906,
-      29.50373043526355,
-      25.982307214755906,
-      406,
-      509,
+      30.037344398340252,
+      1.0560165975103644,
+      30.037344398340252,
+      1.0560165975103644,
+      640,
+      960,
       0,
       0,
       0,
@@ -54,11 +54,11 @@
     ],
     "scaleX": [
       3,
-      0.8981804103755321
+      0.5280082987551867
     ],
     "scaleY": [
       3,
-      0.8981804103755321
+      0.5280082987551867
     ],
     "rotation": [
       3,
@@ -116,7 +116,7 @@
             },
             {
               "clazz": "qc.engine.UIManager",
-              "data": "1c13f0a6-e081-4e71-8b6e-25ae64d75359"
+              "data": "a998369c-b849-4e5b-a9fc-fd0aa89dc4ae"
             }
           ],
           "position": [
@@ -126,7 +126,7 @@
             0,
             0,
             0,
-            765.7367387033399,
+            640,
             960.0000000000001,
             0,
             0,
@@ -139,11 +139,11 @@
           ],
           "scaleX": [
             3,
-            0.5302083333333333
+            1
           ],
           "scaleY": [
             3,
-            0.5302083333333333
+            1
           ],
           "rotation": [
             3,
@@ -161,7 +161,7 @@
             {
               "class": "qc.Node",
               "data": {
-                "uuid": "c16103de-6b49-4a9b-a253-971c1350bd8d",
+                "uuid": "1fff023c-bdc6-4348-a8a2-6413ade8a3d2",
                 "_prefab": [
                   7,
                   ""
@@ -172,7 +172,7 @@
                 ],
                 "name": [
                   7,
-                  "catcherArea"
+                  "welcome_page"
                 ],
                 "ignoreDestroy": [
                   5,
@@ -194,21 +194,16 @@
                   5,
                   false
                 ],
-                "scripts": [
-                  {
-                    "clazz": "qc.engine.ObjectAreaUI",
-                    "data": "04944d41-1127-4882-bde4-3837e014e800"
-                  }
-                ],
+                "scripts": [],
                 "position": [
                   0,
                   0,
-                  -190,
-                  670,
-                  -190,
-                  670,
-                  750,
-                  260,
+                  0,
+                  0,
+                  0,
+                  0,
+                  100,
+                  100,
                   0,
                   0,
                   0,
@@ -239,34 +234,12 @@
                   null
                 ],
                 "children": []
-              },
-              "__json": {
-                "de81549c-bbaa-4c18-befb-056472e4459f": {
-                  "class": "qc.engine.CatcherAreaUI",
-                  "data": {
-                    "uuid": [
-                      7,
-                      "de81549c-bbaa-4c18-befb-056472e4459f"
-                    ],
-                    "enable": true
-                  }
-                },
-                "04944d41-1127-4882-bde4-3837e014e800": {
-                  "class": "qc.engine.ObjectAreaUI",
-                  "data": {
-                    "uuid": [
-                      7,
-                      "04944d41-1127-4882-bde4-3837e014e800"
-                    ],
-                    "enable": true
-                  }
-                }
               }
             },
             {
               "class": "qc.Node",
               "data": {
-                "uuid": "ba49aa84-63aa-4a71-8e04-9bb41be1e014",
+                "uuid": "671291ab-6625-4278-9c53-a779987ba2fa",
                 "_prefab": [
                   7,
                   ""
@@ -277,7 +250,85 @@
                 ],
                 "name": [
                   7,
-                  "world"
+                  "introduce_page"
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [],
+                "position": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  100,
+                  100,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  1
+                ],
+                "scaleY": [
+                  3,
+                  1
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": []
+              }
+            },
+            {
+              "class": "qc.Node",
+              "data": {
+                "uuid": "b95201c5-1ba6-42c0-a777-07c79819e418",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "playing_page"
                 ],
                 "ignoreDestroy": [
                   5,
@@ -301,8 +352,8 @@
                 ],
                 "scripts": [
                   {
-                    "clazz": "qc.engine.ObjectAreaUI",
-                    "data": "9f394eae-0047-41c6-9513-7bbe1336100a"
+                    "clazz": "qc.engine.PlayingPageUI",
+                    "data": "1aae740f-e833-4c5e-af25-3052d528553f"
                   }
                 ],
                 "position": [
@@ -338,492 +389,6 @@
                 "interactive": [
                   5,
                   false
-                ],
-                "isFiltersThrough": [
-                  5,
-                  null
-                ],
-                "children": []
-              },
-              "__json": {
-                "9f394eae-0047-41c6-9513-7bbe1336100a": {
-                  "class": "qc.engine.ObjectAreaUI",
-                  "data": {
-                    "uuid": [
-                      7,
-                      "9f394eae-0047-41c6-9513-7bbe1336100a"
-                    ],
-                    "enable": true
-                  }
-                }
-              }
-            },
-            {
-              "class": "qc.Node",
-              "data": {
-                "uuid": "a47c876b-4671-4b03-8fd7-1f1da214931b",
-                "_prefab": [
-                  7,
-                  ""
-                ],
-                "__lock": [
-                  5,
-                  null
-                ],
-                "name": [
-                  7,
-                  "fallCreateArea"
-                ],
-                "ignoreDestroy": [
-                  5,
-                  false
-                ],
-                "alpha": [
-                  3,
-                  1
-                ],
-                "visible": [
-                  5,
-                  true
-                ],
-                "colorTint": [
-                  14,
-                  16777215
-                ],
-                "static": [
-                  5,
-                  false
-                ],
-                "scripts": [
-                  {
-                    "clazz": "qc.engine.ObjectAreaUI",
-                    "data": "f3c3fa92-3264-4a68-843c-8c5dde72e310"
-                  }
-                ],
-                "position": [
-                  0,
-                  0,
-                  30,
-                  -1000,
-                  30,
-                  -1000,
-                  580,
-                  1000,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "scaleX": [
-                  3,
-                  1.0000000313831932
-                ],
-                "scaleY": [
-                  3,
-                  1.0000000313831932
-                ],
-                "rotation": [
-                  3,
-                  0
-                ],
-                "interactive": [
-                  5,
-                  false
-                ],
-                "isFiltersThrough": [
-                  5,
-                  null
-                ],
-                "children": []
-              },
-              "__json": {
-                "f3c3fa92-3264-4a68-843c-8c5dde72e310": {
-                  "class": "qc.engine.ObjectAreaUI",
-                  "data": {
-                    "uuid": [
-                      7,
-                      "f3c3fa92-3264-4a68-843c-8c5dde72e310"
-                    ],
-                    "enable": true
-                  }
-                }
-              }
-            },
-            {
-              "class": "qc.UIImage",
-              "data": {
-                "uuid": "416461f5-bdb7-4cd0-b2e0-e94f75d0d25d",
-                "_prefab": [
-                  7,
-                  ""
-                ],
-                "__lock": [
-                  5,
-                  null
-                ],
-                "name": [
-                  7,
-                  "background"
-                ],
-                "ignoreDestroy": [
-                  5,
-                  null
-                ],
-                "alpha": [
-                  3,
-                  1
-                ],
-                "visible": [
-                  5,
-                  true
-                ],
-                "colorTint": [
-                  14,
-                  16777215
-                ],
-                "static": [
-                  5,
-                  false
-                ],
-                "scripts": [],
-                "position": [
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  640,
-                  960,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "scaleX": [
-                  3,
-                  1
-                ],
-                "scaleY": [
-                  3,
-                  1
-                ],
-                "rotation": [
-                  3,
-                  0
-                ],
-                "interactive": [
-                  5,
-                  false
-                ],
-                "isFiltersThrough": [
-                  5,
-                  null
-                ],
-                "children": [],
-                "texture": [
-                  10,
-                  "Assets/texture/play_page.bin",
-                  "4f197c43-67a3-47fb-ae93-f21233794595"
-                ],
-                "frame": null,
-                "imageType": [
-                  3,
-                  0
-                ]
-              }
-            },
-            {
-              "class": "qc.Sprite",
-              "data": {
-                "uuid": "e3e388ab-aa9c-4b51-946e-9c77ade12bc0",
-                "_prefab": [
-                  7,
-                  ""
-                ],
-                "__lock": [
-                  5,
-                  null
-                ],
-                "name": [
-                  7,
-                  "TestSprite1"
-                ],
-                "ignoreDestroy": [
-                  5,
-                  null
-                ],
-                "alpha": [
-                  3,
-                  1
-                ],
-                "visible": [
-                  5,
-                  true
-                ],
-                "colorTint": [
-                  14,
-                  16777215
-                ],
-                "static": [
-                  5,
-                  false
-                ],
-                "scripts": [
-                  {
-                    "clazz": "qc.engine.TestSpriteUI",
-                    "data": "47fca7c6-e0fe-4465-ab26-8b64830a21c3"
-                  }
-                ],
-                "position": [
-                  0,
-                  0,
-                  139.49458483754555,
-                  109.270758122744,
-                  139.49458483754555,
-                  109.270758122744,
-                  100,
-                  100,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "scaleX": [
-                  3,
-                  1
-                ],
-                "scaleY": [
-                  3,
-                  1
-                ],
-                "rotation": [
-                  3,
-                  0
-                ],
-                "interactive": [
-                  5,
-                  true
-                ],
-                "isFiltersThrough": [
-                  5,
-                  null
-                ],
-                "children": [],
-                "texture": [
-                  10,
-                  "__builtin_resource__",
-                  "__builtin_resource__"
-                ],
-                "frame": [
-                  7,
-                  "empty.png"
-                ],
-                "defaultAnimation": [
-                  7,
-                  null
-                ]
-              },
-              "__json": {
-                "47fca7c6-e0fe-4465-ab26-8b64830a21c3": {
-                  "class": "qc.engine.TestSpriteUI",
-                  "data": {
-                    "uuid": [
-                      7,
-                      "47fca7c6-e0fe-4465-ab26-8b64830a21c3"
-                    ],
-                    "enable": true,
-                    "testPrefab": [
-                      16,
-                      "9158999a-63a7-4955-b919-065ff6a50690"
-                    ],
-                    "worldNode": [
-                      18,
-                      "ba49aa84-63aa-4a71-8e04-9bb41be1e014"
-                    ],
-                    "catcherPrefab": null
-                  }
-                }
-              }
-            },
-            {
-              "class": "qc.Sprite",
-              "data": {
-                "uuid": "06aee367-297e-4fce-abb9-c82cb070bad6",
-                "_prefab": [
-                  7,
-                  ""
-                ],
-                "__lock": [
-                  5,
-                  null
-                ],
-                "name": [
-                  7,
-                  "TestSprite2"
-                ],
-                "ignoreDestroy": [
-                  5,
-                  null
-                ],
-                "alpha": [
-                  3,
-                  1
-                ],
-                "visible": [
-                  5,
-                  true
-                ],
-                "colorTint": [
-                  14,
-                  16777215
-                ],
-                "static": [
-                  5,
-                  false
-                ],
-                "scripts": [],
-                "position": [
-                  0,
-                  0,
-                  395.7674889445336,
-                  113.75352975651252,
-                  395.7674889445336,
-                  113.75352975651252,
-                  100,
-                  100,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "scaleX": [
-                  3,
-                  1
-                ],
-                "scaleY": [
-                  3,
-                  1
-                ],
-                "rotation": [
-                  3,
-                  0
-                ],
-                "interactive": [
-                  5,
-                  false
-                ],
-                "isFiltersThrough": [
-                  5,
-                  null
-                ],
-                "children": [],
-                "texture": [
-                  10,
-                  "__builtin_resource__",
-                  "__builtin_resource__"
-                ],
-                "frame": [
-                  7,
-                  "empty.png"
-                ],
-                "defaultAnimation": [
-                  7,
-                  null
-                ]
-              }
-            },
-            {
-              "class": "qc.Node",
-              "data": {
-                "uuid": "f5bfde87-8f14-42a4-9208-cf05d9ef5cd2",
-                "_prefab": [
-                  7,
-                  ""
-                ],
-                "__lock": [
-                  5,
-                  null
-                ],
-                "name": [
-                  7,
-                  "catcher"
-                ],
-                "ignoreDestroy": [
-                  5,
-                  false
-                ],
-                "alpha": [
-                  3,
-                  1
-                ],
-                "visible": [
-                  5,
-                  true
-                ],
-                "colorTint": [
-                  14,
-                  16777215
-                ],
-                "static": [
-                  5,
-                  false
-                ],
-                "scripts": [
-                  {
-                    "clazz": "qc.engine.CatcherUI",
-                    "data": "5d44e792-29ad-4d78-8460-12bbdcc5c15c"
-                  }
-                ],
-                "position": [
-                  0,
-                  0,
-                  180,
-                  695.0518408012014,
-                  180,
-                  695.0518408012014,
-                  280,
-                  300,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "scaleX": [
-                  3,
-                  1
-                ],
-                "scaleY": [
-                  3,
-                  1
-                ],
-                "rotation": [
-                  3,
-                  0
-                ],
-                "interactive": [
-                  5,
-                  true
                 ],
                 "isFiltersThrough": [
                   5,
@@ -831,9 +396,9 @@
                 ],
                 "children": [
                   {
-                    "class": "qc.UIImage",
+                    "class": "qc.Node",
                     "data": {
-                      "uuid": "30b38f0b-7260-4f6b-a6ab-31a44e19549b",
+                      "uuid": "c16103de-6b49-4a9b-a253-971c1350bd8d",
                       "_prefab": [
                         7,
                         ""
@@ -844,7 +409,302 @@
                       ],
                       "name": [
                         7,
-                        "colorHand"
+                        "catcherArea"
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        false
+                      ],
+                      "alpha": [
+                        3,
+                        1
+                      ],
+                      "visible": [
+                        5,
+                        true
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [
+                        {
+                          "clazz": "qc.engine.ObjectAreaUI",
+                          "data": "04944d41-1127-4882-bde4-3837e014e800"
+                        }
+                      ],
+                      "position": [
+                        0,
+                        0,
+                        -190.00001033678083,
+                        670.0000421790123,
+                        -190.00001033678083,
+                        670.0000421790123,
+                        750,
+                        260,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1.0000000627663874
+                      ],
+                      "scaleY": [
+                        3,
+                        1.0000000627663874
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "interactive": [
+                        5,
+                        false
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": []
+                    },
+                    "__json": {
+                      "de81549c-bbaa-4c18-befb-056472e4459f": {
+                        "class": "qc.engine.CatcherAreaUI",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "de81549c-bbaa-4c18-befb-056472e4459f"
+                          ],
+                          "enable": true
+                        }
+                      },
+                      "04944d41-1127-4882-bde4-3837e014e800": {
+                        "class": "qc.engine.ObjectAreaUI",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "04944d41-1127-4882-bde4-3837e014e800"
+                          ],
+                          "enable": true
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "class": "qc.Node",
+                    "data": {
+                      "uuid": "ba49aa84-63aa-4a71-8e04-9bb41be1e014",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "world"
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        false
+                      ],
+                      "alpha": [
+                        3,
+                        1
+                      ],
+                      "visible": [
+                        5,
+                        true
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [
+                        {
+                          "clazz": "qc.engine.ObjectAreaUI",
+                          "data": "9f394eae-0047-41c6-9513-7bbe1336100a"
+                        }
+                      ],
+                      "position": [
+                        0,
+                        0,
+                        7.944163584738817e-7,
+                        6.276636899116284e-8,
+                        7.944163584738817e-7,
+                        6.276636899116284e-8,
+                        640,
+                        960,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1.0000000313831932
+                      ],
+                      "scaleY": [
+                        3,
+                        1.0000000313831932
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "interactive": [
+                        5,
+                        false
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": []
+                    },
+                    "__json": {
+                      "9f394eae-0047-41c6-9513-7bbe1336100a": {
+                        "class": "qc.engine.ObjectAreaUI",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "9f394eae-0047-41c6-9513-7bbe1336100a"
+                          ],
+                          "enable": true
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "class": "qc.Node",
+                    "data": {
+                      "uuid": "a47c876b-4671-4b03-8fd7-1f1da214931b",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "fallCreateArea"
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        false
+                      ],
+                      "alpha": [
+                        3,
+                        1
+                      ],
+                      "visible": [
+                        5,
+                        true
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [
+                        {
+                          "clazz": "qc.engine.ObjectAreaUI",
+                          "data": "f3c3fa92-3264-4a68-843c-8c5dde72e310"
+                        }
+                      ],
+                      "position": [
+                        0,
+                        0,
+                        30.000001735912143,
+                        -1000.0000313204267,
+                        30.000001735912143,
+                        -1000.0000313204267,
+                        580,
+                        1000,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1.0000000627663874
+                      ],
+                      "scaleY": [
+                        3,
+                        1.0000000627663874
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "interactive": [
+                        5,
+                        false
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": []
+                    },
+                    "__json": {
+                      "f3c3fa92-3264-4a68-843c-8c5dde72e310": {
+                        "class": "qc.engine.ObjectAreaUI",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "f3c3fa92-3264-4a68-843c-8c5dde72e310"
+                          ],
+                          "enable": true
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "class": "qc.UIImage",
+                    "data": {
+                      "uuid": "416461f5-bdb7-4cd0-b2e0-e94f75d0d25d",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "background"
                       ],
                       "ignoreDestroy": [
                         5,
@@ -870,12 +730,12 @@
                       "position": [
                         0,
                         0,
-                        0,
-                        -4.739730406521403,
-                        0,
-                        -4.739730406521403,
-                        582,
-                        626,
+                        7.944163584738817e-7,
+                        6.276636899116284e-8,
+                        7.944163584738817e-7,
+                        6.276636899116284e-8,
+                        640,
+                        960,
                         0,
                         0,
                         0,
@@ -887,11 +747,11 @@
                       ],
                       "scaleX": [
                         3,
-                        0.5
+                        1.0000000313831932
                       ],
                       "scaleY": [
                         3,
-                        0.5
+                        1.0000000313831932
                       ],
                       "rotation": [
                         3,
@@ -908,118 +768,20 @@
                       "children": [],
                       "texture": [
                         10,
-                        "Assets/texture/hand.bin",
-                        "1c282d99-0404-4e4c-ad8c-c817a1950dfd"
+                        "Assets/texture/play_page.bin",
+                        "4f197c43-67a3-47fb-ae93-f21233794595"
                       ],
                       "frame": null,
                       "imageType": [
                         3,
                         0
                       ]
-                    },
-                    "__json": {
-                      "7b960b4f-cfa1-4539-837a-83c21a9f67f6": {
-                        "class": "qc.TweenProperty",
-                        "data": {
-                          "uuid": [
-                            7,
-                            "7b960b4f-cfa1-4539-837a-83c21a9f67f6"
-                          ],
-                          "enable": false,
-                          "_curve": [
-                            22,
-                            "qc.BezierCurve",
-                            [
-                              [
-                                0,
-                                0,
-                                1,
-                                1
-                              ],
-                              [
-                                1,
-                                1,
-                                1,
-                                1
-                              ],
-                              [
-                                0,
-                                0
-                              ]
-                            ]
-                          ],
-                          "sampleMethod": [
-                            3,
-                            0
-                          ],
-                          "style": [
-                            3,
-                            0
-                          ],
-                          "delay": [
-                            3,
-                            0
-                          ],
-                          "duration": [
-                            3,
-                            1
-                          ],
-                          "tweenGroup": [
-                            3,
-                            0
-                          ],
-                          "flag": [
-                            7,
-                            ""
-                          ],
-                          "playOnAwake": [
-                            5,
-                            false
-                          ],
-                          "from": [
-                            3,
-                            0
-                          ],
-                          "to": [
-                            3,
-                            1
-                          ],
-                          "property": [
-                            7,
-                            ""
-                          ]
-                        }
-                      },
-                      "5b4ad505-0968-48d6-85d3-2bf4d9df0d9f": {
-                        "class": "qc.FilterGroup",
-                        "data": {
-                          "uuid": [
-                            7,
-                            "5b4ad505-0968-48d6-85d3-2bf4d9df0d9f"
-                          ],
-                          "enable": true,
-                          "filters": [
-                            35,
-                            [
-                              [
-                                34,
-                                "qc.Filter.Gray",
-                                {}
-                              ]
-                            ]
-                          ],
-                          "inherited": [
-                            5,
-                            true
-                          ]
-                        }
-                      }
                     }
                   },
                   {
-                    "class": "qc.Node",
+                    "class": "qc.Sprite",
                     "data": {
-                      "uuid": "17a7201f-f7ad-4730-a50e-e213af24cce3",
+                      "uuid": "e3e388ab-aa9c-4b51-946e-9c77ade12bc0",
                       "_prefab": [
                         7,
                         ""
@@ -1030,7 +792,215 @@
                       ],
                       "name": [
                         7,
-                        "detect"
+                        "TestSprite1"
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        null
+                      ],
+                      "alpha": [
+                        3,
+                        1
+                      ],
+                      "visible": [
+                        5,
+                        true
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [
+                        {
+                          "clazz": "qc.engine.TestSpriteUI",
+                          "data": "47fca7c6-e0fe-4465-ab26-8b64830a21c3"
+                        }
+                      ],
+                      "position": [
+                        0,
+                        0,
+                        139.4945900097474,
+                        109.27076161477568,
+                        139.4945900097474,
+                        109.27076161477568,
+                        100,
+                        100,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1.0000000313831932
+                      ],
+                      "scaleY": [
+                        3,
+                        1.0000000313831932
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "interactive": [
+                        5,
+                        true
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": [],
+                      "texture": [
+                        10,
+                        "__builtin_resource__",
+                        "__builtin_resource__"
+                      ],
+                      "frame": [
+                        7,
+                        "empty.png"
+                      ],
+                      "defaultAnimation": [
+                        7,
+                        null
+                      ]
+                    },
+                    "__json": {
+                      "47fca7c6-e0fe-4465-ab26-8b64830a21c3": {
+                        "class": "qc.engine.TestSpriteUI",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "47fca7c6-e0fe-4465-ab26-8b64830a21c3"
+                          ],
+                          "enable": true,
+                          "testPrefab": [
+                            16,
+                            "9158999a-63a7-4955-b919-065ff6a50690"
+                          ],
+                          "worldNode": [
+                            18,
+                            "ba49aa84-63aa-4a71-8e04-9bb41be1e014"
+                          ],
+                          "catcherPrefab": null
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "class": "qc.Sprite",
+                    "data": {
+                      "uuid": "06aee367-297e-4fce-abb9-c82cb070bad6",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "TestSprite2"
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        null
+                      ],
+                      "alpha": [
+                        3,
+                        1
+                      ],
+                      "visible": [
+                        5,
+                        true
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [],
+                      "position": [
+                        0,
+                        0,
+                        395.7675021593975,
+                        113.75353338922788,
+                        395.7675021593975,
+                        113.75353338922788,
+                        100,
+                        100,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1.0000000313831932
+                      ],
+                      "scaleY": [
+                        3,
+                        1.0000000313831932
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "interactive": [
+                        5,
+                        false
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": [],
+                      "texture": [
+                        10,
+                        "__builtin_resource__",
+                        "__builtin_resource__"
+                      ],
+                      "frame": [
+                        7,
+                        "empty.png"
+                      ],
+                      "defaultAnimation": [
+                        7,
+                        null
+                      ]
+                    }
+                  },
+                  {
+                    "class": "qc.Node",
+                    "data": {
+                      "uuid": "f5bfde87-8f14-42a4-9208-cf05d9ef5cd2",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "catcher"
                       ],
                       "ignoreDestroy": [
                         5,
@@ -1054,19 +1024,19 @@
                       ],
                       "scripts": [
                         {
-                          "clazz": "qc.engine.ObjectAreaUI",
-                          "data": "ae912c40-43d9-44e3-b0a5-1a7ff3d7e748"
+                          "clazz": "qc.engine.CatcherUI",
+                          "data": "5d44e792-29ad-4d78-8460-12bbdcc5c15c"
                         }
                       ],
                       "position": [
                         0,
                         0,
-                        65,
-                        7,
-                        65,
-                        7,
-                        140,
-                        80,
+                        180.00000644339113,
+                        695.0518626769139,
+                        180.00000644339113,
+                        695.0518626769139,
+                        280,
+                        300,
                         0,
                         0,
                         0,
@@ -1078,11 +1048,414 @@
                       ],
                       "scaleX": [
                         3,
-                        1
+                        1.0000000313831932
                       ],
                       "scaleY": [
                         3,
+                        1.0000000313831932
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "interactive": [
+                        5,
+                        true
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": [
+                        {
+                          "class": "qc.UIImage",
+                          "data": {
+                            "uuid": "30b38f0b-7260-4f6b-a6ab-31a44e19549b",
+                            "_prefab": [
+                              7,
+                              ""
+                            ],
+                            "__lock": [
+                              5,
+                              null
+                            ],
+                            "name": [
+                              7,
+                              "colorHand"
+                            ],
+                            "ignoreDestroy": [
+                              5,
+                              null
+                            ],
+                            "alpha": [
+                              3,
+                              1
+                            ],
+                            "visible": [
+                              5,
+                              true
+                            ],
+                            "colorTint": [
+                              14,
+                              16777215
+                            ],
+                            "static": [
+                              5,
+                              false
+                            ],
+                            "scripts": [],
+                            "position": [
+                              0,
+                              0,
+                              0,
+                              -4.739730406521403,
+                              0,
+                              -4.739730406521403,
+                              582,
+                              626,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0
+                            ],
+                            "scaleX": [
+                              3,
+                              0.5
+                            ],
+                            "scaleY": [
+                              3,
+                              0.5
+                            ],
+                            "rotation": [
+                              3,
+                              0
+                            ],
+                            "interactive": [
+                              5,
+                              false
+                            ],
+                            "isFiltersThrough": [
+                              5,
+                              null
+                            ],
+                            "children": [],
+                            "texture": [
+                              10,
+                              "Assets/texture/hand.bin",
+                              "1c282d99-0404-4e4c-ad8c-c817a1950dfd"
+                            ],
+                            "frame": null,
+                            "imageType": [
+                              3,
+                              0
+                            ]
+                          },
+                          "__json": {
+                            "7b960b4f-cfa1-4539-837a-83c21a9f67f6": {
+                              "class": "qc.TweenProperty",
+                              "data": {
+                                "uuid": [
+                                  7,
+                                  "7b960b4f-cfa1-4539-837a-83c21a9f67f6"
+                                ],
+                                "enable": false,
+                                "_curve": [
+                                  22,
+                                  "qc.BezierCurve",
+                                  [
+                                    [
+                                      0,
+                                      0,
+                                      1,
+                                      1
+                                    ],
+                                    [
+                                      1,
+                                      1,
+                                      1,
+                                      1
+                                    ],
+                                    [
+                                      0,
+                                      0
+                                    ]
+                                  ]
+                                ],
+                                "sampleMethod": [
+                                  3,
+                                  0
+                                ],
+                                "style": [
+                                  3,
+                                  0
+                                ],
+                                "delay": [
+                                  3,
+                                  0
+                                ],
+                                "duration": [
+                                  3,
+                                  1
+                                ],
+                                "tweenGroup": [
+                                  3,
+                                  0
+                                ],
+                                "flag": [
+                                  7,
+                                  ""
+                                ],
+                                "playOnAwake": [
+                                  5,
+                                  false
+                                ],
+                                "from": [
+                                  3,
+                                  0
+                                ],
+                                "to": [
+                                  3,
+                                  1
+                                ],
+                                "property": [
+                                  7,
+                                  ""
+                                ]
+                              }
+                            },
+                            "5b4ad505-0968-48d6-85d3-2bf4d9df0d9f": {
+                              "class": "qc.FilterGroup",
+                              "data": {
+                                "uuid": [
+                                  7,
+                                  "5b4ad505-0968-48d6-85d3-2bf4d9df0d9f"
+                                ],
+                                "enable": true,
+                                "filters": [
+                                  35,
+                                  [
+                                    [
+                                      34,
+                                      "qc.Filter.Gray",
+                                      {}
+                                    ]
+                                  ]
+                                ],
+                                "inherited": [
+                                  5,
+                                  true
+                                ]
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "class": "qc.Node",
+                          "data": {
+                            "uuid": "17a7201f-f7ad-4730-a50e-e213af24cce3",
+                            "_prefab": [
+                              7,
+                              ""
+                            ],
+                            "__lock": [
+                              5,
+                              null
+                            ],
+                            "name": [
+                              7,
+                              "detect"
+                            ],
+                            "ignoreDestroy": [
+                              5,
+                              false
+                            ],
+                            "alpha": [
+                              3,
+                              1
+                            ],
+                            "visible": [
+                              5,
+                              true
+                            ],
+                            "colorTint": [
+                              14,
+                              16777215
+                            ],
+                            "static": [
+                              5,
+                              false
+                            ],
+                            "scripts": [
+                              {
+                                "clazz": "qc.engine.ObjectAreaUI",
+                                "data": "ae912c40-43d9-44e3-b0a5-1a7ff3d7e748"
+                              }
+                            ],
+                            "position": [
+                              0,
+                              0,
+                              65,
+                              7,
+                              65,
+                              7,
+                              140,
+                              80,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0
+                            ],
+                            "scaleX": [
+                              3,
+                              1
+                            ],
+                            "scaleY": [
+                              3,
+                              1
+                            ],
+                            "rotation": [
+                              3,
+                              0
+                            ],
+                            "interactive": [
+                              5,
+                              false
+                            ],
+                            "isFiltersThrough": [
+                              5,
+                              null
+                            ],
+                            "children": []
+                          },
+                          "__json": {
+                            "60ab53b2-a772-456a-a111-2343eb3d1e2b": {
+                              "class": "qc.engine.CatcherDetectAreaUI",
+                              "data": {
+                                "uuid": [
+                                  7,
+                                  "60ab53b2-a772-456a-a111-2343eb3d1e2b"
+                                ],
+                                "enable": true
+                              }
+                            },
+                            "ae912c40-43d9-44e3-b0a5-1a7ff3d7e748": {
+                              "class": "qc.engine.ObjectAreaUI",
+                              "data": {
+                                "uuid": [
+                                  7,
+                                  "ae912c40-43d9-44e3-b0a5-1a7ff3d7e748"
+                                ],
+                                "enable": true
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "__json": {
+                      "5d44e792-29ad-4d78-8460-12bbdcc5c15c": {
+                        "class": "qc.engine.CatcherUI",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "5d44e792-29ad-4d78-8460-12bbdcc5c15c"
+                          ],
+                          "enable": true,
+                          "CheckAreaNode": [
+                            18,
+                            "17a7201f-f7ad-4730-a50e-e213af24cce3"
+                          ],
+                          "ImageNode": [
+                            18,
+                            "30b38f0b-7260-4f6b-a6ab-31a44e19549b"
+                          ],
+                          "WorldNode": [
+                            18,
+                            "ba49aa84-63aa-4a71-8e04-9bb41be1e014"
+                          ],
+                          "AreaNode": [
+                            18,
+                            "c16103de-6b49-4a9b-a253-971c1350bd8d"
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "class": "qc.Node",
+                    "data": {
+                      "uuid": "0610d8e4-b699-4d4e-8236-4e00af35a6d9",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "fallingPool"
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        false
+                      ],
+                      "alpha": [
+                        3,
                         1
+                      ],
+                      "visible": [
+                        5,
+                        true
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [
+                        {
+                          "clazz": "qc.engine.FallItemPoolUI",
+                          "data": "02979aef-c93a-4fc8-9ede-4cb05e8d957c"
+                        }
+                      ],
+                      "position": [
+                        0,
+                        0,
+                        0.0000015888327453694728,
+                        1.2553274020277172e-7,
+                        0.0000015888327453694728,
+                        1.2553274020277172e-7,
+                        640,
+                        960,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1.0000000627663874
+                      ],
+                      "scaleY": [
+                        3,
+                        1.0000000627663874
                       ],
                       "rotation": [
                         3,
@@ -1099,259 +1472,42 @@
                       "children": []
                     },
                     "__json": {
-                      "60ab53b2-a772-456a-a111-2343eb3d1e2b": {
-                        "class": "qc.engine.CatcherDetectAreaUI",
+                      "d68970f7-4586-4261-bcac-9e8c306dc13e": {
+                        "class": "qc.engine.FallItemPoolUI",
                         "data": {
                           "uuid": [
                             7,
-                            "60ab53b2-a772-456a-a111-2343eb3d1e2b"
+                            "d68970f7-4586-4261-bcac-9e8c306dc13e"
                           ],
-                          "enable": true
+                          "enable": true,
+                          "FallItemPrefab": [
+                            16,
+                            "9158999a-63a7-4955-b919-065ff6a50690"
+                          ],
+                          "FallAreaNode": null,
+                          "NewAreaNode": null
                         }
                       },
-                      "ae912c40-43d9-44e3-b0a5-1a7ff3d7e748": {
-                        "class": "qc.engine.ObjectAreaUI",
+                      "02979aef-c93a-4fc8-9ede-4cb05e8d957c": {
+                        "class": "qc.engine.FallItemPoolUI",
                         "data": {
                           "uuid": [
                             7,
-                            "ae912c40-43d9-44e3-b0a5-1a7ff3d7e748"
+                            "02979aef-c93a-4fc8-9ede-4cb05e8d957c"
                           ],
-                          "enable": true
+                          "enable": true,
+                          "FallItemPrefab": [
+                            16,
+                            "9158999a-63a7-4955-b919-065ff6a50690"
+                          ]
                         }
                       }
                     }
-                  }
-                ]
-              },
-              "__json": {
-                "5d44e792-29ad-4d78-8460-12bbdcc5c15c": {
-                  "class": "qc.engine.CatcherUI",
-                  "data": {
-                    "uuid": [
-                      7,
-                      "5d44e792-29ad-4d78-8460-12bbdcc5c15c"
-                    ],
-                    "enable": true,
-                    "CheckAreaNode": [
-                      18,
-                      "17a7201f-f7ad-4730-a50e-e213af24cce3"
-                    ],
-                    "ImageNode": [
-                      18,
-                      "30b38f0b-7260-4f6b-a6ab-31a44e19549b"
-                    ],
-                    "WorldNode": [
-                      18,
-                      "ba49aa84-63aa-4a71-8e04-9bb41be1e014"
-                    ],
-                    "AreaNode": [
-                      18,
-                      "c16103de-6b49-4a9b-a253-971c1350bd8d"
-                    ]
-                  }
-                }
-              }
-            },
-            {
-              "class": "qc.Node",
-              "data": {
-                "uuid": "0610d8e4-b699-4d4e-8236-4e00af35a6d9",
-                "_prefab": [
-                  7,
-                  ""
-                ],
-                "__lock": [
-                  5,
-                  null
-                ],
-                "name": [
-                  7,
-                  "fallingPool"
-                ],
-                "ignoreDestroy": [
-                  5,
-                  false
-                ],
-                "alpha": [
-                  3,
-                  1
-                ],
-                "visible": [
-                  5,
-                  true
-                ],
-                "colorTint": [
-                  14,
-                  16777215
-                ],
-                "static": [
-                  5,
-                  false
-                ],
-                "scripts": [
+                  },
                   {
-                    "clazz": "qc.engine.FallItemPoolUI",
-                    "data": "02979aef-c93a-4fc8-9ede-4cb05e8d957c"
-                  }
-                ],
-                "position": [
-                  0,
-                  0,
-                  7.944163584738817e-7,
-                  6.276636899116284e-8,
-                  7.944163584738817e-7,
-                  6.276636899116284e-8,
-                  640,
-                  960,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "scaleX": [
-                  3,
-                  1.0000000313831932
-                ],
-                "scaleY": [
-                  3,
-                  1.0000000313831932
-                ],
-                "rotation": [
-                  3,
-                  0
-                ],
-                "interactive": [
-                  5,
-                  false
-                ],
-                "isFiltersThrough": [
-                  5,
-                  null
-                ],
-                "children": []
-              },
-              "__json": {
-                "d68970f7-4586-4261-bcac-9e8c306dc13e": {
-                  "class": "qc.engine.FallItemPoolUI",
-                  "data": {
-                    "uuid": [
-                      7,
-                      "d68970f7-4586-4261-bcac-9e8c306dc13e"
-                    ],
-                    "enable": true,
-                    "FallItemPrefab": [
-                      16,
-                      "9158999a-63a7-4955-b919-065ff6a50690"
-                    ],
-                    "FallAreaNode": null,
-                    "NewAreaNode": null
-                  }
-                },
-                "02979aef-c93a-4fc8-9ede-4cb05e8d957c": {
-                  "class": "qc.engine.FallItemPoolUI",
-                  "data": {
-                    "uuid": [
-                      7,
-                      "02979aef-c93a-4fc8-9ede-4cb05e8d957c"
-                    ],
-                    "enable": true,
-                    "FallItemPrefab": [
-                      16,
-                      "9158999a-63a7-4955-b919-065ff6a50690"
-                    ]
-                  }
-                }
-              }
-            },
-            {
-              "class": "qc.Node",
-              "data": {
-                "uuid": "9cda0fa1-149a-4c50-91dc-0fe94747888c",
-                "_prefab": [
-                  7,
-                  ""
-                ],
-                "__lock": [
-                  5,
-                  null
-                ],
-                "name": [
-                  7,
-                  "speaker"
-                ],
-                "ignoreDestroy": [
-                  5,
-                  false
-                ],
-                "alpha": [
-                  3,
-                  1
-                ],
-                "visible": [
-                  5,
-                  true
-                ],
-                "colorTint": [
-                  14,
-                  16777215
-                ],
-                "static": [
-                  5,
-                  false
-                ],
-                "scripts": [
-                  {
-                    "clazz": "qc.engine.SpeakerUI",
-                    "data": "f96536c9-487d-40db-8141-f2560ff7d991"
-                  }
-                ],
-                "position": [
-                  0,
-                  0,
-                  7.944163584738817e-7,
-                  20,
-                  7.944163584738817e-7,
-                  20,
-                  100,
-                  80,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "scaleX": [
-                  3,
-                  1.0000000313831932
-                ],
-                "scaleY": [
-                  3,
-                  1.0000000313831932
-                ],
-                "rotation": [
-                  3,
-                  0
-                ],
-                "interactive": [
-                  5,
-                  false
-                ],
-                "isFiltersThrough": [
-                  5,
-                  null
-                ],
-                "children": [
-                  {
-                    "class": "qc.UIText",
+                    "class": "qc.Node",
                     "data": {
-                      "uuid": "7b2cb5c9-fcba-4dac-9f0e-2cc1f429c84a",
+                      "uuid": "9cda0fa1-149a-4c50-91dc-0fe94747888c",
                       "_prefab": [
                         7,
                         ""
@@ -1362,7 +1518,7 @@
                       ],
                       "name": [
                         7,
-                        "word"
+                        "speaker"
                       ],
                       "ignoreDestroy": [
                         5,
@@ -1386,19 +1542,19 @@
                       ],
                       "scripts": [
                         {
-                          "clazz": "qc.NodeMask",
-                          "data": "e206df0d-6fc3-457e-a685-986e4a5bebf6"
+                          "clazz": "qc.engine.SpeakerUI",
+                          "data": "f96536c9-487d-40db-8141-f2560ff7d991"
                         }
                       ],
                       "position": [
                         0,
                         0,
-                        20,
-                        20,
-                        20,
-                        20,
-                        580,
-                        50,
+                        0.0000015888327453694728,
+                        20.00000069043023,
+                        0.0000015888327453694728,
+                        20.00000069043023,
+                        100,
+                        80,
                         0,
                         0,
                         0,
@@ -1410,11 +1566,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1
+                        1.0000000627663874
                       ],
                       "scaleY": [
                         3,
-                        1
+                        1.0000000627663874
                       ],
                       "rotation": [
                         3,
@@ -1428,149 +1584,250 @@
                         5,
                         null
                       ],
-                      "children": [],
-                      "fontFamily": [
-                        3,
-                        1
-                      ],
-                      "alignH": [
-                        3,
-                        0
-                      ],
-                      "alignV": [
-                        3,
-                        0
-                      ],
-                      "font": [
-                        32,
-                        "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf",
-                        "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf"
-                      ],
-                      "bold": [
-                        5,
-                        true
-                      ],
-                      "fontSize": [
-                        3,
-                        50
-                      ],
-                      "color": [
-                        14,
-                        4278190080
-                      ],
-                      "text": [
-                        7,
-                        "score：0"
-                      ],
-                      "lineSpacing": [
-                        3,
-                        0
-                      ],
-                      "wrap": [
-                        5,
-                        false
-                      ],
-                      "enableGlow": [
-                        5,
-                        false
-                      ],
-                      "startColor": [
-                        14,
-                        4294901760
-                      ],
-                      "endColor": [
-                        14,
-                        4278190080
-                      ],
-                      "gradient": [
-                        5,
-                        false
-                      ],
-                      "stroke": [
-                        14,
-                        4278190080
-                      ],
-                      "strokeThickness": [
-                        3,
-                        0
-                      ],
-                      "glowColor": [
-                        14,
-                        4294901760
-                      ],
-                      "autoSize": [
-                        5,
-                        false
-                      ],
-                      "overflow": [
-                        5,
-                        true
-                      ],
-                      "shadowColor": [
-                        14,
-                        2147483648
-                      ],
-                      "shadowBlur": [
-                        3,
-                        0
-                      ],
-                      "shadowOffsetX": [
-                        3,
-                        3
-                      ],
-                      "shadowOffsetY": [
-                        3,
-                        3
-                      ],
-                      "enableShadow": [
-                        5,
-                        false
+                      "children": [
+                        {
+                          "class": "qc.UIText",
+                          "data": {
+                            "uuid": "7b2cb5c9-fcba-4dac-9f0e-2cc1f429c84a",
+                            "_prefab": [
+                              7,
+                              ""
+                            ],
+                            "__lock": [
+                              5,
+                              null
+                            ],
+                            "name": [
+                              7,
+                              "word"
+                            ],
+                            "ignoreDestroy": [
+                              5,
+                              false
+                            ],
+                            "alpha": [
+                              3,
+                              1
+                            ],
+                            "visible": [
+                              5,
+                              true
+                            ],
+                            "colorTint": [
+                              14,
+                              16777215
+                            ],
+                            "static": [
+                              5,
+                              false
+                            ],
+                            "scripts": [
+                              {
+                                "clazz": "qc.NodeMask",
+                                "data": "e206df0d-6fc3-457e-a685-986e4a5bebf6"
+                              }
+                            ],
+                            "position": [
+                              0,
+                              0,
+                              20,
+                              20,
+                              20,
+                              20,
+                              580,
+                              50,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0
+                            ],
+                            "scaleX": [
+                              3,
+                              1
+                            ],
+                            "scaleY": [
+                              3,
+                              1
+                            ],
+                            "rotation": [
+                              3,
+                              0
+                            ],
+                            "interactive": [
+                              5,
+                              false
+                            ],
+                            "isFiltersThrough": [
+                              5,
+                              null
+                            ],
+                            "children": [],
+                            "fontFamily": [
+                              3,
+                              1
+                            ],
+                            "alignH": [
+                              3,
+                              0
+                            ],
+                            "alignV": [
+                              3,
+                              0
+                            ],
+                            "font": [
+                              32,
+                              "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf",
+                              "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf"
+                            ],
+                            "bold": [
+                              5,
+                              true
+                            ],
+                            "fontSize": [
+                              3,
+                              50
+                            ],
+                            "color": [
+                              14,
+                              4278190080
+                            ],
+                            "text": [
+                              7,
+                              "score：0"
+                            ],
+                            "lineSpacing": [
+                              3,
+                              0
+                            ],
+                            "wrap": [
+                              5,
+                              false
+                            ],
+                            "enableGlow": [
+                              5,
+                              false
+                            ],
+                            "startColor": [
+                              14,
+                              4294901760
+                            ],
+                            "endColor": [
+                              14,
+                              4278190080
+                            ],
+                            "gradient": [
+                              5,
+                              false
+                            ],
+                            "stroke": [
+                              14,
+                              4278190080
+                            ],
+                            "strokeThickness": [
+                              3,
+                              0
+                            ],
+                            "glowColor": [
+                              14,
+                              4294901760
+                            ],
+                            "autoSize": [
+                              5,
+                              false
+                            ],
+                            "overflow": [
+                              5,
+                              true
+                            ],
+                            "shadowColor": [
+                              14,
+                              2147483648
+                            ],
+                            "shadowBlur": [
+                              3,
+                              0
+                            ],
+                            "shadowOffsetX": [
+                              3,
+                              3
+                            ],
+                            "shadowOffsetY": [
+                              3,
+                              3
+                            ],
+                            "enableShadow": [
+                              5,
+                              false
+                            ]
+                          },
+                          "__json": {
+                            "e206df0d-6fc3-457e-a685-986e4a5bebf6": {
+                              "class": "qc.NodeMask",
+                              "data": {
+                                "uuid": [
+                                  7,
+                                  "e206df0d-6fc3-457e-a685-986e4a5bebf6"
+                                ],
+                                "enable": false,
+                                "checkInField": [
+                                  5,
+                                  false
+                                ],
+                                "minAnchor": [
+                                  24,
+                                  "qc.Point",
+                                  [
+                                    0,
+                                    0
+                                  ]
+                                ],
+                                "maxAnchor": [
+                                  24,
+                                  "qc.Point",
+                                  [
+                                    1,
+                                    1
+                                  ]
+                                ],
+                                "minRotation": [
+                                  3,
+                                  0
+                                ],
+                                "maxRotation": [
+                                  3,
+                                  6.283185307179586
+                                ],
+                                "clipType": [
+                                  3,
+                                  1
+                                ],
+                                "mode": [
+                                  3,
+                                  0
+                                ]
+                              }
+                            }
+                          }
+                        }
                       ]
                     },
                     "__json": {
-                      "e206df0d-6fc3-457e-a685-986e4a5bebf6": {
-                        "class": "qc.NodeMask",
+                      "f96536c9-487d-40db-8141-f2560ff7d991": {
+                        "class": "qc.engine.SpeakerUI",
                         "data": {
                           "uuid": [
                             7,
-                            "e206df0d-6fc3-457e-a685-986e4a5bebf6"
+                            "f96536c9-487d-40db-8141-f2560ff7d991"
                           ],
-                          "enable": false,
-                          "checkInField": [
-                            5,
-                            false
-                          ],
-                          "minAnchor": [
-                            24,
-                            "qc.Point",
-                            [
-                              0,
-                              0
-                            ]
-                          ],
-                          "maxAnchor": [
-                            24,
-                            "qc.Point",
-                            [
-                              1,
-                              1
-                            ]
-                          ],
-                          "minRotation": [
-                            3,
-                            0
-                          ],
-                          "maxRotation": [
-                            3,
-                            6.283185307179586
-                          ],
-                          "clipType": [
-                            3,
-                            1
-                          ],
-                          "mode": [
-                            3,
-                            0
+                          "enable": true,
+                          "BackgroundNode": null,
+                          "TextNode": [
+                            18,
+                            "7b2cb5c9-fcba-4dac-9f0e-2cc1f429c84a"
                           ]
                         }
                       }
@@ -1579,21 +1836,102 @@
                 ]
               },
               "__json": {
-                "f96536c9-487d-40db-8141-f2560ff7d991": {
-                  "class": "qc.engine.SpeakerUI",
+                "1aae740f-e833-4c5e-af25-3052d528553f": {
+                  "class": "qc.engine.PlayingPageUI",
                   "data": {
                     "uuid": [
                       7,
-                      "f96536c9-487d-40db-8141-f2560ff7d991"
+                      "1aae740f-e833-4c5e-af25-3052d528553f"
                     ],
                     "enable": true,
-                    "BackgroundNode": null,
-                    "TextNode": [
+                    "FallCreateAreaNode": [
                       18,
-                      "7b2cb5c9-fcba-4dac-9f0e-2cc1f429c84a"
+                      "a47c876b-4671-4b03-8fd7-1f1da214931b"
+                    ],
+                    "FallPoolNode": [
+                      18,
+                      "0610d8e4-b699-4d4e-8236-4e00af35a6d9"
                     ]
                   }
                 }
+              }
+            },
+            {
+              "class": "qc.Node",
+              "data": {
+                "uuid": "576a789f-91d7-4b27-b248-50aee4bb697a",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "reward_page"
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [],
+                "position": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  100,
+                  100,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  1
+                ],
+                "scaleY": [
+                  3,
+                  1
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  false
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": []
               }
             },
             {
@@ -1712,7 +2050,7 @@
                 ],
                 "text": [
                   7,
-                  "FPS: 30.0\nDraw Calls: 7\nTotal: 1.0 ms\nLogic: 0.4 ms\nRender: 0.5 ms\nPreUpdate: 0.2 ms\nUpdate: 0.1 ms\nPostUpdate: 0.1 ms\nTransformCalc: 0"
+                  "FPS: 30.8\nDraw Calls: 0\nTotal: 1.6 ms\nLogic: 0.8 ms\nRender: 0.7 ms\nPreUpdate: 0.2 ms\nUpdate: 0.1 ms\nPostUpdate: 0.4 ms\nTransformCalc: 0"
                 ],
                 "lineSpacing": [
                   3,
@@ -1894,7 +2232,7 @@
                   -0.0000016345123867722577,
                   -0.000012189390133698907,
                   -0.0000016345123867722577,
-                  765.73675089273,
+                  640.0000121893902,
                   960,
                   -0.000012189390133698907,
                   0,
@@ -1970,7 +2308,7 @@
                         -4.440892098500626e-16,
                         640,
                         -4.440892098500626e-16,
-                        125.73675089273002,
+                        0.000012189390190542326,
                         960,
                         640,
                         0,
@@ -2303,9 +2641,9 @@
               "gameObjectRecord": [
                 4,
                 [
-                  0.5302083333333333,
-                  0.5302083333333333,
-                  765.7367387033399,
+                  1,
+                  1,
+                  640,
                   960.0000000000001
                 ]
               ]
@@ -2339,6 +2677,32 @@
               "FallCreateAreaNode": [
                 18,
                 "a47c876b-4671-4b03-8fd7-1f1da214931b"
+              ]
+            }
+          },
+          "a998369c-b849-4e5b-a9fc-fd0aa89dc4ae": {
+            "class": "qc.engine.UIManager",
+            "data": {
+              "uuid": [
+                7,
+                "a998369c-b849-4e5b-a9fc-fd0aa89dc4ae"
+              ],
+              "enable": true,
+              "WelcomeNode": [
+                18,
+                "1fff023c-bdc6-4348-a8a2-6413ade8a3d2"
+              ],
+              "IntroduceNode": [
+                18,
+                "671291ab-6625-4278-9c53-a779987ba2fa"
+              ],
+              "PlayingNode": [
+                18,
+                "b95201c5-1ba6-42c0-a777-07c79819e418"
+              ],
+              "RewardNode": [
+                18,
+                "576a789f-91d7-4b27-b248-50aee4bb697a"
               ]
             }
           }

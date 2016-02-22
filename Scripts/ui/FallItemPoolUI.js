@@ -11,16 +11,14 @@ var FallItemPoolUI = qc.defineBehaviour('qc.engine.FallItemPoolUI', qc.Behaviour
 });
 
 
-FallItemPoolUI.prototype.awake = function() {
-    var self = this,
-        o = self.gameObject;
+// FallItemPoolUI.prototype.awake = function() {
+//     var self = this,
+//         o = self.gameObject;
+// };
 
-};
 
-
-FallItemPoolUI.prototype.update = function() {
-    //TODO: 更新自己池子里面元素下落坐标
-};
+// FallItemPoolUI.prototype.update = function() {
+// };
 
 //外部传入fallmodel，这里创建图形，同时在逻辑对象创建匹配的对象
 FallItemPoolUI.prototype.additem = function(datainfo) {
