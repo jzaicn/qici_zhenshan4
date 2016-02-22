@@ -37,10 +37,10 @@
     "position": [
       0,
       0,
-      1.9712230215827447,
-      3.661870503597129,
-      1.9712230215827447,
-      3.661870503597129,
+      -15.936651417447223,
+      7.687248879225109,
+      -15.936651417447223,
+      7.687248879225109,
       274,
       509,
       0,
@@ -54,11 +54,11 @@
     ],
     "scaleX": [
       3,
-      0.9856115107913669
+      1.0348920863309352
     ],
     "scaleY": [
       3,
-      0.9856115107913669
+      1.0348920863309352
     ],
     "rotation": [
       3,
@@ -844,7 +844,7 @@
                       ],
                       "name": [
                         7,
-                        "image"
+                        "colorHand"
                       ],
                       "ignoreDestroy": [
                         5,
@@ -916,6 +916,104 @@
                         3,
                         0
                       ]
+                    },
+                    "__json": {
+                      "7b960b4f-cfa1-4539-837a-83c21a9f67f6": {
+                        "class": "qc.TweenProperty",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "7b960b4f-cfa1-4539-837a-83c21a9f67f6"
+                          ],
+                          "enable": false,
+                          "_curve": [
+                            22,
+                            "qc.BezierCurve",
+                            [
+                              [
+                                0,
+                                0,
+                                1,
+                                1
+                              ],
+                              [
+                                1,
+                                1,
+                                1,
+                                1
+                              ],
+                              [
+                                0,
+                                0
+                              ]
+                            ]
+                          ],
+                          "sampleMethod": [
+                            3,
+                            0
+                          ],
+                          "style": [
+                            3,
+                            0
+                          ],
+                          "delay": [
+                            3,
+                            0
+                          ],
+                          "duration": [
+                            3,
+                            1
+                          ],
+                          "tweenGroup": [
+                            3,
+                            0
+                          ],
+                          "flag": [
+                            7,
+                            ""
+                          ],
+                          "playOnAwake": [
+                            5,
+                            false
+                          ],
+                          "from": [
+                            3,
+                            0
+                          ],
+                          "to": [
+                            3,
+                            1
+                          ],
+                          "property": [
+                            7,
+                            ""
+                          ]
+                        }
+                      },
+                      "5b4ad505-0968-48d6-85d3-2bf4d9df0d9f": {
+                        "class": "qc.FilterGroup",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "5b4ad505-0968-48d6-85d3-2bf4d9df0d9f"
+                          ],
+                          "enable": true,
+                          "filters": [
+                            35,
+                            [
+                              [
+                                34,
+                                "qc.Filter.Gray",
+                                {}
+                              ]
+                            ]
+                          ],
+                          "inherited": [
+                            5,
+                            true
+                          ]
+                        }
+                      }
                     }
                   },
                   {
@@ -1614,7 +1712,7 @@
                 ],
                 "text": [
                   7,
-                  "FPS: 29.9\nDraw Calls: 6\nTotal: 0.8 ms\nLogic: 0.1 ms\nRender: 0.6 ms\nPreUpdate: 0.1 ms\nUpdate: 0.0 ms\nPostUpdate: 0.0 ms\nTransformCalc: 0"
+                  "FPS: 30.0\nDraw Calls: 6\nTotal: 0.7 ms\nLogic: 0.1 ms\nRender: 0.6 ms\nPreUpdate: 0.0 ms\nUpdate: 0.0 ms\nPostUpdate: 0.1 ms\nTransformCalc: 0"
                 ],
                 "lineSpacing": [
                   3,
