@@ -4,7 +4,7 @@
  */
 window.CatchGame = qc.CatchGame = {
 
-    FALL_SPEED : 4,
+    FALL_SPEED : 6,
 
     RAISE_LEVEL : -20,
     SEA_LEVEL : 980,
