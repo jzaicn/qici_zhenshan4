@@ -54,7 +54,7 @@ UIManager.prototype.createItems = function() {
 
 UIManager.prototype.update = function() {
     var self = this;
-	//TODO: 调用游戏类进行判断，游戏是否结束，是否碰撞得分，是否超出边界删除对象
+	//调用游戏类进行判断，游戏是否结束，是否碰撞得分，是否超出边界删除对象
     if (qc.CatchGame.isRunning()) {
         self.fallPool.fallAll();
         self.fallPool.fallOut();//TODO: 考虑这个是不是移动到自定义计时器

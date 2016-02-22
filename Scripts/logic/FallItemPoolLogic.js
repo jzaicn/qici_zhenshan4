@@ -47,6 +47,8 @@ FallItemPoolLogic.prototype.checkFalloutPoolObject = function() {
             var effect = value.o.getScript("qc.engine.FallItemUI");
             effect.onFallout();
             indexgroup.push(index);
+            //下落元素跌出屏幕后事件派发
+            qc.CatchGame.itemSignal.dispatch(value.getInfo());
         };
     };
     doPoolObject(self.currentPool,check_fallout);
@@ -61,10 +63,14 @@ FallItemPoolLogic.prototype.checkCrashPoolObject = function() {
     //处理位置偏移
     var check_crash = function(operaPool,index,value){
         if (qc.CatchGame.isCrash({x:value.x,y:value.y})) {
+            //下落元素显示效果
             var effect = value.o.getScript("qc.engine.FallItemUI");
+            effect.score = value.score;
             effect.onCrash();
+            //下落元素删除准备
             indexgroup.push(index);
-            console.log("score:",value.score);
+            //下落元素触碰后事件派发
+            qc.CatchGame.itemSignal.dispatch(value.getInfo());
         };
     };
     doPoolObject(self.currentPool,check_crash);
@@ -122,13 +128,14 @@ FallItemPoolLogic.prototype.delItemIndexArr = function(indexgroup) {
     arrayDelIndexGroup(indexgroup,self.currentPool);
 };
 
-
+//返回自身
 FallItemPoolLogic.prototype.getPool = function() {
     return this.currentPool;
 };
 
-
-FallItemPoolLogic.prototype.checkPoolNeedNew = function() {
+//检测是否最后一个元素已经跌过出生线了，是的话返回真
+//根据这个判断是不是需要增加新元素
+FallItemPoolLogic.prototype.isPoolNeedNew = function() {
     var self = this;
     if (self.currentPool.length > 0) {
         if (self.currentPool[self.currentPool.length -1].y > self.raiseLine) {

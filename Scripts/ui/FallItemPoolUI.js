@@ -56,7 +56,7 @@ FallItemPoolUI.prototype.crashUp = function() {
 };
 
 FallItemPoolUI.prototype.need2Create = function() {
-    return qc.CatchGame.fallitemPool.checkPoolNeedNew();
+    return qc.CatchGame.fallitemPool.isPoolNeedNew();
 };
 
 
