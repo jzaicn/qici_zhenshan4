@@ -9,6 +9,10 @@ window.CatchGame = qc.CatchGame = {
     RAISE_LEVEL : -20,
     SEA_LEVEL : 980,
     SPEAK_BOX_MIX_WIDTH : 600,
+    DEFAULT_PAGE: "welcome",
+
+    DEFAULT_MUSIC_PLAYING : false,
+
 
     DATA_SOURCE : [
         { id: 0, icon: "13.png", score: 10, noRepeatRadius: 1500, noOtherRadius: 160 },
@@ -27,8 +31,11 @@ window.CatchGame = qc.CatchGame = {
         { id: 13, icon: "6.png", score: 5, noRepeatRadius: 500, noOtherRadius: 160 },
     ],
 
-    _status : "welcome",
 
+    _introduced : false,
+
+
+    _status : "welcome",
     set Status(v) {
         this.statusSignal.dispatch(this._status,v);
         this._status = v;
@@ -36,6 +43,8 @@ window.CatchGame = qc.CatchGame = {
     get Status() {
         return this._status;
     },
+
+
 
     // 所有的操作指令集合
     operation: {},
@@ -87,6 +96,10 @@ qc.CatchGame.restart = function(){
     //初始化提示语言
 }
 
+//绑定对象到
+qc.CatchGame.isIntroduced = function(){
+    return this._introduced;
+}
 
 //绑定对象到
 qc.CatchGame.bandUIObj  = function(uiObj){

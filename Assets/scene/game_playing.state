@@ -1987,8 +1987,8 @@
                   0,
                   0,
                   0,
-                  100,
-                  100,
+                  640,
+                  960,
                   0,
                   0,
                   0,
@@ -2121,7 +2121,7 @@
                       ],
                       "name": [
                         7,
-                        "Sprite"
+                        "gameBegin"
                       ],
                       "ignoreDestroy": [
                         5,
@@ -2152,28 +2152,28 @@
                       "position": [
                         0.5,
                         0.5,
-                        322.30166764344636,
-                        758.356865043405,
-                        322.30166764344636,
-                        758.356865043405,
+                        0,
+                        -210.91800309021073,
+                        320,
+                        749.0819969097893,
                         380,
                         209,
                         0,
                         0,
                         0,
                         0,
-                        0,
-                        0,
-                        0,
-                        0
+                        0.5,
+                        1,
+                        0.5,
+                        1
                       ],
                       "scaleX": [
                         3,
-                        1.0827451446228007
+                        1.008035848632399
                       ],
                       "scaleY": [
                         3,
-                        1.0827451446228007
+                        1.008035848632399
                       ],
                       "rotation": [
                         3,
@@ -2181,7 +2181,7 @@
                       ],
                       "interactive": [
                         5,
-                        false
+                        true
                       ],
                       "isFiltersThrough": [
                         5,
@@ -2274,7 +2274,7 @@
                           ],
                           "playOnAwake": [
                             5,
-                            false
+                            true
                           ],
                           "from": [
                             24,
@@ -2415,7 +2415,7 @@
                 ],
                 "text": [
                   7,
-                  "FPS: 30.0\nDraw Calls: 12\nTotal: 0.6 ms\nLogic: 0.0 ms\nRender: 0.5 ms\nPreUpdate: 0.0 ms\nUpdate: 0.0 ms\nPostUpdate: 0.0 ms\nTransformCalc: 0"
+                  "FPS: 30.0\nDraw Calls: 12\nTotal: 0.7 ms\nLogic: 0.3 ms\nRender: 0.3 ms\nPreUpdate: 0.2 ms\nUpdate: 0.0 ms\nPostUpdate: 0.1 ms\nTransformCalc: 0"
                 ],
                 "lineSpacing": [
                   3,
