@@ -42,16 +42,16 @@ UIManager.prototype.awake = function() {
         self.RewardNode.visible = false;
     }
 
-    // qc.CatchGame.statusSignal.add(function(oldStatus, newStatus) {
-    //     var self = this;
-    //     self.gameStatusChange = true;
-    //     if (newStatus == "playing") {
-    //         self.WelcomeNode.visible = false;
-    //         self.IntroduceNode.visible = false;
-    //         self.PlayingNode.visible = true;
-    //         self.RewardNode.visible = false;
-    //     };
-    // });
+    qc.CatchGame.statusSignal.add(function(oldStatus, newStatus) {
+        self.gameStatusChange = true;
+        // if (newStatus == "playing") {
+        //     self.WelcomeNode.visible = false;
+        //     self.IntroduceNode.visible = false;
+        //     self.PlayingNode.visible = true;
+        //     self.RewardNode.visible = false;
+        // };
+        console.log(oldStatus,newStatus);
+    });
 
 };
 

@@ -5,24 +5,24 @@ var TestSpriteUI = qc.defineBehaviour('qc.engine.TestSpriteUI', qc.Behaviour, fu
 
     var self = this;
 
-    self.itemFactory = new qc.CatchGame.FallItemFactory();
+    // self.itemFactory = new qc.CatchGame.FallItemFactory();
 
-    self.catcher = new qc.CatchGame.CatcherLogic();
+    // self.catcher = new qc.CatchGame.CatcherLogic();
 
 }, {
-    testPrefab: qc.Serializer.PREFAB,
-    catcherPrefab: qc.Serializer.PREFAB,
-    worldNode: qc.Serializer.NODE
+    //     testPrefab: qc.Serializer.PREFAB,
+    //     catcherPrefab: qc.Serializer.PREFAB,
+    //     worldNode: qc.Serializer.NODE
 });
 
 
 TestSpriteUI.prototype.awake = function() {
     var self = this;
-
-    if (self.catcherPrefab) {
-        var testObject = self.game.add.clone(self.catcherPrefab, self.worldNode);
-        self.test = testObject.getScript("qc.engine.CathcerUI");
-    };
+    self.getPlay = getPlayXunhuanLoop();
+    // if (self.catcherPrefab) {
+    //     var testObject = self.game.add.clone(self.catcherPrefab, self.worldNode);
+    //     self.test = testObject.getScript("qc.engine.CathcerUI");
+    // };
 };
 
 
@@ -30,18 +30,50 @@ TestSpriteUI.prototype.update = function() {
 
 };
 
-TestSpriteUI.prototype.onClick = function(){
-    this.onCreateOneFallItem()
+TestSpriteUI.prototype.onClick = function() {
+    var self = this;
+    qc.CatchGame.Status = self.getPlay();
 };
+
+
+function getPlayXunhuanLoop() {
+    var i = 0;
+
+    function returnPlayName() {
+        var name = "";
+        switch (i++) {
+            case 0:
+                name = "welcome";
+                break;
+            case 1:
+                name = "introduce";
+                break;
+            case 2:
+                name = "playing";
+                break;
+            case 3:
+                name = "reward";
+                break;
+            default:
+        }
+        if (i % 4 == 0) {
+            i = 0;
+        };
+        return name;
+    }
+    return returnPlayName;
+}
+
+
 
 TestSpriteUI.prototype.onCreatePoolFallItem = function() {
     var self = this;
 
     var area = {
-        x:0,
-        y:0,
-        width:640,
-        height:960,
+        x: 0,
+        y: 0,
+        width: 640,
+        height: 960,
     };
     var pool = self.itemFactory.getFillAreaPool(area);
 
@@ -65,8 +97,7 @@ TestSpriteUI.prototype.onCreateOneFallItem = function() {
 
         var testObject = self.game.add.clone(self.testPrefab, self.gameObject);
         self.test = testObject.getScript("qc.engine.FallItemUI");
-    }
-    else {
+    } else {
         self.flag = false;
 
 
@@ -84,4 +115,3 @@ TestSpriteUI.prototype.onScoreDispear = function() {
 
     self.test.show("+5");
 };
-

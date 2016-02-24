@@ -29,6 +29,14 @@ window.CatchGame = qc.CatchGame = {
 
     _status : "welcome",
 
+    set Status(v) {
+        this.statusSignal.dispatch(this._status,v);
+        this._status = v;
+    },
+    get Status() {
+        return this._status;
+    },
+
     // 所有的操作指令集合
     operation: {},
 };
@@ -56,17 +64,6 @@ qc.initGame = function(game) {
     // 设置监听全局消息
     //CatchGame.itemSignal.add(qc.CatchGame.onItemSignal);
 };
-
-// Object.defineProperties(qc.CatchGame.prototype, {
-//     status: {
-//         get: function() { return this._status; },
-//         set: function(v) {
-//             this.statusSignal.dispatch(this._status,v);
-//             this._status = v;
-//         }
-//     }
-// });
-
 
 
 qc.CatchGame.onItemSignal = function(obj){
