@@ -29,6 +29,6 @@ TeachImageUI.prototype.onClick = function(e) {
     var self = this,
         o = self.gameObject;
     
-    //qc.CatchGame.setStart();
+    qc.CatchGame.setStart();
 };
 

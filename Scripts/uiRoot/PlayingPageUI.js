@@ -10,6 +10,7 @@ var PlayingPageUI = qc.defineBehaviour('qc.engine.PlayingPageUI', qc.Behaviour, 
 }, {
     FallCreateAreaNode: qc.Serializer.NODE,
     FallPoolNode: qc.Serializer.NODE,
+    BackCountNode: qc.Serializer.NODE,
 });
 
 
@@ -29,6 +30,12 @@ PlayingPageUI.prototype.awake = function() {
         qc.CatchGame.fallitemPool.init(self.fallPool);
     };
 
+    //绑定倒数对象
+    if (self.BackCountNode) {
+        self.backcount = self.BackCountNode.getScript("qc.engine.BackCountUI");
+    };
+
+    self.createItems();
 };
 
 PlayingPageUI.prototype.createItems = function() {
@@ -45,7 +52,11 @@ PlayingPageUI.prototype.createItems = function() {
     }
 };
 
-
+PlayingPageUI.prototype.beginGameCall = function() {
+    //TODO: 调用游戏开始
+    //TODO: 调用游戏倒计时
+    //TODO: 调用创建下落元素
+};
 
 
 

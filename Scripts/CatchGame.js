@@ -71,7 +71,7 @@ qc.initGame = function(game) {
     CatchGame.speaker = new qc.CatchGame.SpeakerLogic();
 
     // 设置监听全局消息
-    //CatchGame.itemSignal.add(qc.CatchGame.onItemSignal);
+    CatchGame.itemSignal.add(qc.CatchGame.onItemSignal);
 };
 
 
@@ -85,16 +85,6 @@ qc.CatchGame.onItemSignal = function(obj){
     }
 };
 
-//TODO: 复位游戏
-qc.CatchGame.restart = function(){
-    var self = this;
-    // 初始化捕获者
-    //self.status = "welcome";
-
-    // 初始化下落物
-
-    //初始化提示语言
-}
 
 //绑定对象到
 qc.CatchGame.isIntroduced = function(){
@@ -109,7 +99,7 @@ qc.CatchGame.bandUIObj  = function(uiObj){
 //游戏是否在运行
 qc.CatchGame.isRunning = function(){
     var self = this;
-    switch(self.status){
+    switch(self.Status){
         case "welcome":
             return false;
             break;
@@ -145,14 +135,20 @@ qc.CatchGame.isCrash = function(pos){
     return false;
 }
 
+//TODO: 操作开始
+//开始游戏
+qc.CatchGame.setStart = function() {
+    this.Status = "playing";
+    
+    //初始化提示语言
+    // 初始化下落物
 
-// //开始游戏
-// qc.CatchGame.prototype.setStart = function() {
-//     this.status = "playing";
-//     this.restart();
-// };
+};
 
-
+//重新开始游戏
+qc.CatchGame.reStart = function(){
+    //
+};
 
 
 

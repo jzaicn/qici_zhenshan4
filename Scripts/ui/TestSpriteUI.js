@@ -39,27 +39,26 @@ TestSpriteUI.prototype.onClick = function() {
 function getPlayXunhuanLoop() {
     var i = 0;
 
+    var group = [
+        {name : "welcome" },
+        {name : "introduce" },
+        {name : "playing" },
+        {name : "reward" },
+    ];
     function returnPlayName() {
-        var name = "";
-        switch (i++) {
-            case 0:
-                name = "welcome";
-                break;
-            case 1:
-                name = "introduce";
-                break;
-            case 2:
-                name = "playing";
-                break;
-            case 3:
-                name = "reward";
-                break;
-            default:
-        }
-        if (i % 4 == 0) {
-            i = 0;
+        var index= 0;
+        //获取当前位置
+        for (var i = 0; i < group.length; i++) {
+            if (group[i].name == qc.CatchGame.Status) {
+                index = i;
+            };
+            
         };
-        return name;
+
+        //循环复位
+        index++;
+        index = index % 4;
+        return group[index].name;
     }
     return returnPlayName;
 }

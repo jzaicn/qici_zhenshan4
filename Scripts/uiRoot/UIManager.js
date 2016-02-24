@@ -65,6 +65,10 @@ UIManager.prototype.awake = function() {
                 if (value.name === "introduce") {
                     qc.CatchGame._introduced = true;  
                 };
+                //设置已经介绍信息状态为真
+                if (value.name === "playing") {
+                    qc.CatchGame.reStart();
+                };
             };
         };
         var switchOffStage = function(operaPool, index, value) {
