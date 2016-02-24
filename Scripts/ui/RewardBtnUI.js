@@ -20,5 +20,5 @@ var RewardBtnUI = qc.defineBehaviour('qc.engine.RewardBtnUI', qc.Behaviour, func
 
 RewardBtnUI.prototype.onClick = function() {
     var self = this;
-    
+    window.location.href=qc.CatchGame.getCurrentReward();
 };

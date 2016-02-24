@@ -147,9 +147,13 @@ qc.CatchGame.setStart = function() {
 
 //重新开始游戏
 qc.CatchGame.reStart = function(){
-    //
+    //TODO: 重新开始游戏
 };
 
+//获取当前奖品的地址（用于转跳）
+qc.CatchGame.getCurrentReward = function(){
+    return "http://getgeektest.applinzi.com/";
+};
 
 
 

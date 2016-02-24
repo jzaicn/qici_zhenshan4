@@ -20,5 +20,5 @@ var ReplayBtnUI = qc.defineBehaviour('qc.engine.ReplayBtnUI', qc.Behaviour, func
 
 ReplayBtnUI.prototype.onClick = function() {
     var self = this;
-    
+    qc.CatchGame.setStart();
 };

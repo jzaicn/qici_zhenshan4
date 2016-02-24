@@ -1080,7 +1080,7 @@
                             ],
                             "name": [
                               7,
-                              "node"
+                              "showReward"
                             ],
                             "ignoreDestroy": [
                               5,
@@ -1857,6 +1857,84 @@
                     }
                   },
                   {
+                    "class": "qc.Node",
+                    "data": {
+                      "uuid": "46828912-ca22-46cc-ae6a-485c7ba5baa0",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "btnReward"
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        false
+                      ],
+                      "alpha": [
+                        3,
+                        1
+                      ],
+                      "visible": [
+                        5,
+                        true
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [],
+                      "position": [
+                        0,
+                        0,
+                        539.5496038072207,
+                        276.4634333557641,
+                        539.5496038072207,
+                        276.4634333557641,
+                        100,
+                        300,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1
+                      ],
+                      "scaleY": [
+                        3,
+                        1
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "interactive": [
+                        5,
+                        false
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": []
+                    }
+                  },
+                  {
                     "class": "qc.UIImage",
                     "data": {
                       "uuid": "047f1ffe-c69d-4a3f-92df-2ed4ce499b58",
@@ -1882,7 +1960,7 @@
                       ],
                       "visible": [
                         5,
-                        true
+                        false
                       ],
                       "colorTint": [
                         14,
@@ -1985,6 +2063,94 @@
                     }
                   },
                   {
+                    "class": "qc.UIImage",
+                    "data": {
+                      "uuid": "9e73d876-1d18-4924-b919-db41cfc31b04",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "shareImg"
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        null
+                      ],
+                      "alpha": [
+                        3,
+                        1
+                      ],
+                      "visible": [
+                        5,
+                        false
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [],
+                      "position": [
+                        0,
+                        0,
+                        171.67487393866296,
+                        6.688631452155527,
+                        171.67487393866296,
+                        6.688631452155527,
+                        330,
+                        228,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1.4
+                      ],
+                      "scaleY": [
+                        3,
+                        1.4
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "interactive": [
+                        5,
+                        false
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": [],
+                      "texture": [
+                        10,
+                        "Assets/texture/clicking-share.bin",
+                        "a294d3a5-cded-400a-95bd-3fae6a8edf1b"
+                      ],
+                      "frame": null,
+                      "imageType": [
+                        3,
+                        0
+                      ]
+                    }
+                  },
+                  {
                     "class": "qc.Sprite",
                     "data": {
                       "uuid": "9e1c17b1-5913-4c80-bfbf-67391ebff637",
@@ -2024,6 +2190,10 @@
                         {
                           "clazz": "qc.TweenScale",
                           "data": "59a84826-7b15-435e-902c-0734f65edfae"
+                        },
+                        {
+                          "clazz": "qc.engine.RewardBtnUI",
+                          "data": "359097a1-24ea-4815-a4f3-25ffe779d8bc"
                         }
                       ],
                       "position": [
@@ -2046,11 +2216,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.0004926913580234
+                        1.0050814000914492
                       ],
                       "scaleY": [
                         3,
-                        1.0004926913580234
+                        1.0050814000914492
                       ],
                       "rotation": [
                         3,
@@ -2170,6 +2340,16 @@
                             ]
                           ]
                         }
+                      },
+                      "359097a1-24ea-4815-a4f3-25ffe779d8bc": {
+                        "class": "qc.engine.RewardBtnUI",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "359097a1-24ea-4815-a4f3-25ffe779d8bc"
+                          ],
+                          "enable": true
+                        }
                       }
                     }
                   },
@@ -2213,6 +2393,10 @@
                         {
                           "clazz": "qc.TweenScale",
                           "data": "59a84826-7b15-435e-902c-0734f65edfae"
+                        },
+                        {
+                          "clazz": "qc.engine.ReplayBtnUI",
+                          "data": "290aadd8-c25e-4d73-9a6a-7ddb4a568b5b"
                         }
                       ],
                       "position": [
@@ -2235,11 +2419,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.0004926913580234
+                        1.0050814000914492
                       ],
                       "scaleY": [
                         3,
-                        1.0004926913580234
+                        1.0050814000914492
                       ],
                       "rotation": [
                         3,
@@ -2359,95 +2543,17 @@
                             ]
                           ]
                         }
+                      },
+                      "290aadd8-c25e-4d73-9a6a-7ddb4a568b5b": {
+                        "class": "qc.engine.ReplayBtnUI",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "290aadd8-c25e-4d73-9a6a-7ddb4a568b5b"
+                          ],
+                          "enable": true
+                        }
                       }
-                    }
-                  },
-                  {
-                    "class": "qc.UIImage",
-                    "data": {
-                      "uuid": "9e73d876-1d18-4924-b919-db41cfc31b04",
-                      "_prefab": [
-                        7,
-                        ""
-                      ],
-                      "__lock": [
-                        5,
-                        null
-                      ],
-                      "name": [
-                        7,
-                        "shareImg"
-                      ],
-                      "ignoreDestroy": [
-                        5,
-                        null
-                      ],
-                      "alpha": [
-                        3,
-                        1
-                      ],
-                      "visible": [
-                        5,
-                        true
-                      ],
-                      "colorTint": [
-                        14,
-                        16777215
-                      ],
-                      "static": [
-                        5,
-                        false
-                      ],
-                      "scripts": [],
-                      "position": [
-                        0,
-                        0,
-                        171.67487393866296,
-                        6.688631452155527,
-                        171.67487393866296,
-                        6.688631452155527,
-                        330,
-                        228,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                      ],
-                      "scaleX": [
-                        3,
-                        1.4
-                      ],
-                      "scaleY": [
-                        3,
-                        1.4
-                      ],
-                      "rotation": [
-                        3,
-                        0
-                      ],
-                      "interactive": [
-                        5,
-                        false
-                      ],
-                      "isFiltersThrough": [
-                        5,
-                        null
-                      ],
-                      "children": [],
-                      "texture": [
-                        10,
-                        "Assets/texture/clicking-share.bin",
-                        "a294d3a5-cded-400a-95bd-3fae6a8edf1b"
-                      ],
-                      "frame": null,
-                      "imageType": [
-                        3,
-                        0
-                      ]
                     }
                   }
                 ]
@@ -5425,6 +5531,10 @@
       "key": "Assets/texture/mask.bin",
       "uuid": "0f1b87b9-f529-4aa7-a9a5-76bce475ea6c"
     },
+    "a294d3a5-cded-400a-95bd-3fae6a8edf1b": {
+      "key": "Assets/texture/clicking-share.bin",
+      "uuid": "a294d3a5-cded-400a-95bd-3fae6a8edf1b"
+    },
     "fd89b3f9-a6c4-4d7c-95e6-08253348bd3b": {
       "key": "Assets/texture/btn_reward.bin",
       "uuid": "fd89b3f9-a6c4-4d7c-95e6-08253348bd3b"
@@ -5432,10 +5542,6 @@
     "c649dc06-fd76-4943-8bd7-a1e3ca85c6e7": {
       "key": "Assets/texture/btn_replay.bin",
       "uuid": "c649dc06-fd76-4943-8bd7-a1e3ca85c6e7"
-    },
-    "a294d3a5-cded-400a-95bd-3fae6a8edf1b": {
-      "key": "Assets/texture/clicking-share.bin",
-      "uuid": "a294d3a5-cded-400a-95bd-3fae6a8edf1b"
     },
     "4f197c43-67a3-47fb-ae93-f21233794595": {
       "key": "Assets/texture/play_page.bin",
