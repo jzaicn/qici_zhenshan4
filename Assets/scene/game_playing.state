@@ -37,12 +37,12 @@
     "position": [
       0,
       0,
-      30.037344398340252,
-      1.0560165975103644,
-      30.037344398340252,
-      1.0560165975103644,
-      640,
-      960,
+      1.9712230215827447,
+      3.661870503597129,
+      1.9712230215827447,
+      3.661870503597129,
+      274,
+      509,
       0,
       0,
       0,
@@ -54,11 +54,11 @@
     ],
     "scaleX": [
       3,
-      0.5280082987551867
+      0.9856115107913669
     ],
     "scaleY": [
       3,
-      0.5280082987551867
+      0.9856115107913669
     ],
     "rotation": [
       3,
@@ -127,7 +127,7 @@
             0,
             0,
             640,
-            960.0000000000001,
+            1188.9051094890513,
             0,
             0,
             0,
@@ -139,11 +139,11 @@
           ],
           "scaleX": [
             3,
-            1
+            0.428125
           ],
           "scaleY": [
             3,
-            1
+            0.428125
           ],
           "rotation": [
             3,
@@ -233,7 +233,96 @@
                   5,
                   null
                 ],
-                "children": []
+                "children": [
+                  {
+                    "class": "qc.UIImage",
+                    "data": {
+                      "uuid": "de2dd1cc-0cc0-47bf-bb7f-ed4e31bcd4de",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "rewardImage"
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        null
+                      ],
+                      "alpha": [
+                        3,
+                        1
+                      ],
+                      "visible": [
+                        5,
+                        true
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [],
+                      "position": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        640,
+                        960,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1
+                      ],
+                      "scaleY": [
+                        3,
+                        1
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "interactive": [
+                        5,
+                        false
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": [],
+                      "texture": [
+                        10,
+                        "Assets/texture/end_page.bin",
+                        "7af7c128-e5ff-447f-afe0-6e52c9d247a2"
+                      ],
+                      "frame": null,
+                      "imageType": [
+                        3,
+                        0
+                      ]
+                    }
+                  }
+                ]
               }
             },
             {
@@ -1929,7 +2018,285 @@
                   5,
                   null
                 ],
-                "children": []
+                "children": [
+                  {
+                    "class": "qc.UIImage",
+                    "data": {
+                      "uuid": "6355399e-38df-4484-b369-651c1e02c2ae",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "welImage"
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        null
+                      ],
+                      "alpha": [
+                        3,
+                        1
+                      ],
+                      "visible": [
+                        5,
+                        true
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [],
+                      "position": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        640,
+                        960,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1
+                      ],
+                      "scaleY": [
+                        3,
+                        1
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "interactive": [
+                        5,
+                        false
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": [],
+                      "texture": [
+                        10,
+                        "Assets/texture/welcome_page.bin",
+                        "79e29219-b312-4614-956b-5d13128b81c5"
+                      ],
+                      "frame": null,
+                      "imageType": [
+                        3,
+                        0
+                      ]
+                    }
+                  },
+                  {
+                    "class": "qc.Sprite",
+                    "data": {
+                      "uuid": "000ecff6-438c-4424-ab65-171fd9b9b797",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "Sprite"
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        null
+                      ],
+                      "alpha": [
+                        3,
+                        1
+                      ],
+                      "visible": [
+                        5,
+                        true
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [
+                        {
+                          "clazz": "qc.TweenScale",
+                          "data": "e9fe659f-ca90-4d6d-94a0-ffc50eb7edd8"
+                        }
+                      ],
+                      "position": [
+                        0.5,
+                        0.5,
+                        322.30166764344636,
+                        758.356865043405,
+                        322.30166764344636,
+                        758.356865043405,
+                        380,
+                        209,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1.0827451446228007
+                      ],
+                      "scaleY": [
+                        3,
+                        1.0827451446228007
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "interactive": [
+                        5,
+                        false
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": [],
+                      "texture": [
+                        10,
+                        "Assets/texture/welcome_fix.bin",
+                        "2d17b782-d2cd-4c7a-9d28-7edfe8fccd9d"
+                      ],
+                      "frame": null,
+                      "defaultAnimation": [
+                        7,
+                        null
+                      ]
+                    },
+                    "__json": {
+                      "e9fe659f-ca90-4d6d-94a0-ffc50eb7edd8": {
+                        "class": "qc.TweenScale",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "e9fe659f-ca90-4d6d-94a0-ffc50eb7edd8"
+                          ],
+                          "enable": true,
+                          "_curve": [
+                            22,
+                            "qc.BezierCurve",
+                            [
+                              [
+                                0,
+                                0,
+                                1,
+                                1
+                              ],
+                              [
+                                0.215,
+                                0.885,
+                                0,
+                                0
+                              ],
+                              [
+                                0.535,
+                                0.04,
+                                0,
+                                0
+                              ],
+                              [
+                                0.755,
+                                0.88,
+                                -0.12621480789420458,
+                                -0.12621480789420458
+                              ],
+                              [
+                                1.005,
+                                0,
+                                0,
+                                0
+                              ],
+                              [
+                                0,
+                                0
+                              ]
+                            ]
+                          ],
+                          "sampleMethod": [
+                            3,
+                            0
+                          ],
+                          "style": [
+                            3,
+                            1
+                          ],
+                          "delay": [
+                            3,
+                            0
+                          ],
+                          "duration": [
+                            3,
+                            1
+                          ],
+                          "tweenGroup": [
+                            3,
+                            0
+                          ],
+                          "flag": [
+                            7,
+                            ""
+                          ],
+                          "playOnAwake": [
+                            5,
+                            false
+                          ],
+                          "from": [
+                            24,
+                            "qc.Point",
+                            [
+                              1,
+                              1
+                            ]
+                          ],
+                          "to": [
+                            24,
+                            "qc.Point",
+                            [
+                              1.1,
+                              1.1
+                            ]
+                          ]
+                        }
+                      }
+                    }
+                  }
+                ]
               }
             },
             {
@@ -2048,7 +2415,7 @@
                 ],
                 "text": [
                   7,
-                  "FPS: 29.5\nDraw Calls: 0\nTotal: 1.0 ms\nLogic: 0.5 ms\nRender: 0.3 ms\nPreUpdate: 0.2 ms\nUpdate: 0.1 ms\nPostUpdate: 0.2 ms\nTransformCalc: 0"
+                  "FPS: 30.0\nDraw Calls: 12\nTotal: 0.6 ms\nLogic: 0.0 ms\nRender: 0.5 ms\nPreUpdate: 0.0 ms\nUpdate: 0.0 ms\nPostUpdate: 0.0 ms\nTransformCalc: 0"
                 ],
                 "lineSpacing": [
                   3,
@@ -2231,7 +2598,7 @@
                   -0.000012189390133698907,
                   -0.0000016345123867722577,
                   640.0000121893902,
-                  960,
+                  1188.905109489051,
                   -0.000012189390133698907,
                   0,
                   -0.0000016345123867722577,
@@ -2338,11 +2705,7 @@
                         null
                       ],
                       "children": [],
-                      "texture": [
-                        10,
-                        "Assets/texture/mask.bin",
-                        "d6eb413d-d70e-4922-a11b-585bd17d3a59"
-                      ],
+                      "texture": null,
                       "frame": null,
                       "imageType": [
                         3,
@@ -2395,7 +2758,7 @@
                         0,
                         960,
                         640,
-                        0,
+                        228.90510948905103,
                         0,
                         0,
                         960,
@@ -2426,11 +2789,7 @@
                         null
                       ],
                       "children": [],
-                      "texture": [
-                        10,
-                        "Assets/texture/mask.bin",
-                        "d6eb413d-d70e-4922-a11b-585bd17d3a59"
-                      ],
+                      "texture": null,
                       "frame": null,
                       "imageType": [
                         3,
@@ -2747,10 +3106,10 @@
               "gameObjectRecord": [
                 4,
                 [
-                  1,
-                  1,
+                  0.428125,
+                  0.428125,
                   640,
-                  960.0000000000001
+                  1188.9051094890513
                 ]
               ]
             }
@@ -2817,6 +3176,10 @@
     ]
   },
   "dependences": {
+    "7af7c128-e5ff-447f-afe0-6e52c9d247a2": {
+      "key": "Assets/texture/end_page.bin",
+      "uuid": "7af7c128-e5ff-447f-afe0-6e52c9d247a2"
+    },
     "4f197c43-67a3-47fb-ae93-f21233794595": {
       "key": "Assets/texture/play_page.bin",
       "uuid": "4f197c43-67a3-47fb-ae93-f21233794595"
@@ -2841,9 +3204,13 @@
       "key": "Assets/texture/info_page.bin",
       "uuid": "ab6b16af-4552-4d7f-b25b-01bf93607c7b"
     },
-    "d6eb413d-d70e-4922-a11b-585bd17d3a59": {
-      "key": "Assets/texture/mask.bin",
-      "uuid": "d6eb413d-d70e-4922-a11b-585bd17d3a59"
+    "79e29219-b312-4614-956b-5d13128b81c5": {
+      "key": "Assets/texture/welcome_page.bin",
+      "uuid": "79e29219-b312-4614-956b-5d13128b81c5"
+    },
+    "2d17b782-d2cd-4c7a-9d28-7edfe8fccd9d": {
+      "key": "Assets/texture/welcome_fix.bin",
+      "uuid": "2d17b782-d2cd-4c7a-9d28-7edfe8fccd9d"
     }
   }
 }

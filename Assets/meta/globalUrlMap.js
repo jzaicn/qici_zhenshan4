@@ -28,7 +28,7 @@ urlMapConfig = {
   "fdb633ab-370d-4195-b153-c7e4f6469ae0": "Assets/texture/jiang3.bin",
   "3c3a1cdd-0c5b-42e7-aec9-1045a227a74c": "Assets/texture/jiang4.bin",
   "5763c2ac-7355-425c-9d84-83140175b9bb": "Assets/texture/jiang5.bin",
-  "d6eb413d-d70e-4922-a11b-585bd17d3a59": "Assets/texture/mask.bin",
+  "0f1b87b9-f529-4aa7-a9a5-76bce475ea6c": "Assets/texture/mask.bin",
   "acb79f06-ffce-4578-9b4e-b8f6c0724074": "Assets/texture/music_off.bin",
   "80cd60b7-a31a-4b2b-b0a1-cde71fbcfab3": "Assets/texture/music_on.bin",
   "4f197c43-67a3-47fb-ae93-f21233794595": "Assets/texture/play_page.bin",
