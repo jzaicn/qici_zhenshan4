@@ -9,7 +9,7 @@ window.CatchGame = qc.CatchGame = {
     RAISE_LEVEL : -20,
     SEA_LEVEL : 980,
     SPEAK_BOX_MIX_WIDTH : 600,
-    DEFAULT_PAGE: "welcome",
+    DEFAULT_PAGE: "reward",
 
     DEFAULT_MUSIC_PLAYING : false,
 
@@ -31,6 +31,13 @@ window.CatchGame = qc.CatchGame = {
         { id: 13, icon: "6.png", score: 5, noRepeatRadius: 500, noOtherRadius: 160 },
     ],
 
+    REWARD_GROUP:[
+        { icon: "jiang1.png" , url : "" , score_limit: 10, },
+        { icon: "jiang2.png" , url : "" , score_limit: 10, },
+        { icon: "jiang3.png" , url : "" , score_limit: 10, },
+        { icon: "jiang4.png" , url : "" , score_limit: 10, },
+        { icon: "jiang5.png" , url : "" , score_limit: 10, },
+    ],
 
     _introduced : false,
 
@@ -72,6 +79,8 @@ qc.initGame = function(game) {
 
     // 设置监听全局消息
     CatchGame.itemSignal.add(qc.CatchGame.onItemSignal);
+
+    CatchGame.Status = CatchGame.DEFAULT_PAGE;
 };
 
 

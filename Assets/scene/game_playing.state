@@ -37,12 +37,12 @@
     "position": [
       0,
       0,
-      1.972881355932202,
-      3.450847457627134,
-      1.972881355932202,
-      3.450847457627134,
-      291,
-      509,
+      30.037344398340252,
+      1.0560165975103644,
+      30.037344398340252,
+      1.0560165975103644,
+      640,
+      960,
       0,
       0,
       0,
@@ -54,11 +54,11 @@
     ],
     "scaleX": [
       3,
-      0.9864406779661017
+      0.5280082987551867
     ],
     "scaleY": [
       3,
-      0.9864406779661017
+      0.5280082987551867
     ],
     "rotation": [
       3,
@@ -127,7 +127,7 @@
             0,
             0,
             640,
-            1119.4501718213057,
+            960,
             0,
             0,
             0,
@@ -139,11 +139,11 @@
           ],
           "scaleX": [
             3,
-            0.4546875
+            1
           ],
           "scaleY": [
             3,
-            0.4546875
+            1
           ],
           "rotation": [
             3,
@@ -853,7 +853,12 @@
                   5,
                   false
                 ],
-                "scripts": [],
+                "scripts": [
+                  {
+                    "clazz": "qc.TweenProperty",
+                    "data": "8fc9756a-dc12-4426-9ff5-6f723b9b9bc3"
+                  }
+                ],
                 "position": [
                   0,
                   0,
@@ -972,7 +977,7 @@
                       "texture": [
                         10,
                         "Assets/texture/end_page.bin",
-                        "f27e1808-be02-4624-b3d7-8eee9fd4f55e"
+                        "7af7c128-e5ff-447f-afe0-6e52c9d247a2"
                       ],
                       "frame": null,
                       "imageType": [
@@ -1021,10 +1026,6 @@
                         {
                           "clazz": "qc.NodeMask",
                           "data": "45d0eb25-71eb-4dd9-8238-9c5e8f91f40f"
-                        },
-                        {
-                          "clazz": "qc.engine.ObjectAreaUI",
-                          "data": "2e058ecf-04d5-46ac-8920-bb7e8d994d91"
                         }
                       ],
                       "position": [
@@ -1102,7 +1103,12 @@
                               5,
                               false
                             ],
-                            "scripts": [],
+                            "scripts": [
+                              {
+                                "clazz": "qc.engine.ShowRewardUI",
+                                "data": "ab264514-dabe-4e9b-bded-1e7789a8936b"
+                              }
+                            ],
                             "position": [
                               0,
                               0,
@@ -1156,7 +1162,7 @@
                                   ],
                                   "name": [
                                     7,
-                                    "UIImage"
+                                    "fastReward"
                                   ],
                                   "ignoreDestroy": [
                                     5,
@@ -1182,8 +1188,214 @@
                                     {
                                       "clazz": "qc.FilterGroup",
                                       "data": "01ee4667-f75b-4bb4-b5d4-2a48f8054ca4"
+                                    },
+                                    {
+                                      "clazz": "qc.TweenPosition",
+                                      "data": "dec5ba21-834b-4c63-95a6-a932bcd156fd"
                                     }
                                   ],
+                                  "position": [
+                                    0,
+                                    0,
+                                    0,
+                                    13.228784647610581,
+                                    0,
+                                    13.228784647610581,
+                                    353,
+                                    105,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                  ],
+                                  "scaleX": [
+                                    3,
+                                    0.9300000120384557
+                                  ],
+                                  "scaleY": [
+                                    3,
+                                    1.000000012944576
+                                  ],
+                                  "rotation": [
+                                    3,
+                                    0
+                                  ],
+                                  "interactive": [
+                                    5,
+                                    false
+                                  ],
+                                  "isFiltersThrough": [
+                                    5,
+                                    null
+                                  ],
+                                  "children": [],
+                                  "texture": [
+                                    10,
+                                    "Assets/atlas/reward.bin",
+                                    "24a7afa8-34b5-4c77-8581-d006adb13bee"
+                                  ],
+                                  "frame": [
+                                    7,
+                                    "jiang1.png"
+                                  ],
+                                  "imageType": [
+                                    3,
+                                    0
+                                  ]
+                                },
+                                "__json": {
+                                  "01ee4667-f75b-4bb4-b5d4-2a48f8054ca4": {
+                                    "class": "qc.FilterGroup",
+                                    "data": {
+                                      "uuid": [
+                                        7,
+                                        "01ee4667-f75b-4bb4-b5d4-2a48f8054ca4"
+                                      ],
+                                      "enable": true,
+                                      "filters": [
+                                        35,
+                                        [
+                                          [
+                                            34,
+                                            "qc.Filter.BlurY",
+                                            {
+                                              "blur": [
+                                                "1f",
+                                                3
+                                              ]
+                                            }
+                                          ]
+                                        ]
+                                      ],
+                                      "inherited": [
+                                        5,
+                                        true
+                                      ]
+                                    }
+                                  },
+                                  "dec5ba21-834b-4c63-95a6-a932bcd156fd": {
+                                    "class": "qc.TweenPosition",
+                                    "data": {
+                                      "uuid": [
+                                        7,
+                                        "dec5ba21-834b-4c63-95a6-a932bcd156fd"
+                                      ],
+                                      "enable": false,
+                                      "_curve": [
+                                        22,
+                                        "qc.BezierCurve",
+                                        [
+                                          [
+                                            0,
+                                            0,
+                                            1,
+                                            1
+                                          ],
+                                          [
+                                            1,
+                                            1,
+                                            1,
+                                            1
+                                          ],
+                                          [
+                                            0,
+                                            0
+                                          ]
+                                        ]
+                                      ],
+                                      "sampleMethod": [
+                                        3,
+                                        0
+                                      ],
+                                      "style": [
+                                        3,
+                                        1
+                                      ],
+                                      "delay": [
+                                        3,
+                                        0
+                                      ],
+                                      "duration": [
+                                        3,
+                                        0.1
+                                      ],
+                                      "tweenGroup": [
+                                        3,
+                                        0
+                                      ],
+                                      "flag": [
+                                        7,
+                                        ""
+                                      ],
+                                      "playOnAwake": [
+                                        5,
+                                        false
+                                      ],
+                                      "from": [
+                                        24,
+                                        "qc.Point",
+                                        [
+                                          0,
+                                          -120
+                                        ]
+                                      ],
+                                      "to": [
+                                        24,
+                                        "qc.Point",
+                                        [
+                                          0,
+                                          120
+                                        ]
+                                      ],
+                                      "moveAxis": [
+                                        3,
+                                        255
+                                      ]
+                                    }
+                                  }
+                                }
+                              },
+                              {
+                                "class": "qc.UIImage",
+                                "data": {
+                                  "uuid": "d2144369-c22b-49bb-a345-39c916d939f9",
+                                  "_prefab": [
+                                    7,
+                                    ""
+                                  ],
+                                  "__lock": [
+                                    5,
+                                    null
+                                  ],
+                                  "name": [
+                                    7,
+                                    "lastReward"
+                                  ],
+                                  "ignoreDestroy": [
+                                    5,
+                                    null
+                                  ],
+                                  "alpha": [
+                                    3,
+                                    1
+                                  ],
+                                  "visible": [
+                                    5,
+                                    false
+                                  ],
+                                  "colorTint": [
+                                    14,
+                                    16777215
+                                  ],
+                                  "static": [
+                                    5,
+                                    false
+                                  ],
+                                  "scripts": [],
                                   "position": [
                                     0,
                                     0,
@@ -1226,7 +1438,7 @@
                                   "texture": [
                                     10,
                                     "Assets/atlas/reward.bin",
-                                    "95b20b03-31f4-4b6e-bead-30809608f352"
+                                    "24a7afa8-34b5-4c77-8581-d006adb13bee"
                                   ],
                                   "frame": [
                                     7,
@@ -1270,6 +1482,34 @@
                                 }
                               }
                             ]
+                          },
+                          "__json": {
+                            "ab264514-dabe-4e9b-bded-1e7789a8936b": {
+                              "class": "qc.engine.ShowRewardUI",
+                              "data": {
+                                "uuid": [
+                                  7,
+                                  "ab264514-dabe-4e9b-bded-1e7789a8936b"
+                                ],
+                                "enable": true,
+                                "Price1Node": [
+                                  18,
+                                  "7c04d555-c6a5-4bfc-870b-ea2303dbe4ac"
+                                ],
+                                "Price2Node": [
+                                  18,
+                                  "d2144369-c22b-49bb-a345-39c916d939f9"
+                                ],
+                                "Share1Node": [
+                                  18,
+                                  "047f1ffe-c69d-4a3f-92df-2ed4ce499b58"
+                                ],
+                                "Share2Node": [
+                                  18,
+                                  "9e73d876-1d18-4924-b919-db41cfc31b04"
+                                ]
+                              }
+                            }
                           }
                         }
                       ]
@@ -1493,7 +1733,7 @@
                             "texture": [
                               10,
                               "Assets/texture/stick.bin",
-                              "b02a57fa-7967-4e82-9e29-a3ff1588fd8d"
+                              "ba071e2e-f483-451c-98f3-76a96f5e761c"
                             ],
                             "frame": null,
                             "imageType": [
@@ -1644,7 +1884,7 @@
                                 ],
                                 "duration": [
                                   3,
-                                  1.3
+                                  1
                                 ],
                                 "tweenGroup": [
                                   3,
@@ -1762,7 +2002,7 @@
                             "texture": [
                               10,
                               "Assets/texture/ball.bin",
-                              "37480a77-bb6b-4c09-9818-484ec67d8355"
+                              "25093981-d084-485e-a10e-fdba9d8594a0"
                             ],
                             "frame": null,
                             "imageType": [
@@ -1786,14 +2026,32 @@
                                     [
                                       0,
                                       0,
+                                      0,
+                                      0
+                                    ],
+                                    [
+                                      0.385,
+                                      0.6,
+                                      2.9232000000000005,
+                                      2.9232000000000005
+                                    ],
+                                    [
+                                      0.5,
                                       1,
-                                      1
+                                      0,
+                                      0
+                                    ],
+                                    [
+                                      0.625,
+                                      0.59,
+                                      -2.9699999999999998,
+                                      -2.9699999999999998
                                     ],
                                     [
                                       1,
-                                      1,
-                                      1,
-                                      1
+                                      0,
+                                      0,
+                                      0
                                     ],
                                     [
                                       0,
@@ -1852,86 +2110,119 @@
                               }
                             }
                           }
+                        },
+                        {
+                          "class": "qc.Node",
+                          "data": {
+                            "uuid": "46828912-ca22-46cc-ae6a-485c7ba5baa0",
+                            "_prefab": [
+                              7,
+                              ""
+                            ],
+                            "__lock": [
+                              5,
+                              null
+                            ],
+                            "name": [
+                              7,
+                              "btnReward"
+                            ],
+                            "ignoreDestroy": [
+                              5,
+                              false
+                            ],
+                            "alpha": [
+                              3,
+                              1
+                            ],
+                            "visible": [
+                              5,
+                              true
+                            ],
+                            "colorTint": [
+                              14,
+                              16777215
+                            ],
+                            "static": [
+                              5,
+                              false
+                            ],
+                            "scripts": [
+                              {
+                                "clazz": "qc.engine.GetRewardBtnUI",
+                                "data": "c2b10778-a41a-4482-845e-684d95e5cace"
+                              }
+                            ],
+                            "position": [
+                              0,
+                              0,
+                              -28.984074598861866,
+                              -20.065892807911325,
+                              -28.984074598861866,
+                              -20.065892807911325,
+                              100,
+                              300,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0
+                            ],
+                            "scaleX": [
+                              3,
+                              1.0000000313831932
+                            ],
+                            "scaleY": [
+                              3,
+                              1.0000000313831932
+                            ],
+                            "rotation": [
+                              3,
+                              0
+                            ],
+                            "interactive": [
+                              5,
+                              true
+                            ],
+                            "isFiltersThrough": [
+                              5,
+                              null
+                            ],
+                            "children": []
+                          },
+                          "__json": {
+                            "c2b10778-a41a-4482-845e-684d95e5cace": {
+                              "class": "qc.engine.GetRewardBtnUI",
+                              "data": {
+                                "uuid": [
+                                  7,
+                                  "c2b10778-a41a-4482-845e-684d95e5cace"
+                                ],
+                                "enable": true,
+                                "StackNode": [
+                                  18,
+                                  "0d77908a-8646-4361-9c81-d0360ac7cabb"
+                                ],
+                                "BallNode": [
+                                  18,
+                                  "2c7138a6-0117-475e-a8ef-97221b3d2a4a"
+                                ],
+                                "StickNode": [
+                                  18,
+                                  "0d77908a-8646-4361-9c81-d0360ac7cabb"
+                                ],
+                                "testNode": [
+                                  18,
+                                  "bf9f6ce4-0bd8-4a25-939d-d081559d8615"
+                                ]
+                              }
+                            }
+                          }
                         }
                       ]
-                    }
-                  },
-                  {
-                    "class": "qc.Node",
-                    "data": {
-                      "uuid": "46828912-ca22-46cc-ae6a-485c7ba5baa0",
-                      "_prefab": [
-                        7,
-                        ""
-                      ],
-                      "__lock": [
-                        5,
-                        null
-                      ],
-                      "name": [
-                        7,
-                        "btnReward"
-                      ],
-                      "ignoreDestroy": [
-                        5,
-                        false
-                      ],
-                      "alpha": [
-                        3,
-                        1
-                      ],
-                      "visible": [
-                        5,
-                        true
-                      ],
-                      "colorTint": [
-                        14,
-                        16777215
-                      ],
-                      "static": [
-                        5,
-                        false
-                      ],
-                      "scripts": [],
-                      "position": [
-                        0,
-                        0,
-                        539.5496038072207,
-                        276.4634333557641,
-                        539.5496038072207,
-                        276.4634333557641,
-                        100,
-                        300,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                      ],
-                      "scaleX": [
-                        3,
-                        1
-                      ],
-                      "scaleY": [
-                        3,
-                        1
-                      ],
-                      "rotation": [
-                        3,
-                        0
-                      ],
-                      "interactive": [
-                        5,
-                        false
-                      ],
-                      "isFiltersThrough": [
-                        5,
-                        null
-                      ],
-                      "children": []
                     }
                   },
                   {
@@ -2018,7 +2309,7 @@
                       "texture": [
                         10,
                         "Assets/texture/mask.bin",
-                        "0f1b87b9-f529-4aa7-a9a5-76bce475ea6c"
+                        "d6eb413d-d70e-4922-a11b-585bd17d3a59"
                       ],
                       "frame": null,
                       "imageType": [
@@ -2141,7 +2432,7 @@
                       "texture": [
                         10,
                         "Assets/texture/clicking-share.bin",
-                        "a294d3a5-cded-400a-95bd-3fae6a8edf1b"
+                        "32b609ab-49b6-4b20-a0cb-c8f55c47c054"
                       ],
                       "frame": null,
                       "imageType": [
@@ -2216,11 +2507,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.0050814000914492
+                        1.0013511208643535
                       ],
                       "scaleY": [
                         3,
-                        1.0050814000914492
+                        1.0013511208643535
                       ],
                       "rotation": [
                         3,
@@ -2419,11 +2710,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.0050814000914492
+                        1.0013511208643535
                       ],
                       "scaleY": [
                         3,
-                        1.0050814000914492
+                        1.0013511208643535
                       ],
                       "rotation": [
                         3,
@@ -2602,6 +2893,133 @@
                     "mode": [
                       3,
                       0
+                    ]
+                  }
+                },
+                "8618559a-bab1-4ef2-a497-a626f8b538f9": {
+                  "class": "qc.AspectRatioFitter",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "8618559a-bab1-4ef2-a497-a626f8b538f9"
+                    ],
+                    "enable": true,
+                    "mode": [
+                      3,
+                      0
+                    ],
+                    "ratio": [
+                      3,
+                      1
+                    ]
+                  }
+                },
+                "d452cdba-61f8-4682-b3bc-e530af43ff15": {
+                  "class": "qc.FilterGroup",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "d452cdba-61f8-4682-b3bc-e530af43ff15"
+                    ],
+                    "enable": true,
+                    "filters": [
+                      35,
+                      [
+                        [
+                          34,
+                          "qc.Filter.Highlight",
+                          {
+                            "light": [
+                              "1f",
+                              0.5
+                            ],
+                            "lightColor": [
+                              "3fv",
+                              [
+                                1,
+                                1,
+                                1
+                              ]
+                            ]
+                          }
+                        ]
+                      ]
+                    ],
+                    "inherited": [
+                      5,
+                      true
+                    ]
+                  }
+                },
+                "8fc9756a-dc12-4426-9ff5-6f723b9b9bc3": {
+                  "class": "qc.TweenProperty",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "8fc9756a-dc12-4426-9ff5-6f723b9b9bc3"
+                    ],
+                    "enable": false,
+                    "_curve": [
+                      22,
+                      "qc.BezierCurve",
+                      [
+                        [
+                          0,
+                          0,
+                          1,
+                          1
+                        ],
+                        [
+                          1,
+                          1,
+                          1,
+                          1
+                        ],
+                        [
+                          0,
+                          0
+                        ]
+                      ]
+                    ],
+                    "sampleMethod": [
+                      3,
+                      0
+                    ],
+                    "style": [
+                      3,
+                      0
+                    ],
+                    "delay": [
+                      3,
+                      0
+                    ],
+                    "duration": [
+                      3,
+                      1
+                    ],
+                    "tweenGroup": [
+                      3,
+                      0
+                    ],
+                    "flag": [
+                      7,
+                      ""
+                    ],
+                    "playOnAwake": [
+                      5,
+                      false
+                    ],
+                    "from": [
+                      3,
+                      0
+                    ],
+                    "to": [
+                      3,
+                      1
+                    ],
+                    "property": [
+                      7,
+                      ""
                     ]
                   }
                 }
@@ -4749,7 +5167,7 @@
                   -0.000012189390133698907,
                   -0.0000016345123867722577,
                   640.0000121893902,
-                  1119.4501718213055,
+                  959.9999999999999,
                   -0.000012189390133698907,
                   0,
                   -0.0000016345123867722577,
@@ -4909,7 +5327,7 @@
                         0,
                         960,
                         640,
-                        159.4501718213055,
+                        -1.1368683772161603e-13,
                         0,
                         0,
                         960,
@@ -5311,15 +5729,8 @@
                   null
                 ],
                 "children": [],
-                "texture": [
-                  10,
-                  "Assets/atlas/music.bin",
-                  "e6627bb7-7c06-4391-8f31-64bf38230dbd"
-                ],
-                "frame": [
-                  7,
-                  "music_off.png"
-                ],
+                "texture": null,
+                "frame": null,
                 "defaultAnimation": [
                   7,
                   null
@@ -5425,10 +5836,10 @@
               "gameObjectRecord": [
                 4,
                 [
-                  0.4546875,
-                  0.4546875,
+                  1,
+                  1,
                   640,
-                  1119.4501718213057
+                  960
                 ]
               ]
             }
@@ -5511,29 +5922,29 @@
       "key": "Assets/texture/info_page.bin",
       "uuid": "ab6b16af-4552-4d7f-b25b-01bf93607c7b"
     },
-    "f27e1808-be02-4624-b3d7-8eee9fd4f55e": {
+    "7af7c128-e5ff-447f-afe0-6e52c9d247a2": {
       "key": "Assets/texture/end_page.bin",
-      "uuid": "f27e1808-be02-4624-b3d7-8eee9fd4f55e"
+      "uuid": "7af7c128-e5ff-447f-afe0-6e52c9d247a2"
     },
-    "95b20b03-31f4-4b6e-bead-30809608f352": {
+    "24a7afa8-34b5-4c77-8581-d006adb13bee": {
       "key": "Assets/atlas/reward.bin",
-      "uuid": "95b20b03-31f4-4b6e-bead-30809608f352"
+      "uuid": "24a7afa8-34b5-4c77-8581-d006adb13bee"
     },
-    "b02a57fa-7967-4e82-9e29-a3ff1588fd8d": {
+    "ba071e2e-f483-451c-98f3-76a96f5e761c": {
       "key": "Assets/texture/stick.bin",
-      "uuid": "b02a57fa-7967-4e82-9e29-a3ff1588fd8d"
+      "uuid": "ba071e2e-f483-451c-98f3-76a96f5e761c"
     },
-    "37480a77-bb6b-4c09-9818-484ec67d8355": {
+    "25093981-d084-485e-a10e-fdba9d8594a0": {
       "key": "Assets/texture/ball.bin",
-      "uuid": "37480a77-bb6b-4c09-9818-484ec67d8355"
+      "uuid": "25093981-d084-485e-a10e-fdba9d8594a0"
     },
-    "0f1b87b9-f529-4aa7-a9a5-76bce475ea6c": {
+    "d6eb413d-d70e-4922-a11b-585bd17d3a59": {
       "key": "Assets/texture/mask.bin",
-      "uuid": "0f1b87b9-f529-4aa7-a9a5-76bce475ea6c"
+      "uuid": "d6eb413d-d70e-4922-a11b-585bd17d3a59"
     },
-    "a294d3a5-cded-400a-95bd-3fae6a8edf1b": {
+    "32b609ab-49b6-4b20-a0cb-c8f55c47c054": {
       "key": "Assets/texture/clicking-share.bin",
-      "uuid": "a294d3a5-cded-400a-95bd-3fae6a8edf1b"
+      "uuid": "32b609ab-49b6-4b20-a0cb-c8f55c47c054"
     },
     "fd89b3f9-a6c4-4d7c-95e6-08253348bd3b": {
       "key": "Assets/texture/btn_reward.bin",
@@ -5562,10 +5973,6 @@
     "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf": {
       "key": "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf",
       "uuid": "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf"
-    },
-    "e6627bb7-7c06-4391-8f31-64bf38230dbd": {
-      "key": "Assets/atlas/music.bin",
-      "uuid": "e6627bb7-7c06-4391-8f31-64bf38230dbd"
     }
   }
 }
