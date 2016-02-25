@@ -1,6 +1,3 @@
-'use strict';
-
-
 var ShowRewardUI = qc.defineBehaviour('qc.engine.ShowRewardUI', qc.Behaviour, function() {
 
     var self = this;
@@ -30,6 +27,7 @@ ShowRewardUI.prototype.awake = function() {
         self.price1Position = self.Price1Node.getScript("qc.TweenPosition");
         self.price1FilterGroup = self.Price1Node.getScript("qc.FilterGroup");
         self.price1BlurX = self.price1FilterGroup.filters[0];
+        self.Price1Node.visible = false;
     };
 
     if (self.Price2Node) {
@@ -47,39 +45,48 @@ ShowRewardUI.prototype.awake = function() {
 // };
 
 ShowRewardUI.prototype.onDetail = function(frame, blur, duration, onFinished) {
-    var self = this,
-        o = self.gameObject;
+    // var self = this,
+    //     o = self.gameObject;
 
-    o.frame = frame;
-    self.price1BlurX.blur = blur;
-    self.price1Position.duration = duration;
-    self.price1Position.resetToBeginning();
-    self.price1Position.playForward();
+    // o.frame = frame;
+    // self.price1BlurX.blur = blur;
+    // self.price1Position.duration = duration;
+    // self.price1Position.resetToBeginning();
+    // self.price1Position.playForward();
 
-    self.price1Position.onFinished.addOnce(onFinished);
+    // self.price1Position.onFinished.addOnce(onFinished);
 };
 
-ShowRewardUI.prototype.onFinished = function() {
-    var self = this;
-    console.log("onFinished");
+// ShowRewardUI.prototype.onFinished = function() {
+//     var self = this;
+//     console.log("onFinished");
 
-    self._showtimes--;
-    if (self._showtimes > 0) {
-        self.onDetail(self._frame, self._blur -= 0.3, self._duration += 0.1, self.onFinished);
-    } else {
-        console.log("over");
-    };
-};
+//     self._showtimes--;
+//     if (self._showtimes > 0) {
+//         self.onDetail(self._frame, self._blur -= 0.3, self._duration += 0.1, self.onFinished);
+//     } else {
+//         console.log("over");
+//     };
+// };
 
 ShowRewardUI.prototype.onShow = function() {
     var self = this;
 
-    self._frame = "jiang1.png",
-        self._blur = 3,
-        self._duration = 0.1;
-    self._showtimes = 10;
+    // self._frame = "jiang1.png";
+    // self._blur = 3;
+    // self._duration = 0.1;
+    // self._showtimes = 10;
 
-    self.onDetail(self._frame, self._blur, self._duration, self.onFinished);
+    // function onFinishedFunc() {
+    //     console.log("onFinished");
+
+    //     self._showtimes--;
+    //     if (self._showtimes > 0) {
+    //         self.onDetail(self._frame, self._blur -= 0.3, self._duration += 0.1, onFinishedFunc);
+    //     } else {
+    //         console.log("over");
+    // };
+    // self.onDetail(self._frame, self._blur, self._duration, onFinishedFunc);
 
 
 

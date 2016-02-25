@@ -37,12 +37,12 @@
     "position": [
       0,
       0,
-      30.037344398340252,
-      1.0560165975103644,
-      30.037344398340252,
-      1.0560165975103644,
-      640,
-      960,
+      1.9712230215827447,
+      3.661870503597129,
+      1.9712230215827447,
+      3.661870503597129,
+      274,
+      509,
       0,
       0,
       0,
@@ -54,11 +54,11 @@
     ],
     "scaleX": [
       3,
-      0.5280082987551867
+      0.9856115107913669
     ],
     "scaleY": [
       3,
-      0.5280082987551867
+      0.9856115107913669
     ],
     "rotation": [
       3,
@@ -127,7 +127,7 @@
             0,
             0,
             640,
-            960,
+            1188.9051094890513,
             0,
             0,
             0,
@@ -139,11 +139,11 @@
           ],
           "scaleX": [
             3,
-            1
+            0.428125
           ],
           "scaleY": [
             3,
-            1
+            0.428125
           ],
           "rotation": [
             3,
@@ -407,11 +407,7 @@
                         null
                       ],
                       "children": [],
-                      "texture": [
-                        10,
-                        "Assets/texture/welcome_fix.bin",
-                        "2d17b782-d2cd-4c7a-9d28-7edfe8fccd9d"
-                      ],
+                      "texture": null,
                       "frame": null,
                       "defaultAnimation": [
                         7,
@@ -606,11 +602,7 @@
                         null
                       ],
                       "children": [],
-                      "texture": [
-                        10,
-                        "Assets/texture/question.bin",
-                        "0c8431f1-73e3-413a-90d5-a9124674bb4a"
-                      ],
+                      "texture": null,
                       "frame": null,
                       "defaultAnimation": [
                         7,
@@ -790,11 +782,7 @@
                         null
                       ],
                       "children": [],
-                      "texture": [
-                        10,
-                        "Assets/texture/info_page.bin",
-                        "ab6b16af-4552-4d7f-b25b-01bf93607c7b"
-                      ],
+                      "texture": null,
                       "frame": null,
                       "imageType": [
                         3,
@@ -853,12 +841,7 @@
                   5,
                   false
                 ],
-                "scripts": [
-                  {
-                    "clazz": "qc.TweenProperty",
-                    "data": "8fc9756a-dc12-4426-9ff5-6f723b9b9bc3"
-                  }
-                ],
+                "scripts": [],
                 "position": [
                   0,
                   0,
@@ -1733,7 +1716,7 @@
                             "texture": [
                               10,
                               "Assets/texture/stick.bin",
-                              "ba071e2e-f483-451c-98f3-76a96f5e761c"
+                              "80fa0472-ed97-4a2c-acbd-cacee88b2b23"
                             ],
                             "frame": null,
                             "imageType": [
@@ -2309,7 +2292,7 @@
                       "texture": [
                         10,
                         "Assets/texture/mask.bin",
-                        "d6eb413d-d70e-4922-a11b-585bd17d3a59"
+                        "d734af0c-5165-4d84-b0cc-f3b57fa3c2c4"
                       ],
                       "frame": null,
                       "imageType": [
@@ -2507,11 +2490,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.0013511208643535
+                        1.0177389578367786
                       ],
                       "scaleY": [
                         3,
-                        1.0013511208643535
+                        1.0177389578367786
                       ],
                       "rotation": [
                         3,
@@ -2710,11 +2693,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.0013511208643535
+                        1.0177389578367786
                       ],
                       "scaleY": [
                         3,
-                        1.0013511208643535
+                        1.0177389578367786
                       ],
                       "rotation": [
                         3,
@@ -3477,11 +3460,7 @@
                         null
                       ],
                       "children": [],
-                      "texture": [
-                        10,
-                        "Assets/texture/play_page.bin",
-                        "4f197c43-67a3-47fb-ae93-f21233794595"
-                      ],
+                      "texture": null,
                       "frame": null,
                       "imageType": [
                         3,
@@ -5167,7 +5146,7 @@
                   -0.000012189390133698907,
                   -0.0000016345123867722577,
                   640.0000121893902,
-                  959.9999999999999,
+                  1188.905109489051,
                   -0.000012189390133698907,
                   0,
                   -0.0000016345123867722577,
@@ -5327,7 +5306,7 @@
                         0,
                         960,
                         640,
-                        -1.1368683772161603e-13,
+                        228.90510948905103,
                         0,
                         0,
                         960,
@@ -5836,10 +5815,10 @@
               "gameObjectRecord": [
                 4,
                 [
-                  1,
-                  1,
+                  0.428125,
+                  0.428125,
                   640,
-                  960
+                  1188.9051094890513
                 ]
               ]
             }
@@ -5910,18 +5889,6 @@
       "key": "Assets/texture/welcome_page.bin",
       "uuid": "79e29219-b312-4614-956b-5d13128b81c5"
     },
-    "2d17b782-d2cd-4c7a-9d28-7edfe8fccd9d": {
-      "key": "Assets/texture/welcome_fix.bin",
-      "uuid": "2d17b782-d2cd-4c7a-9d28-7edfe8fccd9d"
-    },
-    "0c8431f1-73e3-413a-90d5-a9124674bb4a": {
-      "key": "Assets/texture/question.bin",
-      "uuid": "0c8431f1-73e3-413a-90d5-a9124674bb4a"
-    },
-    "ab6b16af-4552-4d7f-b25b-01bf93607c7b": {
-      "key": "Assets/texture/info_page.bin",
-      "uuid": "ab6b16af-4552-4d7f-b25b-01bf93607c7b"
-    },
     "7af7c128-e5ff-447f-afe0-6e52c9d247a2": {
       "key": "Assets/texture/end_page.bin",
       "uuid": "7af7c128-e5ff-447f-afe0-6e52c9d247a2"
@@ -5930,17 +5897,17 @@
       "key": "Assets/atlas/reward.bin",
       "uuid": "24a7afa8-34b5-4c77-8581-d006adb13bee"
     },
-    "ba071e2e-f483-451c-98f3-76a96f5e761c": {
+    "80fa0472-ed97-4a2c-acbd-cacee88b2b23": {
       "key": "Assets/texture/stick.bin",
-      "uuid": "ba071e2e-f483-451c-98f3-76a96f5e761c"
+      "uuid": "80fa0472-ed97-4a2c-acbd-cacee88b2b23"
     },
     "25093981-d084-485e-a10e-fdba9d8594a0": {
       "key": "Assets/texture/ball.bin",
       "uuid": "25093981-d084-485e-a10e-fdba9d8594a0"
     },
-    "d6eb413d-d70e-4922-a11b-585bd17d3a59": {
+    "d734af0c-5165-4d84-b0cc-f3b57fa3c2c4": {
       "key": "Assets/texture/mask.bin",
-      "uuid": "d6eb413d-d70e-4922-a11b-585bd17d3a59"
+      "uuid": "d734af0c-5165-4d84-b0cc-f3b57fa3c2c4"
     },
     "32b609ab-49b6-4b20-a0cb-c8f55c47c054": {
       "key": "Assets/texture/clicking-share.bin",
@@ -5953,10 +5920,6 @@
     "c649dc06-fd76-4943-8bd7-a1e3ca85c6e7": {
       "key": "Assets/texture/btn_replay.bin",
       "uuid": "c649dc06-fd76-4943-8bd7-a1e3ca85c6e7"
-    },
-    "4f197c43-67a3-47fb-ae93-f21233794595": {
-      "key": "Assets/texture/play_page.bin",
-      "uuid": "4f197c43-67a3-47fb-ae93-f21233794595"
     },
     "__builtin_resource__": {
       "key": "__builtin_resource__",
