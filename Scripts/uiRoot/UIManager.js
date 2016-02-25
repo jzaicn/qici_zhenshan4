@@ -25,28 +25,28 @@ UIManager.prototype.awake = function() {
         if (self.WelcomeNode) {
             //self.FallCreateArea = self.WelcomeNode.getScript("qc.engine.ObjectAreaUI");
             self.WelcomeNode.visible = false;
-            self.stage.push({ name: "welcome", node: self.WelcomeNode, });
+            self.stage.push({ name: "welcome", node: self.WelcomeNode, setup: null, clearup: null, });
         }
 
         // 页面
         if (self.IntroduceNode) {
             //self.FallCreateArea = self.IntroduceNode.getScript("qc.engine.ObjectAreaUI");
             self.IntroduceNode.visible = false;
-            self.stage.push({ name: "introduce", node: self.IntroduceNode, });
+            self.stage.push({ name: "introduce", node: self.IntroduceNode, setup: null, clearup: null, });
         }
 
         // 页面
         if (self.PlayingNode) {
             //self.FallCreateArea = self.PlayingNode.getScript("qc.engine.ObjectAreaUI");
             self.PlayingNode.visible = false;
-            self.stage.push({ name: "playing", node: self.PlayingNode, });
+            self.stage.push({ name: "playing", node: self.PlayingNode, setup: null, clearup: null, });
         }
 
         // 页面
         if (self.RewardNode) {
             //self.FallCreateArea = self.RewardNode.getScript("qc.engine.ObjectAreaUI");
             self.RewardNode.visible = false;
-            self.stage.push({ name: "reward", node: self.RewardNode, });
+            self.stage.push({ name: "reward", node: self.RewardNode, setup: null, clearup: null, });
         }
     }
 

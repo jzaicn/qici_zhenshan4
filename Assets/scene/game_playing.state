@@ -407,7 +407,11 @@
                         null
                       ],
                       "children": [],
-                      "texture": null,
+                      "texture": [
+                        10,
+                        "Assets/texture/welcome_fix.bin",
+                        "b3dd5e17-bf7d-41c8-8f10-bba33f2c64b3"
+                      ],
                       "frame": null,
                       "defaultAnimation": [
                         7,
@@ -602,7 +606,11 @@
                         null
                       ],
                       "children": [],
-                      "texture": null,
+                      "texture": [
+                        10,
+                        "Assets/texture/question.bin",
+                        "08ad82b7-9f46-44a5-bb59-d46672818b54"
+                      ],
                       "frame": null,
                       "defaultAnimation": [
                         7,
@@ -782,7 +790,11 @@
                         null
                       ],
                       "children": [],
-                      "texture": null,
+                      "texture": [
+                        10,
+                        "Assets/texture/info_page.bin",
+                        "d81cf82e-143d-4501-a2ed-52448e649ec7"
+                      ],
                       "frame": null,
                       "imageType": [
                         3,
@@ -2586,11 +2598,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.0286239320086328
+                        1.005619131618315
                       ],
                       "scaleY": [
                         3,
-                        1.0286239320086328
+                        1.005619131618315
                       ],
                       "rotation": [
                         3,
@@ -2789,11 +2801,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.0286239320086328
+                        1.005619131618315
                       ],
                       "scaleY": [
                         3,
-                        1.0286239320086328
+                        1.005619131618315
                       ],
                       "rotation": [
                         3,
@@ -6018,6 +6030,18 @@
     "79e29219-b312-4614-956b-5d13128b81c5": {
       "key": "Assets/texture/welcome_page.bin",
       "uuid": "79e29219-b312-4614-956b-5d13128b81c5"
+    },
+    "b3dd5e17-bf7d-41c8-8f10-bba33f2c64b3": {
+      "key": "Assets/texture/welcome_fix.bin",
+      "uuid": "b3dd5e17-bf7d-41c8-8f10-bba33f2c64b3"
+    },
+    "08ad82b7-9f46-44a5-bb59-d46672818b54": {
+      "key": "Assets/texture/question.bin",
+      "uuid": "08ad82b7-9f46-44a5-bb59-d46672818b54"
+    },
+    "d81cf82e-143d-4501-a2ed-52448e649ec7": {
+      "key": "Assets/texture/info_page.bin",
+      "uuid": "d81cf82e-143d-4501-a2ed-52448e649ec7"
     },
     "7af7c128-e5ff-447f-afe0-6e52c9d247a2": {
       "key": "Assets/texture/end_page.bin",

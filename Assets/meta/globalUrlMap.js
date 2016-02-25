@@ -24,6 +24,7 @@ urlMapConfig = {
   "70a9f05a-5c22-44bd-b9c7-9ccfab9e0c11": "Assets/atlas/reward@atlas/jiang3.bin",
   "354546d4-a71c-445e-b267-9e8ad462f6dd": "Assets/atlas/reward@atlas/jiang4.bin",
   "ff93d6c9-bfeb-447b-bb05-3f2b986aeaf0": "Assets/atlas/reward@atlas/jiang5.bin",
+  "cc38c01f-3dd3-444c-b7a4-d4cc606c1710": "Assets/excel/config.bin",
   "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf": "Assets/font/华康海报体简.bin",
   "9158999a-63a7-4955-b919-065ff6a50690": "Assets/prefab/FallItem.bin",
   "2be0761b-40f7-4b40-9c78-c8605e1fc357": "Assets/prefab/score.bin",

@@ -9,7 +9,7 @@ window.CatchGame = qc.CatchGame = {
     RAISE_LEVEL : -20,
     SEA_LEVEL : 980,
     SPEAK_BOX_MIX_WIDTH : 600,
-    DEFAULT_PAGE: "reward",
+    DEFAULT_PAGE: "welcome",
 
     DEFAULT_MUSIC_PLAYING : false,
 
@@ -163,6 +163,52 @@ qc.CatchGame.reStart = function(){
 qc.CatchGame.getCurrentReward = function(){
     return "http://getgeektest.applinzi.com/";
 };
+
+
+
+
+
+
+
+
+
+//游戏参数加载
+//
+//游戏参数获取
+//
+//游戏操作-欢迎
+qc.CatchGame.gameWelcome = function(){
+
+};
+
+//游戏操作-介绍
+qc.CatchGame.gameIntroduce = function(){
+
+};
+
+//游戏操作-游戏开始
+qc.CatchGame.gameStart = function(){
+
+};
+
+//游戏操作-游戏结束
+qc.CatchGame.gameOver = function(){
+    CatchGame.fallitemPool.clear();
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
