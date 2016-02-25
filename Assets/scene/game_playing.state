@@ -1103,7 +1103,12 @@
                               5,
                               false
                             ],
-                            "scripts": [],
+                            "scripts": [
+                              {
+                                "clazz": "qc.engine.ShowRewardUI",
+                                "data": "844034c2-d8d4-47b6-bbe0-793a5ead5e31"
+                              }
+                            ],
                             "position": [
                               0,
                               0,
@@ -1594,6 +1599,26 @@
                                 ],
                                 "Share1Node": null,
                                 "Share2Node": null
+                              }
+                            },
+                            "844034c2-d8d4-47b6-bbe0-793a5ead5e31": {
+                              "class": "qc.engine.ShowRewardUI",
+                              "data": {
+                                "uuid": [
+                                  7,
+                                  "844034c2-d8d4-47b6-bbe0-793a5ead5e31"
+                                ],
+                                "enable": true,
+                                "Price1Node": [
+                                  18,
+                                  "7c04d555-c6a5-4bfc-870b-ea2303dbe4ac"
+                                ],
+                                "Price2Node": [
+                                  18,
+                                  "d2144369-c22b-49bb-a345-39c916d939f9"
+                                ],
+                                "Fast1Node": null,
+                                "LastNode": null
                               }
                             }
                           }
@@ -2593,11 +2618,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.018308049576724
+                        1.0282268194624806
                       ],
                       "scaleY": [
                         3,
-                        1.018308049576724
+                        1.0282268194624806
                       ],
                       "rotation": [
                         3,
@@ -2796,11 +2821,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.018308049576724
+                        1.0282268194624806
                       ],
                       "scaleY": [
                         3,
-                        1.018308049576724
+                        1.0282268194624806
                       ],
                       "rotation": [
                         3,
@@ -5099,7 +5124,7 @@
                 ],
                 "text": [
                   7,
-                  "FPS: 30.0\nDraw Calls: 15\nTotal: 1.9 ms\nLogic: 0.3 ms\nRender: 1.4 ms\nPreUpdate: 0.1 ms\nUpdate: 0.0 ms\nPostUpdate: 0.1 ms\nTransformCalc: 0"
+                  "FPS: 30.2\nDraw Calls: 15\nTotal: 1.8 ms\nLogic: 0.4 ms\nRender: 1.3 ms\nPreUpdate: 0.1 ms\nUpdate: 0.2 ms\nPostUpdate: 0.1 ms\nTransformCalc: 0"
                 ],
                 "lineSpacing": [
                   3,
