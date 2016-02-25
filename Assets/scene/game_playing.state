@@ -2330,7 +2330,7 @@
                       ],
                       "visible": [
                         5,
-                        false
+                        true
                       ],
                       "colorTint": [
                         14,
@@ -2458,7 +2458,7 @@
                       ],
                       "visible": [
                         5,
-                        false
+                        true
                       ],
                       "colorTint": [
                         14,
@@ -2546,7 +2546,7 @@
                       ],
                       "visible": [
                         5,
-                        false
+                        true
                       ],
                       "colorTint": [
                         14,
@@ -2586,11 +2586,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1
+                        1.0286239320086328
                       ],
                       "scaleY": [
                         3,
-                        1
+                        1.0286239320086328
                       ],
                       "rotation": [
                         3,
@@ -2598,7 +2598,7 @@
                       ],
                       "interactive": [
                         5,
-                        false
+                        true
                       ],
                       "isFiltersThrough": [
                         5,
@@ -2749,7 +2749,7 @@
                       ],
                       "visible": [
                         5,
-                        false
+                        true
                       ],
                       "colorTint": [
                         14,
@@ -2789,11 +2789,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1
+                        1.0286239320086328
                       ],
                       "scaleY": [
                         3,
-                        1
+                        1.0286239320086328
                       ],
                       "rotation": [
                         3,
@@ -2801,7 +2801,7 @@
                       ],
                       "interactive": [
                         5,
-                        false
+                        true
                       ],
                       "isFiltersThrough": [
                         5,
@@ -3118,10 +3118,22 @@
                       18,
                       "bf9f6ce4-0bd8-4a25-939d-d081559d8615"
                     ],
-                    "ShareNode": null,
-                    "ShadowNode": null,
-                    "ReplayBtnNode": null,
-                    "RewardBtnNode": null
+                    "ShareNode": [
+                      18,
+                      "9e73d876-1d18-4924-b919-db41cfc31b04"
+                    ],
+                    "ShadowNode": [
+                      18,
+                      "047f1ffe-c69d-4a3f-92df-2ed4ce499b58"
+                    ],
+                    "ReplayBtnNode": [
+                      18,
+                      "3bc1c85d-36eb-4118-b90e-ac88d96f3351"
+                    ],
+                    "RewardBtnNode": [
+                      18,
+                      "9e1c17b1-5913-4c80-bfbf-67391ebff637"
+                    ]
                   }
                 }
               }

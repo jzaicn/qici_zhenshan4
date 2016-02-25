@@ -38,9 +38,13 @@ RewardPageUI.prototype.awake = function() {
         self.reward = self.RewardAreaNode.getScript("qc.engine.ShowRewardUI");
         self.RewardAreaNode.visible = true;
         self.reward.init(function(){
-            console.log('end');
+            //设置完成回调函数 -》 显示遮罩，显示分享，显示奖品情况，显示按钮
+            if (self.ShareNode) { self.ShareNode.visible = true; }
+            if (self.ShadowNode) { self.ShadowNode.visible = true; }
+            if (self.ReplayBtnNode) { self.ReplayBtnNode.visible = true; }
+            if (self.RewardBtnNode) { self.RewardBtnNode.visible = true; }
         });
-        //TODO: 设置完成回调函数 -》 显示遮罩，显示分享，显示奖品情况，显示按钮
+        
     }
 
     if (self.ShareNode) {
