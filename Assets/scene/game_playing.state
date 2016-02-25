@@ -841,7 +841,12 @@
                   5,
                   false
                 ],
-                "scripts": [],
+                "scripts": [
+                  {
+                    "clazz": "qc.engine.RewardPageUI",
+                    "data": "0cf1b82e-9e1b-4c82-9daa-5e5bf1e5b6b1"
+                  }
+                ],
                 "position": [
                   0,
                   0,
@@ -1181,9 +1186,9 @@
                                     0,
                                     0,
                                     0,
-                                    13.228784647610581,
                                     0,
-                                    13.228784647610581,
+                                    0,
+                                    0,
                                     353,
                                     105,
                                     0,
@@ -1223,7 +1228,7 @@
                                   ],
                                   "frame": [
                                     7,
-                                    "jiang1.png"
+                                    "jiang0.png"
                                   ],
                                   "imageType": [
                                     3,
@@ -1248,7 +1253,7 @@
                                             {
                                               "blur": [
                                                 "1f",
-                                                3
+                                                1
                                               ]
                                             }
                                           ]
@@ -1296,7 +1301,7 @@
                                       ],
                                       "style": [
                                         3,
-                                        1
+                                        0
                                       ],
                                       "delay": [
                                         3,
@@ -1378,7 +1383,12 @@
                                     5,
                                     false
                                   ],
-                                  "scripts": [],
+                                  "scripts": [
+                                    {
+                                      "clazz": "qc.TweenPosition",
+                                      "data": "4fc045de-20a0-4a4d-accf-ba9b3aab0ea5"
+                                    }
+                                  ],
                                   "position": [
                                     0,
                                     0,
@@ -1461,6 +1471,98 @@
                                         true
                                       ]
                                     }
+                                  },
+                                  "4fc045de-20a0-4a4d-accf-ba9b3aab0ea5": {
+                                    "class": "qc.TweenPosition",
+                                    "data": {
+                                      "uuid": [
+                                        7,
+                                        "4fc045de-20a0-4a4d-accf-ba9b3aab0ea5"
+                                      ],
+                                      "enable": false,
+                                      "_curve": [
+                                        22,
+                                        "qc.BezierCurve",
+                                        [
+                                          [
+                                            0,
+                                            0,
+                                            1,
+                                            1
+                                          ],
+                                          [
+                                            0.845,
+                                            1.18,
+                                            1,
+                                            1
+                                          ],
+                                          [
+                                            0.97,
+                                            0.94,
+                                            -0.7542210734785629,
+                                            -0.7542210734785629
+                                          ],
+                                          [
+                                            1,
+                                            1,
+                                            1,
+                                            1
+                                          ],
+                                          [
+                                            0,
+                                            0
+                                          ]
+                                        ]
+                                      ],
+                                      "sampleMethod": [
+                                        3,
+                                        0
+                                      ],
+                                      "style": [
+                                        3,
+                                        0
+                                      ],
+                                      "delay": [
+                                        3,
+                                        0
+                                      ],
+                                      "duration": [
+                                        3,
+                                        0.7
+                                      ],
+                                      "tweenGroup": [
+                                        3,
+                                        0
+                                      ],
+                                      "flag": [
+                                        7,
+                                        ""
+                                      ],
+                                      "playOnAwake": [
+                                        5,
+                                        false
+                                      ],
+                                      "from": [
+                                        24,
+                                        "qc.Point",
+                                        [
+                                          0,
+                                          -120
+                                        ]
+                                      ],
+                                      "to": [
+                                        24,
+                                        "qc.Point",
+                                        [
+                                          0,
+                                          0
+                                        ]
+                                      ],
+                                      "moveAxis": [
+                                        3,
+                                        255
+                                      ]
+                                    }
                                   }
                                 }
                               }
@@ -1483,14 +1585,8 @@
                                   18,
                                   "d2144369-c22b-49bb-a345-39c916d939f9"
                                 ],
-                                "Share1Node": [
-                                  18,
-                                  "047f1ffe-c69d-4a3f-92df-2ed4ce499b58"
-                                ],
-                                "Share2Node": [
-                                  18,
-                                  "9e73d876-1d18-4924-b919-db41cfc31b04"
-                                ]
+                                "Share1Node": null,
+                                "Share2Node": null
                               }
                             }
                           }
@@ -2450,7 +2546,7 @@
                       ],
                       "visible": [
                         5,
-                        true
+                        false
                       ],
                       "colorTint": [
                         14,
@@ -2490,11 +2586,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.0177389578367786
+                        1
                       ],
                       "scaleY": [
                         3,
-                        1.0177389578367786
+                        1
                       ],
                       "rotation": [
                         3,
@@ -2653,7 +2749,7 @@
                       ],
                       "visible": [
                         5,
-                        true
+                        false
                       ],
                       "colorTint": [
                         14,
@@ -2693,11 +2789,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.0177389578367786
+                        1
                       ],
                       "scaleY": [
                         3,
-                        1.0177389578367786
+                        1
                       ],
                       "rotation": [
                         3,
@@ -3004,6 +3100,28 @@
                       7,
                       ""
                     ]
+                  }
+                },
+                "0cf1b82e-9e1b-4c82-9daa-5e5bf1e5b6b1": {
+                  "class": "qc.engine.RewardPageUI",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "0cf1b82e-9e1b-4c82-9daa-5e5bf1e5b6b1"
+                    ],
+                    "enable": true,
+                    "TigerStickNode": [
+                      18,
+                      "46828912-ca22-46cc-ae6a-485c7ba5baa0"
+                    ],
+                    "RewardAreaNode": [
+                      18,
+                      "bf9f6ce4-0bd8-4a25-939d-d081559d8615"
+                    ],
+                    "ShareNode": null,
+                    "ShadowNode": null,
+                    "ReplayBtnNode": null,
+                    "RewardBtnNode": null
                   }
                 }
               }

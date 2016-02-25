@@ -8,15 +8,13 @@ var ShowRewardUI = qc.defineBehaviour('qc.engine.ShowRewardUI', qc.Behaviour, fu
 
     self._endWith = "jiang1.png";
 
-    self._frame = "jiang1.png",
-        self._blur = 3,
-        self._duration = 0.1;
-    self._showtimes = 10;
+    self._frameName = "jiang1.png",
+    self._blurValue = 3,
+    self._durationValue = 0.1;
+    self._showTimes = 10;
 }, {
     Price1Node: qc.Serializer.NODE,
     Price2Node: qc.Serializer.NODE,
-    Share1Node: qc.Serializer.NODE,
-    Share2Node: qc.Serializer.NODE,
 });
 
 
@@ -32,7 +30,7 @@ ShowRewardUI.prototype.awake = function() {
 
     if (self.Price2Node) {
         self.price2Position = self.Price2Node.getScript("qc.TweenPosition");
-        self.Price2Node.visible = false;
+        self.Price2Node.visible = true;
     };
 };
 
@@ -43,95 +41,77 @@ ShowRewardUI.prototype.awake = function() {
 
 //     };
 // };
+// 
 
-ShowRewardUI.prototype.onDetail = function(frame, blur, duration, onFinished) {
-    // var self = this,
-    //     o = self.gameObject;
 
-    // o.frame = frame;
-    // self.price1BlurX.blur = blur;
-    // self.price1Position.duration = duration;
-    // self.price1Position.resetToBeginning();
-    // self.price1Position.playForward();
+ShowRewardUI.prototype.init = function(callback) {
+    var self = this;
+    self.Price2Node.visible = true;
+    self.Price1Node.visible = false;
+    self.Price1Node.frame = "jiang0.png";
 
-    // self.price1Position.onFinished.addOnce(onFinished);
+    self.callback = callback;
 };
 
-// ShowRewardUI.prototype.onFinished = function() {
-//     var self = this;
-//     console.log("onFinished");
+ShowRewardUI.prototype.showFastMove = function(blur, duration, onFinished) {
+    var self = this,
+        o = self.gameObject;
 
-//     self._showtimes--;
-//     if (self._showtimes > 0) {
-//         self.onDetail(self._frame, self._blur -= 0.3, self._duration += 0.1, self.onFinished);
-//     } else {
-//         console.log("over");
-//     };
-// };
+    self.Price1Node.frame = qc_game.math.getRandom(["jiang1.png","jiang2.png","jiang3.png","jiang4.png","jiang5.png"]);
+    self.price1BlurX.blur = blur;
+    self.price1Position.duration = duration;
+    self.price1Position.playForward(true);
+
+    self.price1Position.onFinished.addOnce(onFinished);
+};
+
+ShowRewardUI.prototype.showLastMove = function(onFinished) {
+    var self = this,
+        o = self.gameObject;
+
+    self.Price2Node.frame = "jiang5.png";//TODO: 这里设置最终奖品
+    self.Price2Node.visible = true;
+    self.price2Position.playForward(true);
+
+    self.price2Position.onFinished.addOnce(onFinished);
+};
+
 
 ShowRewardUI.prototype.onShow = function() {
     var self = this;
 
-    // self._frame = "jiang1.png";
-    // self._blur = 3;
-    // self._duration = 0.1;
-    // self._showtimes = 10;
-
-    // function onFinishedFunc() {
-    //     console.log("onFinished");
-
-    //     self._showtimes--;
-    //     if (self._showtimes > 0) {
-    //         self.onDetail(self._frame, self._blur -= 0.3, self._duration += 0.1, onFinishedFunc);
-    //     } else {
-    //         console.log("over");
-    // };
-    // self.onDetail(self._frame, self._blur, self._duration, onFinishedFunc);
+    self._frameName = "jiang1.png";
+    self._blurValue = 3;
+    self._durationValue = 0.1;
 
 
+    self.Price1Node.visible = true;
 
+    self.Price2Node.visible = false;
 
-
-
-
-
-
-    // var self = this;
-
-    // var len = qc.CatchGame.REWARD_GROUP.length;
-    // var len_double = qc.CatchGame.REWARD_GROUP.length * 2;
-
-    // //先确定是哪个结果
-    // var index = 0;
-    // for (var i = 0; i < self._frameGroup.length; i++) {
-    //     if (self._endWith === self._frameGroup[i].icon) {//TODO: 确认这个调用
-    //         index = i;
-    //         break;
-    //     };
-    // };
-
-    // //建立显示用数组
-    // var showGroupIndex = [];
-    // for (var i = 0; i < len_double; i++) {
-    //     showGroupIndex.push(index%len);
-    //     index++;
-    // };
-    // var showGroup = [];
-    // showGroupIndex.map(function(v){
-    //     showGroup.push(self._frameGroup[v].icon);
-    // });
-
-    // var status = 0;
-    // clearInterval(self.timer);
-    // self.timer = setInterval(function(){
-    //     switch(status){
-    //         case 0 :
-
-    //     }
-    // }, 500);
-
-
-    //TODO: 实现几等奖动画
-    //TODO: 最后定格后显示分享
-
+    self.showFastMove(self._blurValue-=0.3, self._durationValue += 0.1, function() {
+        self.showFastMove(self._blurValue-=0.3, self._durationValue += 0.1, function() {
+            self.showFastMove(self._blurValue-=0.3, self._durationValue += 0.1, function() {
+                self.showFastMove(self._blurValue-=0.3, self._durationValue += 0.1, function() {
+                    self.showFastMove(self._blurValue-=0.3, self._durationValue += 0.1, function() {
+                        self.showFastMove(self._blurValue-=0.3, self._durationValue += 0.1, function() {
+                            self.showFastMove(self._blurValue-=0.3, self._durationValue += 0.1, function() {
+                                self.showFastMove(self._blurValue-=0.3, self._durationValue += 0.1, function() {
+                                    self.showFastMove(self._blurValue-=0.3, self._durationValue += 0.1, function() {
+                                        self.showFastMove(self._blurValue-=0.3, self._durationValue += 0.1, function() {
+                                            self.showLastMove(function(){
+                                                if (self.callback) {
+                                                    self.callback();
+                                                };
+                                            });
+                                        });
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        });
+    });
 };

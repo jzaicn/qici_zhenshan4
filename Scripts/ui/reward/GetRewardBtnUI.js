@@ -11,7 +11,6 @@ var GetRewardBtnUI = qc.defineBehaviour('qc.engine.GetRewardBtnUI', qc.Behaviour
 }, {
     StickNode: qc.Serializer.NODE,
     BallNode: qc.Serializer.NODE,
-    testNode: qc.Serializer.NODE,
 });
 
 
@@ -25,12 +24,12 @@ GetRewardBtnUI.prototype.awake = function() {
     if (self.BallNode) {
     	self.ball = self.BallNode.getScript("qc.TweenPosition");
     };
-    if (self.testNode) {
-        self.test = self.testNode.getScript("qc.engine.ShowRewardUI");
-    };
+    // if (self.testNode) {
+    //     self.test = self.testNode.getScript("qc.engine.ShowRewardUI");
+    // };
 };
 
-GetRewardBtnUI.prototype.setFinishClickCallback = function(callback) {
+GetRewardBtnUI.prototype.init = function(callback) {
     this.onFinishClickCallback = callback;
 };
 
@@ -53,9 +52,8 @@ GetRewardBtnUI.prototype.onClick = function() {
         self.stick.onFinished.addOnce(function() {
             self._clickable = true;
             if (self.onFinishClickCallback) {
-                this.onFinishClickCallback();
+                self.onFinishClickCallback();
             };
-            self.test.onShow();
         });
 
     };
