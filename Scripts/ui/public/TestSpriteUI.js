@@ -12,13 +12,18 @@ var TestSpriteUI = qc.defineBehaviour('qc.engine.TestSpriteUI', qc.Behaviour, fu
 }, {
     //     testPrefab: qc.Serializer.PREFAB,
     //     catcherPrefab: qc.Serializer.PREFAB,
-    //     worldNode: qc.Serializer.NODE
+    testNode: qc.Serializer.NODE
 });
 
 
 TestSpriteUI.prototype.awake = function() {
     var self = this;
-    self.getPlay = getPlayXunhuanLoop();
+
+    if (self.testNode) {
+        self.test = self.testNode.getScript("qc.engine.BackCountUI");
+    };
+
+    // self.getPlay = getPlayXunhuanLoop();
     // if (self.catcherPrefab) {
     //     var testObject = self.game.add.clone(self.catcherPrefab, self.worldNode);
     //     self.test = testObject.getScript("qc.engine.CathcerUI");
@@ -32,7 +37,7 @@ TestSpriteUI.prototype.update = function() {
 
 TestSpriteUI.prototype.onClick = function() {
     var self = this;
-    //qc.CatchGame.Status = self.getPlay();
+    // self.test.showGameOver();
 };
 
 

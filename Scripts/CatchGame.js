@@ -9,7 +9,7 @@ window.CatchGame = qc.CatchGame = {
     RAISE_LEVEL : -20,
     SEA_LEVEL : 980,
     SPEAK_BOX_MIX_WIDTH : 600,
-    DEFAULT_PAGE: "welcome",
+    DEFAULT_PAGE: "playing",//TODO: welcome
 
     DEFAULT_MUSIC_PLAYING : false,
 

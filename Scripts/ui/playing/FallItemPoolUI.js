@@ -15,7 +15,7 @@ FallItemPoolUI.prototype.awake = function() {
     var self = this,
         o = self.gameObject;
 
-
+    
     qc.CatchGame.fallitemPool.init(self);
 };
 

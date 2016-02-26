@@ -40,8 +40,11 @@ PlayingPageUI.prototype.awake = function() {
 //被上层调用，重新初始化相关地方
 PlayingPageUI.prototype.setup = function() {
     var self = this;
-    self.clearItems();
-    self.createItems();
+
+    BackCountNode.showBackCount(function(){
+        self.clearItems();
+        self.createItems();
+    });
 };
 
 //被上层调用，关闭相关地方

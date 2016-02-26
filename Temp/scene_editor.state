@@ -2658,11 +2658,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.024056547193248
+                        1
                       ],
                       "scaleY": [
                         3,
-                        1.024056547193248
+                        1
                       ],
                       "rotation": [
                         3,
@@ -2861,11 +2861,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.024056547193248
+                        1
                       ],
                       "scaleY": [
                         3,
-                        1.024056547193248
+                        1
                       ],
                       "rotation": [
                         3,
@@ -3786,7 +3786,11 @@
                             18,
                             "ba49aa84-63aa-4a71-8e04-9bb41be1e014"
                           ],
-                          "catcherPrefab": null
+                          "catcherPrefab": null,
+                          "testNode": [
+                            18,
+                            "c94c2fe6-2a4c-4526-8d5e-06dd5c3c538f"
+                          ]
                         }
                       }
                     }
@@ -4674,7 +4678,7 @@
                       ],
                       "alpha": [
                         3,
-                        0
+                        1
                       ],
                       "visible": [
                         5,
@@ -4696,6 +4700,10 @@
                         {
                           "clazz": "qc.TweenAlpha",
                           "data": "7657a323-391d-4a25-af0b-b2cc5dc62aef"
+                        },
+                        {
+                          "clazz": "qc.engine.BackCountUI",
+                          "data": "b410e930-59b4-4623-8d7a-7cdee1816103"
                         }
                       ],
                       "position": [
@@ -4932,7 +4940,7 @@
                           ],
                           "duration": [
                             3,
-                            1
+                            0.8
                           ],
                           "tweenGroup": [
                             3,
@@ -5036,6 +5044,16 @@
                               0.8
                             ]
                           ]
+                        }
+                      },
+                      "b410e930-59b4-4623-8d7a-7cdee1816103": {
+                        "class": "qc.engine.BackCountUI",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "b410e930-59b4-4623-8d7a-7cdee1816103"
+                          ],
+                          "enable": true
                         }
                       }
                     }
