@@ -37,7 +37,8 @@ TestSpriteUI.prototype.update = function() {
 
 TestSpriteUI.prototype.onClick = function() {
     var self = this;
-    // self.test.showGameOver();
+    // self.test.showYouWin();
+    qc.CatchGame.gameOver();
 };
 
 

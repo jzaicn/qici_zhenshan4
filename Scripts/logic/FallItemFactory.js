@@ -17,6 +17,8 @@ var FallItemFactory = qc.CatchGame.FallItemFactory = function() {
 
 
     self.tryUpTimes = 5;
+    self._chapter = 0;
+
 };
 FallItemFactory.prototype = {};
 FallItemFactory.prototype.constructor = FallItemFactory;
@@ -27,6 +29,25 @@ Object.defineProperties(FallItemFactory.prototype, {
 
 //填充区域
 FallItemFactory.prototype.fillPoolWithArea = function(area,pool) {
+    var self = this;
+
+    //这里可以更改方法
+    var bigPool = self.randomPoolWithArea(area,pool);
+
+    //先排序，方便后续使用
+    bigPool.sort(function(a, b) {
+        if (a.y>=b.y) { return 1; }
+        else if (a.x>=b.x) { return 1; }
+        else { return -1; };
+    });
+
+    return bigPool;
+};
+///////////////////////////////////////////////////////////////////
+///  功能函数
+
+//填充区域
+FallItemFactory.prototype.randomPoolWithArea = function(area,pool) {
     var self = this;
     var bigPool = [];
 
@@ -40,18 +61,6 @@ FallItemFactory.prototype.fillPoolWithArea = function(area,pool) {
         //所有新增加的元素都应该放置在这，以备后续添加
         bigPool = bigPool.concat(newItems);
     };
-    //先排序，方便后续使用
-    bigPool.sort(function(a, b) {
-        if (a.y>=b.y) {
-            return 1;
-        }
-        else {
-            if (a.x>=b.x) {
-                return 1;
-            };
-        };
-        return -1; 
-    });
     return bigPool;
 };
 
@@ -84,7 +93,6 @@ FallItemFactory.prototype.fillUP = function(everyElement,area,bigPool) {
     return pool;
 };
 
-
 //改点是否能放下检测
 FallItemFactory.prototype.putCheck = function(id, pos ,pool) {
     var self = this;
@@ -104,7 +112,30 @@ FallItemFactory.prototype.putCheck = function(id, pos ,pool) {
     return true;
 };
 
+///////////////////////////////////////////////////////////////////
+///  功能函数
+
+//按设计关卡取出物品
+FallItemFactory.prototype.chapterPoolWithArea = function(area,pool) {
+    var self = this;
+    var itemPools = [
+        [[320,0],[320,-100],[320,-200],[320,-300],[320,-400],[320,-500],[320,-600],[320,-700],[320,-800],[320,-900],[320,-1000]],
+    ];
+    var thisPool = itemPools[this._chapter];
+    var pools = [];
 
 
+    this._chapter = (this._chapter ++ )% itemPools.length;
 
 
+    for (var i = 0; i < thisPool.length; i++) {
+        var everyElement = self.data[0];
+
+        everyElement.x = thisPool[i][0];
+        everyElement.y = thisPool[i][1];
+
+        pools.push(everyElement.clone());
+    };
+    
+    return pools;
+};

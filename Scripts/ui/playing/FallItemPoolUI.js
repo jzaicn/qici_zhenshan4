@@ -15,7 +15,7 @@ FallItemPoolUI.prototype.awake = function() {
     var self = this,
         o = self.gameObject;
 
-    
+
     qc.CatchGame.fallitemPool.init(self);
 };
 
@@ -60,6 +60,8 @@ FallItemPoolUI.prototype.need2Create = function() {
     return qc.CatchGame.fallitemPool.isPoolNeedNew();
 };
 
-
+FallItemPoolUI.prototype.clearAll = function() {
+    qc.CatchGame.fallitemPool.clearAll();
+};
 
 

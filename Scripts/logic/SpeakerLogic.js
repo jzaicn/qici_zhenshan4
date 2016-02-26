@@ -6,7 +6,6 @@
 var SpeakerLogic = qc.CatchGame.SpeakerLogic = function() {
     var self = this;
 
-    self.score = 0;
 };
 SpeakerLogic.prototype = {};
 SpeakerLogic.prototype.constructor = SpeakerLogic;
@@ -19,18 +18,10 @@ SpeakerLogic.prototype.init = function(uiObj) {
     this.uiObj = uiObj;
 };
 
-//设置显示内容
-SpeakerLogic.prototype.eventLisenter = function(score) {
-    var self = this;
-    self.score = score;
-    console.log('SpeakerLogic score:',self.score);
-};
-
-SpeakerLogic.prototype.setScore = function(obj) {
+SpeakerLogic.prototype.setScore = function(score) {
     var self = this;
 
     //当前得分字符串
-    self.score += obj.score;
-    var textScore = "Score : " + self.score.toString();
+    var textScore = "Score : " + qc.CatchGame.Score;
     self.uiObj.setWord(textScore);
 };

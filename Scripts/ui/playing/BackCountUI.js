@@ -66,7 +66,7 @@ BackCountUI.prototype.showBackCount = function(callback) {
 };
 
 //对外可用的倒数事件（回调函数可不设）
-BackCountUI.prototype.showGameOver = function(callback) {
+BackCountUI.prototype.showLose = function(callback) {
 
     var self = this,
         o = self.gameObject;
@@ -79,6 +79,31 @@ BackCountUI.prototype.showGameOver = function(callback) {
     o.startColor = new qc.Color([158, 150, 0]);
     o.endColor = new qc.Color([255, 0, 0]);
     self.doShow("GameOver", 3, function() {
+        //完成执行回调
+        if (self.callback) {
+            self.callback();
+        };
+
+        //消失
+        o.visible = false;
+    });
+};
+
+
+//对外可用的倒数事件（回调函数可不设）
+BackCountUI.prototype.showWin = function(callback) {
+
+    var self = this,
+        o = self.gameObject;
+
+    if (callback) {
+        self.init(callback);
+    };
+
+    o.text = "";
+    o.startColor = new qc.Color("#FCE300");
+    o.endColor = new qc.Color("#FFFC59");
+    self.doShow("~\\YouWin/~", 2, function() {
         //完成执行回调
         if (self.callback) {
             self.callback();

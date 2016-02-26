@@ -5,11 +5,8 @@ var FallItemUI = qc.defineBehaviour('qc.engine.FallItemUI', qc.Behaviour, functi
 
     var self = this,
         o = self.gameObject;
-    // self._press = false;
-    // self._pos = new qc.Point(0, 0);
-    // self._mousepos = new qc.Point(0, 0);
-    // 
-    self.score = 10;
+        
+    self._scoretext = "";
 }, {
     testPrefab: qc.Serializer.PREFAB
 });
@@ -44,17 +41,6 @@ Object.defineProperties(FallItemUI.prototype, {
 
 });
 
-// Called when the script instance is being loaded.
-FallItemUI.prototype.awake = function() {
-    var self = this;
-};
-
-// Called every frame, if the behaviour is enabled.
-//FallItemUI.prototype.update = function() {
-//
-//};
-
-
 
 //碰撞显示得分
 FallItemUI.prototype.onCrash = function() {
@@ -80,8 +66,7 @@ FallItemUI.prototype.onCrash = function() {
         self.test.setPos(o.x,o.y);
     };
 
-    var textScore = self.score > 0 ? "+"+self.score.toString() : self.score.toString();
-    self.test.show(textScore);
+    self.test.show(self._scoretext);
 };
 
 //跌出区域删除自己
@@ -90,4 +75,10 @@ FallItemUI.prototype.onFallout = function() {
         o = self.gameObject;
 
     o.destroy();
+};
+
+//设置碰撞显示分数
+FallItemUI.prototype.setScore = function(score) {
+    var self = this;
+    self._scoretext = score > 0 ? "+"+ score.toString() : score.toString();
 };

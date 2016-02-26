@@ -18,7 +18,7 @@ IntroducePageUI.prototype.update = function() {
 
 //被上层调用，重新初始化相关地方
 IntroducePageUI.prototype.setup = function() {
-    qc.CatchGame._introduced = true;  
+    qc.CatchGame.setIntroduced();  
 };
 
 //被上层调用，关闭相关地方

@@ -1,8 +1,6 @@
 "use strict";
 
-/**
- * 维护分数信息
- */
+
 var FallItemPoolLogic = qc.CatchGame.FallItemPoolLogic = function() {
     var self = this;
 
@@ -23,61 +21,38 @@ FallItemPoolLogic.prototype.init = function(uiObj) {
     this.uiObj = uiObj;
 };
 
-//所有池中的对象全部偏移指定的数值
-FallItemPoolLogic.prototype.updateAllPoolObject = function(pos_diff) {
-    var self = this;
 
-    //处理位置偏移
-    var pos_add = function(operaPool,index,value){
-        value.x += pos_diff.x;
-        value.y += pos_diff.y;
-    };
-    doPoolObject(self.currentPool,pos_add);
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//    读取操作
+
+//返回自身
+FallItemPoolLogic.prototype.getPool = function() {
+    return this.currentPool;
 };
 
-
-//返回超出掉出线的物品index数组
-FallItemPoolLogic.prototype.checkFalloutPoolObject = function() {
+//一屏一屏刷
+//检测是否最后一个元素已经跌过出生线了，是的话返回真
+//根据这个判断是不是需要增加新元素
+FallItemPoolLogic.prototype.isPoolNeedNew = function() {
     var self = this;
-    var indexgroup = [];
-
-    //处理位置偏移
-    var check_fallout = function(operaPool,index,value){
-        if (value.y > self.fallOutLine) {
-            var effect = value.o.getScript("qc.engine.FallItemUI");
-            effect.onFallout();
-            indexgroup.push(index);
-            //下落元素跌出屏幕后事件派发
-            // value.selfDispatch(qc.CatchGame.itemSignal);
-            qc.CatchGame.itemSignal.dispatch(value.getInfo());
+    if (self.currentPool.length > 0) {
+        if (self.currentPool[self.currentPool.length -1].y > self.raiseLine) {
+            return true;
         };
+    }
+    else{
+        return true;
     };
-    doPoolObject(self.currentPool,check_fallout);
-    self.delItemIndexArr(indexgroup);
+    return false;
 };
 
-//返回发生碰撞的物品index数组
-FallItemPoolLogic.prototype.checkCrashPoolObject = function() {
-    var self = this;
-    var indexgroup = [];
+//////////////////////////////////////////////////////////////////////////////////////////////
+//    基本操作
 
-    //处理位置偏移
-    var check_crash = function(operaPool,index,value){
-        if (qc.CatchGame.isCrash({x:value.x,y:value.y})) {
-            //下落元素显示效果
-            var effect = value.o.getScript("qc.engine.FallItemUI");
-            effect.score = value.score;
-            effect.onCrash();
-            //下落元素删除准备
-            indexgroup.push(index);
-            //下落元素触碰后事件派发
-            // value.selfDispatch(qc.CatchGame.itemSignal);
-            qc.CatchGame.itemSignal.dispatch(value.getInfo());
-        };
-    };
-    doPoolObject(self.currentPool,check_crash);
-    self.delItemIndexArr(indexgroup);
-};
 
 //增加元素
 FallItemPoolLogic.prototype.additem = function(item) {
@@ -130,22 +105,86 @@ FallItemPoolLogic.prototype.delItemIndexArr = function(indexgroup) {
     arrayDelIndexGroup(indexgroup,self.currentPool);
 };
 
-//返回自身
-FallItemPoolLogic.prototype.getPool = function() {
-    return this.currentPool;
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//    子元素处理
+
+FallItemPoolLogic.prototype.clearAll = function() {
+    var self = this;
+    var indexgroup = [];
+
+    //处理位置偏移
+    var check_fallout = function(operaPool,index,value){
+        if (true) {
+            var effect = value.o.getScript("qc.engine.FallItemUI");
+            effect.onFallout();
+            indexgroup.push(index);
+        };
+    };
+    doPoolObject(self.currentPool,check_fallout);
+    self.delItemIndexArr(indexgroup);
 };
 
-//检测是否最后一个元素已经跌过出生线了，是的话返回真
-//根据这个判断是不是需要增加新元素
-FallItemPoolLogic.prototype.isPoolNeedNew = function() {
+//所有池中的对象全部偏移指定的数值
+FallItemPoolLogic.prototype.updateAllPoolObject = function(pos_diff) {
     var self = this;
-    if (self.currentPool.length > 0) {
-        if (self.currentPool[self.currentPool.length -1].y > self.raiseLine) {
-            return true;
-        };
-    }
-    else{
-        return true;
+
+    //处理位置偏移
+    var pos_add = function(operaPool,index,value){
+        value.x += pos_diff.x;
+        value.y += pos_diff.y;
     };
-    return false;
+    doPoolObject(self.currentPool,pos_add);
+};
+
+
+//返回超出掉出线的物品index数组
+FallItemPoolLogic.prototype.checkFalloutPoolObject = function() {
+    var self = this;
+    var indexgroup = [];
+
+    //处理位置偏移
+    var check_fallout = function(operaPool,index,value){
+        if (value.y > self.fallOutLine) {
+            var effect = value.o.getScript("qc.engine.FallItemUI");
+            effect.onFallout();
+            indexgroup.push(index);
+            //下落元素跌出屏幕后事件派发
+            // value.selfDispatch(qc.CatchGame.itemSignal);
+            qc.CatchGame.itemSignal.dispatch({
+                eventType : "fallout",
+                obj : value,
+            });
+        };
+    };
+    doPoolObject(self.currentPool,check_fallout);
+    self.delItemIndexArr(indexgroup);
+};
+
+//返回发生碰撞的物品index数组
+FallItemPoolLogic.prototype.checkCrashPoolObject = function() {
+    var self = this;
+    var indexgroup = [];
+
+    //处理位置偏移
+    var check_crash = function(operaPool,index,value){
+        if (qc.CatchGame.isCrash({x:value.x,y:value.y})) {
+            //下落元素显示效果
+            var effect = value.o.getScript("qc.engine.FallItemUI");
+            effect.setScore(value.score);
+            effect.onCrash();
+            //下落元素删除准备
+            indexgroup.push(index);
+            //下落元素触碰后事件派发
+            // value.selfDispatch(qc.CatchGame.itemSignal);
+            qc.CatchGame.itemSignal.dispatch({
+                eventType : "crash",
+                score: value.score,
+                obj : value,
+            });
+            qc.CatchGame.itemSignal.dispatch(value.getInfo());
+        };
+    };
+    doPoolObject(self.currentPool,check_crash);
+    self.delItemIndexArr(indexgroup);
 };

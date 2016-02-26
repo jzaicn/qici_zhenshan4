@@ -1140,7 +1140,7 @@
                             "scripts": [
                               {
                                 "clazz": "qc.engine.ShowRewardUI",
-                                "data": "844034c2-d8d4-47b6-bbe0-793a5ead5e31"
+                                "data": "7168bf2b-92d1-4ead-bdbb-11c95f5f22e6"
                               }
                             ],
                             "position": [
@@ -1651,6 +1651,24 @@
                                   18,
                                   "d2144369-c22b-49bb-a345-39c916d939f9"
                                 ],
+                                "Fast1Node": [
+                                  18,
+                                  "7c04d555-c6a5-4bfc-870b-ea2303dbe4ac"
+                                ],
+                                "LastNode": [
+                                  18,
+                                  "d2144369-c22b-49bb-a345-39c916d939f9"
+                                ]
+                              }
+                            },
+                            "7168bf2b-92d1-4ead-bdbb-11c95f5f22e6": {
+                              "class": "qc.engine.ShowRewardUI",
+                              "data": {
+                                "uuid": [
+                                  7,
+                                  "7168bf2b-92d1-4ead-bdbb-11c95f5f22e6"
+                                ],
+                                "enable": true,
                                 "Fast1Node": [
                                   18,
                                   "7c04d555-c6a5-4bfc-870b-ea2303dbe4ac"
@@ -4234,12 +4252,7 @@
                         5,
                         false
                       ],
-                      "scripts": [
-                        {
-                          "clazz": "qc.engine.FallItemPoolUI",
-                          "data": "f96c6bad-c2d2-48e2-887b-97abafa1f722"
-                        }
-                      ],
+                      "scripts": [],
                       "position": [
                         0,
                         0,
@@ -5801,10 +5814,6 @@
                   {
                     "clazz": "qc.NodeMask",
                     "data": "81d831b7-e5ea-4c25-85d0-3a9b5622f5c1"
-                  },
-                  {
-                    "clazz": "qc.engine.MusicBtnUI",
-                    "data": "195ad138-787e-49d2-b2d3-129d5699574d"
                   }
                 ],
                 "position": [
@@ -6571,10 +6580,6 @@
     "1c282d99-0404-4e4c-ad8c-c817a1950dfd": {
       "key": "Assets/texture/hand.bin",
       "uuid": "1c282d99-0404-4e4c-ad8c-c817a1950dfd"
-    },
-    "9158999a-63a7-4955-b919-065ff6a50690": {
-      "key": "9158999a-63a7-4955-b919-065ff6a50690",
-      "uuid": "9158999a-63a7-4955-b919-065ff6a50690"
     },
     "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf": {
       "key": "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf",

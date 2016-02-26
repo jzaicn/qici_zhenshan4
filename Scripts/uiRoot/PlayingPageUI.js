@@ -5,7 +5,7 @@ var PlayingPageUI = qc.defineBehaviour('qc.engine.PlayingPageUI', qc.Behaviour, 
 
     var self = this;
 
-    var seaLevel = 0;
+    self._onEffect = false;
 
 }, {
     FallCreateAreaNode: qc.Serializer.NODE,
@@ -34,27 +34,40 @@ PlayingPageUI.prototype.awake = function() {
         self.backcount = self.BackCountNode.getScript("qc.engine.BackCountUI");
     };
 
-    //self.createItems();
 };
 
 //被上层调用，重新初始化相关地方
 PlayingPageUI.prototype.setup = function() {
     var self = this;
 
-    BackCountNode.showBackCount(function(){
-        self.clearItems();
-        self.createItems();
+    qc.CatchGame.gameInit();
+    self.clearItems();
+    self.createItems();
+
+    self.backcount.showBackCount(function(){
+        qc.CatchGame.gameStart();
     });
 };
 
 //被上层调用，关闭相关地方
 PlayingPageUI.prototype.clearup = function() {
+    var self = this;
+    self.backcount.showLose(function(){
+        var self = this;
+        self.clearItems();
+        qc.CatchGame.gameOver();
+    });
 };
+
+
+////////////////////////////////////////////////////////////////////////////
+///   创建对象相关
+
 
 //清空下落对象池
 PlayingPageUI.prototype.clearItems = function() {
-    var currentPool = qc.CatchGame.fallitemPool.getPool();
-    currentPool = [];
+    var self = this;
+    self.fallPool.clearAll();
 };
 
 //创建对象池
@@ -73,29 +86,38 @@ PlayingPageUI.prototype.createItems = function() {
 };
 
 
-
-
-
-
-PlayingPageUI.prototype.beginGameCall = function() {
-    //TODO: 调用游戏开始
-    //TODO: 调用游戏倒计时
-    //TODO: 调用创建下落元素
-};
-
-
+/////////////////////////////////////////////////////////////////////////////
+///  游戏过程
 
 PlayingPageUI.prototype.update = function() {
     var self = this;
 	//调用游戏类进行判断，游戏是否结束，是否碰撞得分，是否超出边界删除对象
-    if (false) {
-    //if (qc.CatchGame.isRunning()) {
+    if (qc.CatchGame.isGameRunning()) {
+        qc.CatchGame.checkStatus();
         self.fallPool.fallAll();//TODO: 考虑到帧率问题，这里下落速度应该同帧率有关，待修改
         self.fallPool.fallOut();
         self.fallPool.crashUp();
         if (self.fallPool.need2Create()) {
             self.createItems();
         };
+    }
+    else if (self._onEffect === false) {
+        switch (qc.CatchGame.getGameEndStatus()) {
+            case "lose":
+                self._onEffect = true;
+                self.backcount.showLose(function(){
+                    console.log('lose 输了');
+                    self._onEffect = false;
+                });
+                break;
+            case "win":
+                self._onEffect = true;
+                self.backcount.showWin(function(){
+                    qc.CatchGame.Status = "reward";
+                    self._onEffect = false;
+                });
+                break;
+        }
     };
 };
 

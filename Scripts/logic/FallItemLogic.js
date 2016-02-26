@@ -94,25 +94,6 @@ FallItemLogic.prototype.getInfo = function(status) {
     return info;
 };
 
-//碰撞返回信息
-FallItemLogic.prototype.getCrashInfo = function(status) {
-    // var self = this;//TODO: 被销毁后返回的内容，用于设置到对话框
-    // var info = {
-    //     score : self.score,
-    // };
-    // console.log('item getInfo');
-    // return info;
-};
-
-//跌落返回信息
-FallItemLogic.prototype.getFallInfo = function(status) {
-    // var self = this;//TODO: 被销毁后返回的内容，用于设置到对话框
-    // var info = {
-    //     score : self.score,
-    // };
-    // console.log('item getInfo');
-    // return info;
-};
 
 //如果是某种表情则替换
 FallItemLogic.prototype.onChangeEvent = function() {
