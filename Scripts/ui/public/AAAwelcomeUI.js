@@ -18,7 +18,6 @@ var AAAwelcomeUI = qc.defineBehaviour('qc.engine.AAAwelcomeUI', qc.Behaviour, fu
 
 AAAwelcomeUI.prototype.awake = function() {
     var self = this;
-    self.getPlay = getPlayXunhuanLoop();
     // if (self.catcherPrefab) {
     //     var testObject = self.game.add.clone(self.catcherPrefab, self.worldNode);
     //     self.test = testObject.getScript("qc.engine.CathcerUI");
@@ -32,6 +31,7 @@ AAAwelcomeUI.prototype.update = function() {
 
 AAAwelcomeUI.prototype.onClick = function() {
     var self = this;
-    console.log('AAAreward')
+    console.log('AAAwelcomeUI');
+    qc.CatchGame.Status = "welcome";
 };
 
