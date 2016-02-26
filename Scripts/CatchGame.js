@@ -42,7 +42,7 @@ window.CatchGame = qc.CatchGame = {
     _introduced : false,
 
 
-    _status : "welcome",
+    _status : "",
     set Status(v) {
         this.statusSignal.dispatch(this._status,v);
         this._status = v;

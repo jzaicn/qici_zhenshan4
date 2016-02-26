@@ -18,7 +18,7 @@ urlMapConfig = {
   "7d4553ad-f395-4e33-86e8-d3c3b489d4e4": "Assets/atlas/music@atlas/music_off.bin",
   "43cef780-9127-4633-bccf-ef1a5666c0fa": "Assets/atlas/music@atlas/music_on.bin",
   "24a7afa8-34b5-4c77-8581-d006adb13bee": "Assets/atlas/reward.bin",
-  "aa55934d-f460-4b9d-8fc4-d19600f02e1f": "Assets/atlas/reward@atlas/jiang0.bin",
+  "1e8374a1-74c6-421e-b37f-e7d1062b9063": "Assets/atlas/reward@atlas/jiang0.bin",
   "955ee845-4065-4cbe-834d-2309c10f7fb3": "Assets/atlas/reward@atlas/jiang1.bin",
   "03c215dd-86dc-47ee-8fd0-14d7b5212e24": "Assets/atlas/reward@atlas/jiang2.bin",
   "70a9f05a-5c22-44bd-b9c7-9ccfab9e0c11": "Assets/atlas/reward@atlas/jiang3.bin",

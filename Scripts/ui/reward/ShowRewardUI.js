@@ -41,10 +41,11 @@ ShowRewardUI.prototype.setup = function() {
 
 
 ShowRewardUI.prototype.init = function(callback) {
-
+    var self = this;
     self.callback = callback;
 };
 
+//效果，Y轴动态模糊，按指定的速度，下落某个选定的元素
 ShowRewardUI.prototype.showFastMove = function(blur, duration, onFinished) {
     var self = this,
         o = self.gameObject;
@@ -57,6 +58,7 @@ ShowRewardUI.prototype.showFastMove = function(blur, duration, onFinished) {
     self.fast1Position.onFinished.addOnce(onFinished);
 };
 
+//效果，Y轴清晰，按指定的速度，下落某个选定的元素
 ShowRewardUI.prototype.showLastMove = function(onFinished) {
     var self = this,
         o = self.gameObject;
