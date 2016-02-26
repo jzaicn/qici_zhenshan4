@@ -27,7 +27,6 @@ PlayingPageUI.prototype.awake = function() {
     //绑定对象池
     if (self.FallPoolNode) {
         self.fallPool = self.FallPoolNode.getScript("qc.engine.FallItemPoolUI");
-        qc.CatchGame.fallitemPool.init(self.fallPool);
     };
 
     //绑定倒数对象
@@ -41,8 +40,8 @@ PlayingPageUI.prototype.awake = function() {
 //被上层调用，重新初始化相关地方
 PlayingPageUI.prototype.setup = function() {
     var self = this;
-    // self.clearItems();
-    // self.createItems();
+    self.clearItems();
+    self.createItems();
 };
 
 //被上层调用，关闭相关地方

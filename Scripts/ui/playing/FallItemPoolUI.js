@@ -11,10 +11,13 @@ var FallItemPoolUI = qc.defineBehaviour('qc.engine.FallItemPoolUI', qc.Behaviour
 });
 
 
-// FallItemPoolUI.prototype.awake = function() {
-//     var self = this,
-//         o = self.gameObject;
-// };
+FallItemPoolUI.prototype.awake = function() {
+    var self = this,
+        o = self.gameObject;
+
+
+    qc.CatchGame.fallitemPool.init(self);
+};
 
 
 // FallItemPoolUI.prototype.update = function() {

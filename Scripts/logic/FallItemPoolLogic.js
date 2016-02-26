@@ -48,6 +48,7 @@ FallItemPoolLogic.prototype.checkFalloutPoolObject = function() {
             effect.onFallout();
             indexgroup.push(index);
             //下落元素跌出屏幕后事件派发
+            // value.selfDispatch(qc.CatchGame.itemSignal);
             qc.CatchGame.itemSignal.dispatch(value.getInfo());
         };
     };
@@ -70,6 +71,7 @@ FallItemPoolLogic.prototype.checkCrashPoolObject = function() {
             //下落元素删除准备
             indexgroup.push(index);
             //下落元素触碰后事件派发
+            // value.selfDispatch(qc.CatchGame.itemSignal);
             qc.CatchGame.itemSignal.dispatch(value.getInfo());
         };
     };

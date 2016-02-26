@@ -83,7 +83,7 @@ qc.initGame = function(game) {
     CatchGame.Status = CatchGame.DEFAULT_PAGE;
 };
 
-
+//物品碰撞事件
 qc.CatchGame.onItemSignal = function(obj){
     //碰撞结果事件：碰撞加减分，碰撞提示语，碰撞特殊信息，碰撞游戏结束
     switch(obj.eventType){
@@ -147,7 +147,7 @@ qc.CatchGame.isCrash = function(pos){
 //TODO: 操作开始
 //开始游戏
 qc.CatchGame.setStart = function() {
-    this.Status = "playing";
+    //this.Status = "playing";
     
     //初始化提示语言
     // 初始化下落物
