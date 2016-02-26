@@ -877,7 +877,7 @@
                 ],
                 "visible": [
                   5,
-                  false
+                  true
                 ],
                 "colorTint": [
                   14,
@@ -1208,7 +1208,7 @@
                                   ],
                                   "visible": [
                                     5,
-                                    true
+                                    false
                                   ],
                                   "colorTint": [
                                     14,
@@ -1374,7 +1374,7 @@
                                         "qc.Point",
                                         [
                                           0,
-                                          -120
+                                          -130
                                         ]
                                       ],
                                       "to": [
@@ -1382,7 +1382,7 @@
                                         "qc.Point",
                                         [
                                           0,
-                                          120
+                                          130
                                         ]
                                       ],
                                       "moveAxis": [
@@ -1419,7 +1419,7 @@
                                   ],
                                   "visible": [
                                     5,
-                                    false
+                                    true
                                   ],
                                   "colorTint": [
                                     14,
@@ -1537,16 +1537,16 @@
                                             1
                                           ],
                                           [
-                                            0.845,
-                                            1.18,
+                                            0.8,
+                                            1.055,
                                             1,
                                             1
                                           ],
                                           [
-                                            0.97,
-                                            0.94,
-                                            -0.7542210734785629,
-                                            -0.7542210734785629
+                                            0.925,
+                                            0.965,
+                                            0.10000000000000023,
+                                            0.10000000000000023
                                           ],
                                           [
                                             1,
@@ -1574,7 +1574,7 @@
                                       ],
                                       "duration": [
                                         3,
-                                        0.7
+                                        1.2
                                       ],
                                       "tweenGroup": [
                                         3,
@@ -2676,11 +2676,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1
+                        1.0081216176337406
                       ],
                       "scaleY": [
                         3,
-                        1
+                        1.0081216176337406
                       ],
                       "rotation": [
                         3,
@@ -2879,11 +2879,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1
+                        1.0081216176337406
                       ],
                       "scaleY": [
                         3,
-                        1
+                        1.0081216176337406
                       ],
                       "rotation": [
                         3,
@@ -3254,7 +3254,7 @@
                 ],
                 "visible": [
                   5,
-                  true
+                  false
                 ],
                 "colorTint": [
                   14,
@@ -3559,7 +3559,7 @@
                         30.000001735912143,
                         -1000.0000313204267,
                         580,
-                        1000,
+                        900,
                         0,
                         0,
                         0,
@@ -3718,7 +3718,7 @@
                       ],
                       "visible": [
                         5,
-                        true
+                        false
                       ],
                       "colorTint": [
                         14,
@@ -4252,7 +4252,12 @@
                         5,
                         false
                       ],
-                      "scripts": [],
+                      "scripts": [
+                        {
+                          "clazz": "qc.engine.FallItemPoolUI",
+                          "data": "e103b896-a743-478f-ac34-a79f839c28f0"
+                        }
+                      ],
                       "position": [
                         0,
                         0,
@@ -4330,6 +4335,20 @@
                           "uuid": [
                             7,
                             "f96c6bad-c2d2-48e2-887b-97abafa1f722"
+                          ],
+                          "enable": true,
+                          "FallItemPrefab": [
+                            16,
+                            "9158999a-63a7-4955-b919-065ff6a50690"
+                          ]
+                        }
+                      },
+                      "e103b896-a743-478f-ac34-a79f839c28f0": {
+                        "class": "qc.engine.FallItemPoolUI",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "e103b896-a743-478f-ac34-a79f839c28f0"
                           ],
                           "enable": true,
                           "FallItemPrefab": [
@@ -5974,7 +5993,7 @@
                 ],
                 "visible": [
                   5,
-                  true
+                  false
                 ],
                 "colorTint": [
                   14,
@@ -6092,7 +6111,7 @@
                 ],
                 "visible": [
                   5,
-                  true
+                  false
                 ],
                 "colorTint": [
                   14,
@@ -6210,7 +6229,7 @@
                 ],
                 "visible": [
                   5,
-                  true
+                  false
                 ],
                 "colorTint": [
                   14,
@@ -6328,7 +6347,7 @@
                 ],
                 "visible": [
                   5,
-                  true
+                  false
                 ],
                 "colorTint": [
                   14,
@@ -6580,6 +6599,10 @@
     "1c282d99-0404-4e4c-ad8c-c817a1950dfd": {
       "key": "Assets/texture/hand.bin",
       "uuid": "1c282d99-0404-4e4c-ad8c-c817a1950dfd"
+    },
+    "9158999a-63a7-4955-b919-065ff6a50690": {
+      "key": "9158999a-63a7-4955-b919-065ff6a50690",
+      "uuid": "9158999a-63a7-4955-b919-065ff6a50690"
     },
     "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf": {
       "key": "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf",

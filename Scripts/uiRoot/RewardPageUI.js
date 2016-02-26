@@ -43,6 +43,9 @@ RewardPageUI.prototype.awake = function() {
             if (self.ShadowNode) { self.ShadowNode.visible = true; }
             if (self.ReplayBtnNode) { self.ReplayBtnNode.visible = true; }
             if (self.RewardBtnNode) { self.RewardBtnNode.visible = true; }
+
+            //抽完奖显示
+            document.title = qc.CatchGame.getWinTitle();
         });
         
     }
@@ -70,7 +73,16 @@ RewardPageUI.prototype.setup = function() {
         self.RewardBtnNode.visible = false;
     }
 
-    self.reward.setup();
+
+    if (qc.CatchGame.getGameEndStatus() === "win") {
+        self.reward.setup();
+    }
+    else {
+        self.ShareNode.visible = true;
+        self.ShadowNode.visible = true;
+        self.ReplayBtnNode.visible = true;
+        document.title = qc.CatchGame.getLoseTitle();
+    }
 };
 
 //被上层调用，关闭相关地方

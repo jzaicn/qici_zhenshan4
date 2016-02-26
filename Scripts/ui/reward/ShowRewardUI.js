@@ -2,7 +2,7 @@ var ShowRewardUI = qc.defineBehaviour('qc.engine.ShowRewardUI', qc.Behaviour, fu
 
     var self = this;
 
-    self._update_enable = false;
+    self._update_enable = true;
 
     self._frameGroup = qc.CatchGame.REWARD_GROUP;
 
@@ -74,8 +74,10 @@ ShowRewardUI.prototype.showLastMove = function(onFinished) {
 
 ShowRewardUI.prototype.onShow = function() {
     var self = this;
+    if (self._update_enable === true) {
+        self._update_enable = false;
 
-    self._frameName = "jiang1.png";
+         self._frameName = "jiang1.png";
     self._blurValue = 3;
     self._durationValue = 0.1;
 
@@ -98,6 +100,7 @@ ShowRewardUI.prototype.onShow = function() {
                                                 if (self.callback) {
                                                     self.callback();
                                                 };
+                                                self._update_enable = true;
                                             });
                                         });
                                     });
@@ -109,4 +112,7 @@ ShowRewardUI.prototype.onShow = function() {
             });
         });
     });
+    }
+    
+   
 };

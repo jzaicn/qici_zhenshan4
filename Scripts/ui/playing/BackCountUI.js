@@ -16,11 +16,6 @@ BackCountUI.prototype.awake = function() {
 BackCountUI.prototype.update = function() {
 };
 
-//设置回调函数
-BackCountUI.prototype.init = function(callback) {
-    this.callback = callback;
-};
-
 //内部显示一个数字
 BackCountUI.prototype.doShow = function(text, time, func) {
     var self = this,
@@ -40,10 +35,6 @@ BackCountUI.prototype.showBackCount = function(callback) {
     var self = this,
         o = self.gameObject;
 
-    if (callback) {
-        self.init(callback);
-    };
-
     o.text = "";
     o.startColor = new qc.Color([255, 255, 255]);
     o.endColor = new qc.Color([201, 201, 201]);
@@ -52,8 +43,8 @@ BackCountUI.prototype.showBackCount = function(callback) {
             self.doShow("1", 0.8, function() {
                 self.doShow("Go!", 0.8, function() {
                     //完成执行回调
-                    if (self.callback) {
-                        self.callback();
+                    if (typeof(callback) === "function") {
+                        callback();
                     };
 
                     //消失
@@ -71,17 +62,14 @@ BackCountUI.prototype.showLose = function(callback) {
     var self = this,
         o = self.gameObject;
 
-    if (callback) {
-        self.init(callback);
-    };
 
     o.text = "";
     o.startColor = new qc.Color([158, 150, 0]);
     o.endColor = new qc.Color([255, 0, 0]);
     self.doShow("GameOver", 3, function() {
         //完成执行回调
-        if (self.callback) {
-            self.callback();
+        if (typeof(callback) === "function") {
+            callback();
         };
 
         //消失
@@ -96,17 +84,13 @@ BackCountUI.prototype.showWin = function(callback) {
     var self = this,
         o = self.gameObject;
 
-    if (callback) {
-        self.init(callback);
-    };
-
     o.text = "";
     o.startColor = new qc.Color("#FCE300");
     o.endColor = new qc.Color("#FFFC59");
     self.doShow("~\\YouWin/~", 2, function() {
         //完成执行回调
-        if (self.callback) {
-            self.callback();
+        if (typeof(callback) === "function") {
+            callback();
         };
 
         //消失

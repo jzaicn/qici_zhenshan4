@@ -6,7 +6,7 @@
 ////
 window.CatchGame = qc.CatchGame = {
 
-    FALL_SPEED : 6,
+    FALL_SPEED : 5,
     RAISE_LEVEL : -20,
     SEA_LEVEL : 980,
     SPEAK_BOX_MIX_WIDTH : 600,
@@ -190,6 +190,17 @@ qc.CatchGame.getCurrentRewardPng = function(){
     return "jiang4.png";
 };
 
+//获取当前奖品的地址（用于转跳）
+qc.CatchGame.getWinTitle = function(){
+    //TODO: 根据奖励等级切换这个
+    return "Yeah~满堂彩";
+};
+
+//获取当前奖品的图片名称
+qc.CatchGame.getLoseTitle = function(){
+    //TODO: 根据奖励等级切换这个
+    return "好难，输了输了";
+};
 
 
 
@@ -237,10 +248,10 @@ qc.CatchGame.onItemSignal = function(obj){
 //检测当前状态是否获胜
 qc.CatchGame.checkStatus = function(){
     var self = this;
-    if (self.Score > 1000) {
+    if (self.Score > 200) {
         self.gameWin();
     }
-    else if (self.Score < -500) {
+    else if (self.Score < -200) {
         self.gameOver();
     }
 };
@@ -260,63 +271,3 @@ qc.CatchGame.onItemSignal_crash = function(obj){
 //跌落事件
 qc.CatchGame.onItemSignal_fallout = function(obj){
 };
-
-
-
-
-
-
-
-
-
-// qc.CatchGame.getFaillingData = function(){
-//     var data = [
-//         //先分成大类
-//         //稀有物品类
-//         {
-//             isObject :true, //本元素是对象
-//             isRelative : false, //同一嵌套层次下是否使用相同index
-//             clazz : "稀有物品类",    //物品分类
-//             rate : 0.01,    //出现概率
-//             icon: [//包含元素
-//                 {
-//                     isObject :true,
-//                     isRelative :true,
-//                     icon:"10.png",  //使用图标 unido图标
-//                 },
-//             ],
-//             id: 0 ,
-//             score: 10,
-//             noRepeatRadius: 1500,
-//             noOtherRadius: 160,
-//             catching: [
-//                 {
-//                     isObject :true,
-//                     isRelative :true,
-//                     catching : [
-//                         "unido，是四大认证之一",
-//                     ],
-//                 },
-//             ],
-//             missing: [
-//                 {
-//                     isObject :true,
-//                     isRelative :true,
-//                     missing : [
-//                         "错过了unido认证等十年",
-//                     ],
-//                 },
-//             ],
-//         },
-//         //宝贵物品类
-//         {
-
-//         },
-//         //一般物品类
-//         {},
-//         //垃圾物品类
-//         {}，
-//         //非常垃圾物品类
-//         {},
-//     ];
-// };

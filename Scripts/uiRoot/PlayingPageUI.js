@@ -40,10 +40,10 @@ PlayingPageUI.prototype.awake = function() {
 PlayingPageUI.prototype.setup = function() {
     var self = this;
 
-    qc.CatchGame.gameInit();
     self.clearItems();
     self.createItems();
-
+    qc.CatchGame.gameInit();
+    
     self.backcount.showBackCount(function(){
         qc.CatchGame.gameStart();
     });
@@ -53,9 +53,8 @@ PlayingPageUI.prototype.setup = function() {
 PlayingPageUI.prototype.clearup = function() {
     var self = this;
     self.backcount.showLose(function(){
-        var self = this;
         self.clearItems();
-        qc.CatchGame.gameOver();
+        qc.CatchGame.gameInit();
     });
 };
 
@@ -107,6 +106,7 @@ PlayingPageUI.prototype.update = function() {
                 self._onEffect = true;
                 self.backcount.showLose(function(){
                     console.log('lose 输了');
+                    qc.CatchGame.Status = "reward";
                     self._onEffect = false;
                 });
                 break;

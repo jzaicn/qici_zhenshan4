@@ -46,10 +46,11 @@ GetRewardBtnUI.prototype.onClick = function() {
 
         //拉杆拉完再拉
         self.stick.onFinished.addOnce(function() {
-            self._clickable = true;
             if (self.onFinishClickCallback) {
                 self.onFinishClickCallback();
             };
+            
+            self._clickable = true;
         });
 
     };
