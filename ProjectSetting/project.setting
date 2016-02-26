@@ -13,9 +13,9 @@
     "width": 640,
     "height": 960
   },
-  "backgroundColor": 4671303,
+  "backgroundColor": 0,
   "runInBackground": true,
-  "antialias": false,
+  "antialias": true,
   "renderer": "Auto",
   "transparent": false,
   "developerMode": false,

@@ -73,3 +73,6 @@ RewardPageUI.prototype.setup = function() {
     self.reward.setup();
 };
 
+//被上层调用，关闭相关地方
+RewardPageUI.prototype.clearup = function() {
+};

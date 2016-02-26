@@ -20,3 +20,7 @@ IntroducePageUI.prototype.update = function() {
 IntroducePageUI.prototype.setup = function() {
     qc.CatchGame._introduced = true;  
 };
+
+//被上层调用，关闭相关地方
+IntroducePageUI.prototype.clearup = function() {
+};

@@ -61,12 +61,6 @@ UIManager.prototype.awake = function() {
             if (value.name === newStatus) {
                 value.node.visible = true;
 
-                //设置已经介绍信息状态为真
-                if (value.name === "playing") {
-                    qc.CatchGame.reStart();
-                };
-
-
                 //每个页面的初始化动作
                 switch (value.name) {
                     case "welcome":
@@ -90,6 +84,24 @@ UIManager.prototype.awake = function() {
         var switchOffStage = function(operaPool, index, value) {
             if (value.name != newStatus) {
                 value.node.visible = false;
+
+                //每个页面的结束动作
+                switch (value.name) {
+                    case "welcome":
+                        self.Welcome.clearup();
+                        break;
+                    case "introduce":
+                        self.Introduce.clearup();
+                        break;
+                    case "playing":
+                        self.Playing.clearup();
+                        break;
+                    case "reward":
+                        self.Reward.clearup();
+                        break;
+                    default:
+                        break;
+                }
             };
         };
         doPoolObject(self.stage, switchOnStage);    //打开指定页面

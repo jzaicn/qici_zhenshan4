@@ -35,12 +35,18 @@ PlayingPageUI.prototype.awake = function() {
         self.backcount = self.BackCountNode.getScript("qc.engine.BackCountUI");
     };
 
+    //self.createItems();
 };
 
 //被上层调用，重新初始化相关地方
 PlayingPageUI.prototype.setup = function() {
-    self.clearItems();
-    self.createItems();
+    var self = this;
+    // self.clearItems();
+    // self.createItems();
+};
+
+//被上层调用，关闭相关地方
+PlayingPageUI.prototype.clearup = function() {
 };
 
 //清空下落对象池
@@ -80,7 +86,8 @@ PlayingPageUI.prototype.beginGameCall = function() {
 PlayingPageUI.prototype.update = function() {
     var self = this;
 	//调用游戏类进行判断，游戏是否结束，是否碰撞得分，是否超出边界删除对象
-    if (qc.CatchGame.isRunning()) {
+    if (false) {
+    //if (qc.CatchGame.isRunning()) {
         self.fallPool.fallAll();//TODO: 考虑到帧率问题，这里下落速度应该同帧率有关，待修改
         self.fallPool.fallOut();
         self.fallPool.crashUp();

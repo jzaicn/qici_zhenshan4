@@ -676,7 +676,7 @@
                 ],
                 "visible": [
                   5,
-                  false
+                  true
                 ],
                 "colorTint": [
                   14,
@@ -877,7 +877,7 @@
                 ],
                 "visible": [
                   5,
-                  true
+                  false
                 ],
                 "colorTint": [
                   14,
@@ -2658,11 +2658,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.002950996067961
+                        1
                       ],
                       "scaleY": [
                         3,
-                        1.002950996067961
+                        1
                       ],
                       "rotation": [
                         3,
@@ -2861,11 +2861,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.002950996067961
+                        1
                       ],
                       "scaleY": [
                         3,
-                        1.002950996067961
+                        1
                       ],
                       "rotation": [
                         3,
@@ -5164,7 +5164,7 @@
                 ],
                 "text": [
                   7,
-                  "FPS: 30.0\nDraw Calls: 15\nTotal: 1.7 ms\nLogic: 0.3 ms\nRender: 1.2 ms\nPreUpdate: 0.0 ms\nUpdate: 0.1 ms\nPostUpdate: 0.2 ms\nTransformCalc: 0"
+                  "FPS: 32.5\nDraw Calls: 6\nTotal: 5.9 ms\nLogic: 4.5 ms\nRender: 1.2 ms\nPreUpdate: 1.1 ms\nUpdate: 0.1 ms\nPostUpdate: 0.3 ms\nTransformCalc: 0"
                 ],
                 "lineSpacing": [
                   3,
