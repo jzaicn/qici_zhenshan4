@@ -36,7 +36,7 @@ ShowRewardUI.prototype.setup = function() {
     var self = this;
     self.LastNode.visible = true;
     self.Fast1Node.visible = false;
-    self.Fast1Node.frame = "jiang0.png";
+    self.LastNode.frame = "jiang0.png";
 };
 
 

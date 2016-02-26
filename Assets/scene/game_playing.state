@@ -676,7 +676,7 @@
                 ],
                 "visible": [
                   5,
-                  true
+                  false
                 ],
                 "colorTint": [
                   14,
@@ -877,7 +877,7 @@
                 ],
                 "visible": [
                   5,
-                  false
+                  true
                 ],
                 "colorTint": [
                   14,
@@ -2658,11 +2658,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1
+                        1.0247709367884952
                       ],
                       "scaleY": [
                         3,
-                        1
+                        1.0247709367884952
                       ],
                       "rotation": [
                         3,
@@ -2861,11 +2861,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1
+                        1.0247709367884952
                       ],
                       "scaleY": [
                         3,
-                        1
+                        1.0247709367884952
                       ],
                       "rotation": [
                         3,
@@ -5074,7 +5074,7 @@
                 ],
                 "visible": [
                   5,
-                  true
+                  false
                 ],
                 "colorTint": [
                   14,
@@ -5164,7 +5164,7 @@
                 ],
                 "text": [
                   7,
-                  "FPS: 60.0\nDraw Calls: 5\nTotal: 0.7 ms\nLogic: 0.1 ms\nRender: 0.6 ms\nPreUpdate: 0.0 ms\nUpdate: 0.0 ms\nPostUpdate: 0.1 ms\nTransformCalc: 0"
+                  "FPS: 30.0\nDraw Calls: 6\nTotal: 2.8 ms\nLogic: 0.2 ms\nRender: 2.4 ms\nPreUpdate: 0.0 ms\nUpdate: 0.1 ms\nPostUpdate: 0.0 ms\nTransformCalc: 0"
                 ],
                 "lineSpacing": [
                   3,
@@ -5906,7 +5906,7 @@
                 ],
                 "visible": [
                   5,
-                  false
+                  true
                 ],
                 "colorTint": [
                   14,
@@ -5917,10 +5917,6 @@
                   false
                 ],
                 "scripts": [
-                  {
-                    "clazz": "qc.engine.TestSpriteUI",
-                    "data": "e127c59b-bea3-4566-8dc3-9c621ea4d51a"
-                  },
                   {
                     "clazz": "qc.engine.AAAwelcomeUI",
                     "data": "2c130d4e-da5a-40e7-a167-2a15b797033e"
@@ -6028,7 +6024,7 @@
                 ],
                 "visible": [
                   5,
-                  false
+                  true
                 ],
                 "colorTint": [
                   14,
@@ -6039,10 +6035,6 @@
                   false
                 ],
                 "scripts": [
-                  {
-                    "clazz": "qc.engine.TestSpriteUI",
-                    "data": "e127c59b-bea3-4566-8dc3-9c621ea4d51a"
-                  },
                   {
                     "clazz": "qc.engine.AAAintroduceUI",
                     "data": "2b4cc604-23d2-4146-85c1-b61b1b6c50f1"
@@ -6150,7 +6142,7 @@
                 ],
                 "visible": [
                   5,
-                  false
+                  true
                 ],
                 "colorTint": [
                   14,
@@ -6161,10 +6153,6 @@
                   false
                 ],
                 "scripts": [
-                  {
-                    "clazz": "qc.engine.TestSpriteUI",
-                    "data": "e127c59b-bea3-4566-8dc3-9c621ea4d51a"
-                  },
                   {
                     "clazz": "qc.engine.AAAplayingUI",
                     "data": "d937f4ce-7d98-4d91-b5da-fdfa97f7cf50"
@@ -6272,7 +6260,7 @@
                 ],
                 "visible": [
                   5,
-                  false
+                  true
                 ],
                 "colorTint": [
                   14,
@@ -6283,10 +6271,6 @@
                   false
                 ],
                 "scripts": [
-                  {
-                    "clazz": "qc.engine.TestSpriteUI",
-                    "data": "e127c59b-bea3-4566-8dc3-9c621ea4d51a"
-                  },
                   {
                     "clazz": "qc.engine.AAArewardUI",
                     "data": "8bd01a8d-2dde-4e83-92ac-c47d048b1164"

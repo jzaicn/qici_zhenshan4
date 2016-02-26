@@ -32,7 +32,7 @@ TestSpriteUI.prototype.update = function() {
 
 TestSpriteUI.prototype.onClick = function() {
     var self = this;
-    qc.CatchGame.Status = self.getPlay();
+    //qc.CatchGame.Status = self.getPlay();
 };
 
 
