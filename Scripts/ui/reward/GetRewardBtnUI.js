@@ -24,19 +24,15 @@ GetRewardBtnUI.prototype.awake = function() {
     if (self.BallNode) {
     	self.ball = self.BallNode.getScript("qc.TweenPosition");
     };
-    // if (self.testNode) {
-    //     self.test = self.testNode.getScript("qc.engine.ShowRewardUI");
-    // };
 };
 
+//完成回调函数
 GetRewardBtnUI.prototype.init = function(callback) {
     this.onFinishClickCallback = callback;
 };
 
-// GetRewardBtnUI.prototype.update = function() {
-
-// };
-
+//点击事件
+//拉动抽奖拉杆
 GetRewardBtnUI.prototype.onClick = function() {
     var self = this;
     if (self._clickable === true) {

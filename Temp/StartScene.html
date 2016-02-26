@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name='viewport' content='width=device-width,user-scalable=no'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-title' content='珍膳小游戏'>
+    <link rel='apple-touch-icon' href='../../build/imgs/qici.png'>
+    <link rel='apple-touch-startup-image' href='../../build/imgs/qici.png'>
+
+    <link rel="shortcut icon" href="../../lib/imgs/qici.ico" />
+    <title>编辑器启动场景的脚本</title>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;             
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="/Assets/css/style.css"/>
+
+    <script>
+
+        var qici = {};
+        qici.config = {
+            // 项目名，默认为：Game
+            projectName: 'catchgame',
+
+            // 游戏名字，默认为：未命名
+            gameName: '珍膳小游戏',
+
+            // 开发者名字，默认为：DefaultCompany
+            companyName: 'zhenshan',
+
+            // 项目唯一标识，默认为：com.DefaultCompany.Game
+            bundleIdentifier: 'com.zhenshan.catchgame',
+        
+            // 游戏示例，将作为全局变量访问，默认为：game
+            gameInstance: 'qc_game',
+
+            // 帧率
+            frameRate: {"mobile":30,"desktop":60},
+            
+            // 固定游戏大小
+            fixedGameSize: {"enabled":false,"width":640,"height":960},
+
+            // 游戏背景色
+            backgroundColor: 4671303,
+
+            // 后台运行
+            runInBackground: true,
+
+            // 抗锯齿
+            antialias: false,
+
+            // 渲染方式
+            renderer: 'Auto',
+
+            // 背景透明
+            transparent: false,
+
+            // 游戏切屏时的进度界面
+            loadingPrefab: '',
+
+            // 开发模式
+            developerMode: true,
+
+            // 是否启用脏矩形
+            dirtyRectangles: true,
+
+            // 是否显示脏矩形区域
+            dirtyRectanglesShow: false,
+
+            // 自定义配置
+            customSettings: {},
+
+            // 所有的游戏场景
+            scene: {
+                editor : 'Temp/scene_editor.bin'
+                ,
+            "game_playing" : "Assets/scene/game_playing.bin"
+            },
+
+            // 入口场景
+            entryScene : 'editor',
+            loading: {
+                loadingText: 'Loading, please wait...',
+                loadingInterval: 200,
+                brightingInterval: 10,
+                blinkingCount: 5,
+                blinkingInterval: 70,
+                fadingInInterval: 50,
+                fadingOutInterval: 100
+            }
+        };
+
+        qici.config.developerMode = true;
+        qici.config.editor = true;
+        qici.config.runInBackground = true;
+        qici.config.frameRate = {
+            "mobile": 30,
+            "desktop": 30
+        };
+
+   		_pluginVariables_={}
+
+        qici.scripts = [
+            './Assets/meta/globalUrlMap.js?20160227103037_6',
+            '../lib/phaser.js',
+            '../lib/webfontloader.js',
+            '../lib/qc-core-debug.js',
+            // External scripts for plugins
+
+            // Plugins scripts    
+
+            // User scripts    
+			'../Scripts/Public.js?20160227090657',
+			'../Scripts/CatchGame.js?20160227095917',
+			'../Scripts/logic/FallItemFactory.js?20160227090657',
+			'../Scripts/logic/FallItemLogic.js?20160227090657',
+			'../Scripts/logic/FallItemPoolLogic.js?20160227090657',
+			'../Scripts/logic/Introduced.js?20160227090657',
+			'../Scripts/logic/SpeakerLogic.js?20160227090657',
+			'../Scripts/uiRoot/WelcomePageUI.js?20160227093603',
+			'../Scripts/ui/introduce/ItroduceUI.js?20160227090657',
+			'../Scripts/ui/introduce/TeachImageUI.js?20160227090657',
+			'../Scripts/ui/playing/BackCountUI.js?20160227090657',
+			'../Scripts/ui/playing/CatcherUI.js?20160227090657',
+			'../Scripts/ui/playing/FallItemPoolUI.js?20160227090657',
+			'../Scripts/ui/playing/FallItemUI.js?20160227090657',
+			'../Scripts/ui/playing/ScoreUI.js?20160227090657',
+			'../Scripts/ui/playing/SpeakerUI.js?20160227090657',
+			'../Scripts/ui/public/AAAintroduceUI.js?20160227090959',
+			'../Scripts/logic/CatcherLogic.js?20160227090657',
+			'../Scripts/ui/public/AAArewardUI.js?20160227090959',
+			'../Scripts/ui/public/AAAwelcomeUI.js?20160227090959',
+			'../Scripts/ui/public/MusicBtnUI.js?20160227090657',
+			'../Scripts/ui/public/TestSpriteUI.js?20160227090657',
+			'../Scripts/ui/reward/GetRewardBtnUI.js?20160227092103',
+			'../Scripts/ui/reward/ReplayBtnUI.js?20160227092201',
+			'../Scripts/ui/reward/RewardBtnUI.js?20160227092323',
+			'../Scripts/ui/reward/ShowRewardUI.js?20160227100411',
+			'../Scripts/ui/welcome/ItroduceBtnUI.js?20160227090657',
+			'../Scripts/ui/welcome/WelStartBtnUI.js?20160227090657',
+			'../Scripts/uiArea/ObjectAreaUI.js?20160227090657',
+			'../Scripts/uiRoot/IntroducePageUI.js?20160227093925',
+			'../Scripts/uiRoot/PlayingPageUI.js?20160227094552',
+			'../Scripts/uiRoot/RewardPageUI.js?20160227101334',
+			'../Scripts/uiRoot/UIManager.js?20160227101142',
+			'../Scripts/ui/public/AAAplayingUI.js?20160227090959',
+
+        ];
+        
+		// Asset count that need preload in boot
+		qici.loadingAssetCount = 17;
+    </script>
+</head>
+
+<body onload="qici.init();">
+    <div style="overflow:hidden;padding:0;margin:0;width:100%;height:100%;">
+        <div id="gameDiv" style="position:absolute;width:100%;height:100%"></div>
+    </div>
+    <script src='../../lib/qc-loading-debug.js'></script>
+    <script src='../../lib/qc-loading-editor.js'></script>
+</body>
+
+</html>

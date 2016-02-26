@@ -28,7 +28,7 @@ RewardPageUI.prototype.awake = function() {
     if (self.TigerStickNode) {
         self.tiger = self.TigerStickNode.getScript("qc.engine.GetRewardBtnUI");
         self.TigerStickNode.visible = true;
-        //TODO: 设置完成回调函数 - 》显示抽奖
+        //设置完成回调函数 - 》显示抽奖
         self.tiger.init(function(){
             self.reward.onShow();
         });
@@ -47,6 +47,13 @@ RewardPageUI.prototype.awake = function() {
         
     }
 
+
+
+};
+
+//被上层调用，重新初始化相关地方
+RewardPageUI.prototype.setup = function() {
+    var self = this;
     if (self.ShareNode) {
         self.ShareNode.visible = false;
     }
@@ -63,14 +70,6 @@ RewardPageUI.prototype.awake = function() {
         self.RewardBtnNode.visible = false;
     }
 
+    self.reward.setup();
 };
 
-
-RewardPageUI.prototype.update = function() {
-    var self = this;
-};
-
-//显示抽奖
-RewardPageUI.prototype.showReward = function(first_argument) {
-    // body...
-};

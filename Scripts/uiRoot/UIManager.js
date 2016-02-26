@@ -23,28 +23,28 @@ UIManager.prototype.awake = function() {
     if (true) {
         // 页面
         if (self.WelcomeNode) {
-            //self.FallCreateArea = self.WelcomeNode.getScript("qc.engine.ObjectAreaUI");
+            self.Welcome = self.WelcomeNode.getScript("qc.engine.WelcomePageUI");
             self.WelcomeNode.visible = false;
             self.stage.push({ name: "welcome", node: self.WelcomeNode, setup: null, clearup: null, });
         }
 
         // 页面
         if (self.IntroduceNode) {
-            //self.FallCreateArea = self.IntroduceNode.getScript("qc.engine.ObjectAreaUI");
+            self.Introduce = self.IntroduceNode.getScript("qc.engine.IntroducePageUI");
             self.IntroduceNode.visible = false;
             self.stage.push({ name: "introduce", node: self.IntroduceNode, setup: null, clearup: null, });
         }
 
         // 页面
         if (self.PlayingNode) {
-            //self.FallCreateArea = self.PlayingNode.getScript("qc.engine.ObjectAreaUI");
+            self.Playing = self.PlayingNode.getScript("qc.engine.PlayingPageUI");
             self.PlayingNode.visible = false;
             self.stage.push({ name: "playing", node: self.PlayingNode, setup: null, clearup: null, });
         }
 
         // 页面
         if (self.RewardNode) {
-            //self.FallCreateArea = self.RewardNode.getScript("qc.engine.ObjectAreaUI");
+            self.Reward = self.RewardNode.getScript("qc.engine.RewardPageUI");
             self.RewardNode.visible = false;
             self.stage.push({ name: "reward", node: self.RewardNode, setup: null, clearup: null, });
         }
@@ -62,13 +62,29 @@ UIManager.prototype.awake = function() {
                 value.node.visible = true;
 
                 //设置已经介绍信息状态为真
-                if (value.name === "introduce") {
-                    qc.CatchGame._introduced = true;  
-                };
-                //设置已经介绍信息状态为真
                 if (value.name === "playing") {
                     qc.CatchGame.reStart();
                 };
+
+
+                //每个页面的初始化动作
+                switch (value.name) {
+                    case "welcome":
+                        self.Welcome.setup();
+                        break;
+                    case "introduce":
+                        self.Introduce.setup();
+                        break;
+                    case "playing":
+                        self.Playing.setup();
+                        break;
+                    case "reward":
+                        self.Reward.setup();
+                        break;
+                    default:
+                        break;
+                }
+
             };
         };
         var switchOffStage = function(operaPool, index, value) {
@@ -76,15 +92,15 @@ UIManager.prototype.awake = function() {
                 value.node.visible = false;
             };
         };
-        doPoolObject(self.stage, switchOnStage);
-        doPoolObject(self.stage, switchOffStage);
+        doPoolObject(self.stage, switchOnStage);    //打开指定页面
+        doPoolObject(self.stage, switchOffStage);   //关闭其他页面
     });
 };
 
 
-UIManager.prototype.update = function() {
-    var self = this;
-};
+// UIManager.prototype.update = function() {
+//     var self = this;
+// };
 
 //打开默认页面
 UIManager.prototype.openDefaultPage = function() {

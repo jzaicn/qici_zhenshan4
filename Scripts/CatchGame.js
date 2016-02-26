@@ -159,10 +159,7 @@ qc.CatchGame.reStart = function(){
     //TODO: 重新开始游戏
 };
 
-//获取当前奖品的地址（用于转跳）
-qc.CatchGame.getCurrentReward = function(){
-    return "http://getgeektest.applinzi.com/";
-};
+
 
 
 
@@ -207,6 +204,48 @@ qc.CatchGame.gameOver = function(){
 
 
 
+
+
+
+
+////////////////////////////////////////////////
+//
+//  welcome page 欢迎页面
+//  页面切换通过```qc.CatchGame.Status = "welcome";```切换
+//
+
+
+////////////////////////////////////////////////
+//
+//  introduce page 介绍页面
+//  页面切换通过```qc.CatchGame.Status = "introduce";```切换
+//
+
+
+////////////////////////////////////////////////
+//
+//  playing page 游戏页面
+//  页面切换通过```qc.CatchGame.Status = "playing";```切换
+//
+
+
+////////////////////////////////////////////////
+//
+//  reward page 抽奖页面
+//  页面切换通过```qc.CatchGame.Status = "reward";```切换
+//
+
+//获取当前奖品的地址（用于转跳）
+qc.CatchGame.getCurrentRewardURL = function(){
+    //TODO: 根据奖励等级切换这个
+    return "http://getgeektest.applinzi.com/";
+};
+
+//获取当前奖品的图片名称
+qc.CatchGame.getCurrentRewardPng = function(){
+    //TODO: 根据奖励等级切换这个
+    return "jiang4.png";
+};
 
 
 

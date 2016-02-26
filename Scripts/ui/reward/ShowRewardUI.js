@@ -6,12 +6,9 @@ var ShowRewardUI = qc.defineBehaviour('qc.engine.ShowRewardUI', qc.Behaviour, fu
 
     self._frameGroup = qc.CatchGame.REWARD_GROUP;
 
-    self._endWith = "jiang1.png";
-
     self._frameName = "jiang1.png",
     self._blurValue = 3,
     self._durationValue = 0.1;
-    self._showTimes = 10;
 }, {
     Fast1Node: qc.Serializer.NODE,
     LastNode: qc.Serializer.NODE,
@@ -35,20 +32,15 @@ ShowRewardUI.prototype.awake = function() {
 };
 
 
-// ShowRewardUI.prototype.update = function() {
-//     var self = this;
-//     if (self._update_enable === true) {
-
-//     };
-// };
-// 
-
-
-ShowRewardUI.prototype.init = function(callback) {
+ShowRewardUI.prototype.setup = function() {
     var self = this;
     self.LastNode.visible = true;
     self.Fast1Node.visible = false;
     self.Fast1Node.frame = "jiang0.png";
+};
+
+
+ShowRewardUI.prototype.init = function(callback) {
 
     self.callback = callback;
 };
@@ -57,7 +49,7 @@ ShowRewardUI.prototype.showFastMove = function(blur, duration, onFinished) {
     var self = this,
         o = self.gameObject;
 
-    self.Fast1Node.frame = qc_game.math.getRandom(["jiang1.png","jiang2.png","jiang3.png","jiang4.png","jiang5.png"]);
+    self.Fast1Node.frame = qc_game.math.getRandom(qc.CatchGame.REWARD_GROUP).icon;
     self.fast1BlurX.blur = blur;
     self.fast1Position.duration = duration;
     self.fast1Position.playForward(true);
@@ -69,7 +61,8 @@ ShowRewardUI.prototype.showLastMove = function(onFinished) {
     var self = this,
         o = self.gameObject;
 
-    self.LastNode.frame = "jiang5.png";//TODO: 这里设置最终奖品
+    //这里设置最终奖品
+    self.LastNode.frame = qc.CatchGame.getCurrentRewardPng();
     self.LastNode.visible = true;
     self.last2Position.playForward(true);
 

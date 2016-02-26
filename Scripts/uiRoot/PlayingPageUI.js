@@ -35,9 +35,21 @@ PlayingPageUI.prototype.awake = function() {
         self.backcount = self.BackCountNode.getScript("qc.engine.BackCountUI");
     };
 
+};
+
+//被上层调用，重新初始化相关地方
+PlayingPageUI.prototype.setup = function() {
+    self.clearItems();
     self.createItems();
 };
 
+//清空下落对象池
+PlayingPageUI.prototype.clearItems = function() {
+    var currentPool = qc.CatchGame.fallitemPool.getPool();
+    currentPool = [];
+};
+
+//创建对象池
 PlayingPageUI.prototype.createItems = function() {
     var self = this;
 
@@ -51,6 +63,11 @@ PlayingPageUI.prototype.createItems = function() {
         qc.CatchGame.fallitemPool.additem(item);
     }
 };
+
+
+
+
+
 
 PlayingPageUI.prototype.beginGameCall = function() {
     //TODO: 调用游戏开始

@@ -2658,11 +2658,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.0285647974394103
+                        1.002950996067961
                       ],
                       "scaleY": [
                         3,
-                        1.0285647974394103
+                        1.002950996067961
                       ],
                       "rotation": [
                         3,
@@ -2861,11 +2861,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.0285647974394103
+                        1.002950996067961
                       ],
                       "scaleY": [
                         3,
-                        1.0285647974394103
+                        1.002950996067961
                       ],
                       "rotation": [
                         3,
@@ -5164,7 +5164,7 @@
                 ],
                 "text": [
                   7,
-                  "FPS: 30.0\nDraw Calls: 15\nTotal: 1.4 ms\nLogic: 0.3 ms\nRender: 1.0 ms\nPreUpdate: 0.1 ms\nUpdate: 0.1 ms\nPostUpdate: 0.1 ms\nTransformCalc: 0"
+                  "FPS: 30.0\nDraw Calls: 15\nTotal: 1.7 ms\nLogic: 0.3 ms\nRender: 1.2 ms\nPreUpdate: 0.0 ms\nUpdate: 0.1 ms\nPostUpdate: 0.2 ms\nTransformCalc: 0"
                 ],
                 "lineSpacing": [
                   3,
