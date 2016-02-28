@@ -20,7 +20,7 @@ TestSpriteUI.prototype.awake = function() {
     var self = this;
 
     if (self.testNode) {
-        self.test = self.testNode.getScript("qc.engine.BackCountUI");
+        self.test = self.testNode.getScript("qc.engine.DesignPlanelUI");
     };
 
     // self.getPlay = getPlayXunhuanLoop();
@@ -38,7 +38,11 @@ TestSpriteUI.prototype.update = function() {
 TestSpriteUI.prototype.onClick = function() {
     var self = this;
     // self.test.showYouWin();
-    qc.CatchGame.gameOver();
+    // qc.CatchGame.gameOver();
+    qc.CatchGame.ok = qc.CatchGame.ok ? false : true;
+
+    self.test.onPosition();
+    self.test.onClear();
 };
 
 

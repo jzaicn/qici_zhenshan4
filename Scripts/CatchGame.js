@@ -242,6 +242,9 @@ qc.CatchGame.onItemSignal = function(obj){
         case "fallout":
             qc.CatchGame.onItemSignal_fallout(obj);
             break;
+        case "appear":
+            qc.CatchGame.onItemSignal_appear(obj);
+            break;
         default:
             break;
     }
@@ -272,4 +275,8 @@ qc.CatchGame.onItemSignal_crash = function(obj){
 
 //跌落事件
 qc.CatchGame.onItemSignal_fallout = function(obj){
+};
+
+//跌落事件
+qc.CatchGame.onItemSignal_appear = function(obj){
 };

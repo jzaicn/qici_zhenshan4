@@ -37,12 +37,12 @@
     "position": [
       0,
       0,
-      1.980722891566245,
-      2.7807228915662563,
-      1.980722891566245,
-      2.7807228915662563,
-      411,
-      577,
+      30.537344398340252,
+      1.0560165975103644,
+      30.537344398340252,
+      1.0560165975103644,
+      640,
+      960,
       0,
       0,
       0,
@@ -54,11 +54,11 @@
     ],
     "scaleX": [
       3,
-      0.9903614457831326
+      0.5280082987551867
     ],
     "scaleY": [
       3,
-      0.9903614457831326
+      0.5280082987551867
     ],
     "rotation": [
       3,
@@ -126,7 +126,7 @@
             0,
             0,
             0,
-            683.8128249566724,
+            640,
             960,
             0,
             0,
@@ -139,11 +139,11 @@
           ],
           "scaleX": [
             3,
-            0.6010416666666667
+            1
           ],
           "scaleY": [
             3,
-            0.6010416666666667
+            1
           ],
           "rotation": [
             3,
@@ -2671,11 +2671,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.0179291335251135
+                        1.0009992976789255
                       ],
                       "scaleY": [
                         3,
-                        1.0179291335251135
+                        1.0009992976789255
                       ],
                       "rotation": [
                         3,
@@ -2874,11 +2874,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.0179291335251135
+                        1.0009992976789255
                       ],
                       "scaleY": [
                         3,
-                        1.0179291335251135
+                        1.0009992976789255
                       ],
                       "rotation": [
                         3,
@@ -5138,7 +5138,7 @@
                 ],
                 "visible": [
                   5,
-                  true
+                  false
                 ],
                 "colorTint": [
                   14,
@@ -5228,7 +5228,7 @@
                 ],
                 "text": [
                   7,
-                  "FPS: 30.0\nDraw Calls: 13\nTotal: 2.4 ms\nLogic: 0.4 ms\nRender: 1.9 ms\nPreUpdate: 0.2 ms\nUpdate: 0.1 ms\nPostUpdate: 0.1 ms\nTransformCalc: 0"
+                  "FPS: 30.2\nDraw Calls: 0\nTotal: 4.2 ms\nLogic: 0.4 ms\nRender: 3.6 ms\nPreUpdate: 0.3 ms\nUpdate: 0.0 ms\nPostUpdate: 0.1 ms\nTransformCalc: 0"
                 ],
                 "lineSpacing": [
                   3,
@@ -5410,7 +5410,7 @@
                   -0.0000016345123867722577,
                   -0.000012189390133698907,
                   -0.0000016345123867722577,
-                  683.8128371460625,
+                  640.0000121893902,
                   959.9999999999999,
                   -0.000012189390133698907,
                   0,
@@ -5486,7 +5486,7 @@
                         -4.440892098500626e-16,
                         640,
                         -4.440892098500626e-16,
-                        43.81283714606252,
+                        0.000012189390190542326,
                         960,
                         640,
                         0,
@@ -5814,7 +5814,7 @@
                 ],
                 "visible": [
                   5,
-                  true
+                  false
                 ],
                 "colorTint": [
                   14,
@@ -6433,285 +6433,6 @@
                   }
                 }
               }
-            },
-            {
-              "class": "qc.Node",
-              "data": {
-                "uuid": "29dd8a94-0f76-47c3-9f7e-fc5d8a7ce1c8",
-                "_prefab": [
-                  7,
-                  ""
-                ],
-                "__lock": [
-                  5,
-                  null
-                ],
-                "name": [
-                  7,
-                  "designPanel"
-                ],
-                "ignoreDestroy": [
-                  5,
-                  false
-                ],
-                "alpha": [
-                  3,
-                  1
-                ],
-                "visible": [
-                  5,
-                  true
-                ],
-                "colorTint": [
-                  14,
-                  16777215
-                ],
-                "static": [
-                  5,
-                  false
-                ],
-                "scripts": [
-                  {
-                    "clazz": "qc.engine.DesignPlanelUI",
-                    "data": "e7426060-471c-46a1-95d5-73eb13bcedfb"
-                  }
-                ],
-                "position": [
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  640,
-                  960,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                "scaleX": [
-                  3,
-                  1
-                ],
-                "scaleY": [
-                  3,
-                  1
-                ],
-                "rotation": [
-                  3,
-                  0
-                ],
-                "interactive": [
-                  5,
-                  true
-                ],
-                "isFiltersThrough": [
-                  5,
-                  null
-                ],
-                "children": [
-                  {
-                    "class": "qc.Sprite",
-                    "data": {
-                      "uuid": "9ef64940-879c-4c01-a24a-3f70452273af",
-                      "_prefab": [
-                        7,
-                        ""
-                      ],
-                      "__lock": [
-                        5,
-                        null
-                      ],
-                      "name": [
-                        7,
-                        "Sprite"
-                      ],
-                      "ignoreDestroy": [
-                        5,
-                        null
-                      ],
-                      "alpha": [
-                        3,
-                        1
-                      ],
-                      "visible": [
-                        5,
-                        true
-                      ],
-                      "colorTint": [
-                        14,
-                        16777215
-                      ],
-                      "static": [
-                        5,
-                        false
-                      ],
-                      "scripts": [],
-                      "position": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        100,
-                        100,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                      ],
-                      "scaleX": [
-                        3,
-                        1
-                      ],
-                      "scaleY": [
-                        3,
-                        1
-                      ],
-                      "rotation": [
-                        3,
-                        0
-                      ],
-                      "interactive": [
-                        5,
-                        false
-                      ],
-                      "isFiltersThrough": [
-                        5,
-                        null
-                      ],
-                      "children": [],
-                      "texture": [
-                        10,
-                        "__builtin_resource__",
-                        "__builtin_resource__"
-                      ],
-                      "frame": [
-                        7,
-                        "empty.png"
-                      ],
-                      "defaultAnimation": [
-                        7,
-                        null
-                      ]
-                    }
-                  },
-                  {
-                    "class": "qc.Sprite",
-                    "data": {
-                      "uuid": "f06babc3-d2d8-45e4-bbad-2775da20f8ee",
-                      "_prefab": [
-                        7,
-                        ""
-                      ],
-                      "__lock": [
-                        5,
-                        null
-                      ],
-                      "name": [
-                        7,
-                        "Sprite"
-                      ],
-                      "ignoreDestroy": [
-                        5,
-                        null
-                      ],
-                      "alpha": [
-                        3,
-                        1
-                      ],
-                      "visible": [
-                        5,
-                        true
-                      ],
-                      "colorTint": [
-                        14,
-                        16777215
-                      ],
-                      "static": [
-                        5,
-                        false
-                      ],
-                      "scripts": [],
-                      "position": [
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        100,
-                        100,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
-                      ],
-                      "scaleX": [
-                        3,
-                        1
-                      ],
-                      "scaleY": [
-                        3,
-                        1
-                      ],
-                      "rotation": [
-                        3,
-                        0
-                      ],
-                      "interactive": [
-                        5,
-                        false
-                      ],
-                      "isFiltersThrough": [
-                        5,
-                        null
-                      ],
-                      "children": [],
-                      "texture": [
-                        10,
-                        "__builtin_resource__",
-                        "__builtin_resource__"
-                      ],
-                      "frame": [
-                        7,
-                        "empty.png"
-                      ],
-                      "defaultAnimation": [
-                        7,
-                        null
-                      ]
-                    }
-                  }
-                ]
-              },
-              "__json": {
-                "e7426060-471c-46a1-95d5-73eb13bcedfb": {
-                  "class": "qc.engine.DesignPlanelUI",
-                  "data": {
-                    "uuid": [
-                      7,
-                      "e7426060-471c-46a1-95d5-73eb13bcedfb"
-                    ],
-                    "enable": true,
-                    "FallItemPrefab": null
-                  }
-                }
-              }
             }
           ]
         },
@@ -6744,9 +6465,9 @@
               "gameObjectRecord": [
                 4,
                 [
-                  0.6010416666666667,
-                  0.6010416666666667,
-                  683.8128249566724,
+                  1,
+                  1,
+                  640,
                   960
                 ]
               ]
