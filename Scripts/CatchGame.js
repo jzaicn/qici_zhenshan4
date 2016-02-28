@@ -6,7 +6,8 @@
 ////
 window.CatchGame = qc.CatchGame = {
 
-    FALL_SPEED : 5,
+    TIMER_ELAPSE : 20,
+    FALL_SPEED : 6,
     RAISE_LEVEL : -20,
     SEA_LEVEL : 980,
     SPEAK_BOX_MIX_WIDTH : 600,
@@ -124,6 +125,13 @@ qc.initGame = function(game) {
 //  页面切换通过```qc.CatchGame.Status = "playing";```切换
 //
 
+//游戏操作-游戏结束
+qc.CatchGame.gameInit = function(){
+    this.Score = 0;
+    this._running = false;
+    this._gameStatus = "";
+};
+
 //游戏操作-游戏开始
 qc.CatchGame.gameStart = function(){
     this.Score = 0;
@@ -143,12 +151,6 @@ qc.CatchGame.gameWin = function(){
     this._gameStatus = "win";
 };
 
-//游戏操作-游戏结束
-qc.CatchGame.gameInit = function(){
-    this.Score = 0;
-    this._running = false;
-    this._gameStatus = "";
-};
 
 //游戏操作-游戏结束状态
 qc.CatchGame.getGameEndStatus = function(){

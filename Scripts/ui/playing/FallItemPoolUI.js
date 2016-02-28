@@ -33,6 +33,7 @@ FallItemPoolUI.prototype.additem = function(datainfo) {
     fallitem.frame = datainfo.icon;
     fallitem.x = datainfo.x;
     fallitem.y = datainfo.y;
+    fallitem.rotation = (Math.random() - 0.5) * 0.0174 * 35 ;
     fallitem.visable = true;
 
     datainfo.o = fallitem;

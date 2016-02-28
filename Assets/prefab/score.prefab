@@ -105,8 +105,8 @@
     ],
     "font": [
       32,
-      "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf",
-      "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf"
+      "ld6225ff-6196-47e0-8a05-33aad7caaf51",
+      "ld6225ff-6196-47e0-8a05-33aad7caaf51"
     ],
     "bold": [
       5,
@@ -410,9 +410,9 @@
     }
   },
   "dependences": {
-    "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf": {
-      "key": "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf",
-      "uuid": "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf"
+    "ld6225ff-6196-47e0-8a05-33aad7caaf51": {
+      "key": "ld6225ff-6196-47e0-8a05-33aad7caaf51",
+      "uuid": "ld6225ff-6196-47e0-8a05-33aad7caaf51"
     }
   }
 }

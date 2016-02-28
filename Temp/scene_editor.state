@@ -37,12 +37,12 @@
     "position": [
       0,
       0,
-      1.9712230215827447,
-      3.661870503597129,
-      1.9712230215827447,
-      3.661870503597129,
-      274,
-      509,
+      1.980722891566245,
+      2.7807228915662563,
+      1.980722891566245,
+      2.7807228915662563,
+      411,
+      577,
       0,
       0,
       0,
@@ -54,11 +54,11 @@
     ],
     "scaleX": [
       3,
-      0.9856115107913669
+      0.9903614457831326
     ],
     "scaleY": [
       3,
-      0.9856115107913669
+      0.9903614457831326
     ],
     "rotation": [
       3,
@@ -126,8 +126,8 @@
             0,
             0,
             0,
-            640,
-            1188.9051094890513,
+            683.8128249566724,
+            960,
             0,
             0,
             0,
@@ -139,11 +139,11 @@
           ],
           "scaleX": [
             3,
-            0.428125
+            0.6010416666666667
           ],
           "scaleY": [
             3,
-            0.428125
+            0.6010416666666667
           ],
           "rotation": [
             3,
@@ -2416,7 +2416,7 @@
                       ],
                       "alpha": [
                         3,
-                        1
+                        "0.7"
                       ],
                       "visible": [
                         5,
@@ -2430,12 +2430,7 @@
                         5,
                         false
                       ],
-                      "scripts": [
-                        {
-                          "clazz": "qc.FilterGroup",
-                          "data": "aa1f1a8e-bfaa-4ef9-a9b2-ad2b6ea4e71b"
-                        }
-                      ],
+                      "scripts": [],
                       "position": [
                         0,
                         0,
@@ -2676,11 +2671,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.0021799173430446
+                        1.0179291335251135
                       ],
                       "scaleY": [
                         3,
-                        1.0021799173430446
+                        1.0179291335251135
                       ],
                       "rotation": [
                         3,
@@ -2879,11 +2874,11 @@
                       ],
                       "scaleX": [
                         3,
-                        1.0021799173430446
+                        1.0179291335251135
                       ],
                       "scaleY": [
                         3,
-                        1.0021799173430446
+                        1.0179291335251135
                       ],
                       "rotation": [
                         3,
@@ -3559,7 +3554,7 @@
                         30.000001735912143,
                         -1000.0000313204267,
                         580,
-                        900,
+                        960,
                         0,
                         0,
                         0,
@@ -4535,8 +4530,8 @@
                             ],
                             "font": [
                               32,
-                              "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf",
-                              "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf"
+                              null,
+                              null
                             ],
                             "bold": [
                               5,
@@ -4791,8 +4786,8 @@
                       ],
                       "font": [
                         32,
-                        "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf",
-                        "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf"
+                        "ld6225ff-6196-47e0-8a05-33aad7caaf51",
+                        "ld6225ff-6196-47e0-8a05-33aad7caaf51"
                       ],
                       "bold": [
                         5,
@@ -4860,7 +4855,7 @@
                       ],
                       "shadowBlur": [
                         3,
-                        5
+                        0
                       ],
                       "shadowOffsetX": [
                         3,
@@ -5143,7 +5138,7 @@
                 ],
                 "visible": [
                   5,
-                  false
+                  true
                 ],
                 "colorTint": [
                   14,
@@ -5233,7 +5228,7 @@
                 ],
                 "text": [
                   7,
-                  "FPS: 30.0\nDraw Calls: 6\nTotal: 2.8 ms\nLogic: 0.2 ms\nRender: 2.4 ms\nPreUpdate: 0.0 ms\nUpdate: 0.1 ms\nPostUpdate: 0.0 ms\nTransformCalc: 0"
+                  "FPS: 30.0\nDraw Calls: 13\nTotal: 2.4 ms\nLogic: 0.4 ms\nRender: 1.9 ms\nPreUpdate: 0.2 ms\nUpdate: 0.1 ms\nPostUpdate: 0.1 ms\nTransformCalc: 0"
                 ],
                 "lineSpacing": [
                   3,
@@ -5415,8 +5410,8 @@
                   -0.0000016345123867722577,
                   -0.000012189390133698907,
                   -0.0000016345123867722577,
-                  640.0000121893902,
-                  1188.905109489051,
+                  683.8128371460625,
+                  959.9999999999999,
                   -0.000012189390133698907,
                   0,
                   -0.0000016345123867722577,
@@ -5491,7 +5486,7 @@
                         -4.440892098500626e-16,
                         640,
                         -4.440892098500626e-16,
-                        0.000012189390190542326,
+                        43.81283714606252,
                         960,
                         640,
                         0,
@@ -5580,7 +5575,7 @@
                         0,
                         960,
                         640,
-                        228.90510948905103,
+                        -1.1368683772161603e-13,
                         0,
                         0,
                         960,
@@ -6438,6 +6433,285 @@
                   }
                 }
               }
+            },
+            {
+              "class": "qc.Node",
+              "data": {
+                "uuid": "29dd8a94-0f76-47c3-9f7e-fc5d8a7ce1c8",
+                "_prefab": [
+                  7,
+                  ""
+                ],
+                "__lock": [
+                  5,
+                  null
+                ],
+                "name": [
+                  7,
+                  "designPanel"
+                ],
+                "ignoreDestroy": [
+                  5,
+                  false
+                ],
+                "alpha": [
+                  3,
+                  1
+                ],
+                "visible": [
+                  5,
+                  true
+                ],
+                "colorTint": [
+                  14,
+                  16777215
+                ],
+                "static": [
+                  5,
+                  false
+                ],
+                "scripts": [
+                  {
+                    "clazz": "qc.engine.DesignPlanelUI",
+                    "data": "e7426060-471c-46a1-95d5-73eb13bcedfb"
+                  }
+                ],
+                "position": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  640,
+                  960,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "scaleX": [
+                  3,
+                  1
+                ],
+                "scaleY": [
+                  3,
+                  1
+                ],
+                "rotation": [
+                  3,
+                  0
+                ],
+                "interactive": [
+                  5,
+                  true
+                ],
+                "isFiltersThrough": [
+                  5,
+                  null
+                ],
+                "children": [
+                  {
+                    "class": "qc.Sprite",
+                    "data": {
+                      "uuid": "9ef64940-879c-4c01-a24a-3f70452273af",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "Sprite"
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        null
+                      ],
+                      "alpha": [
+                        3,
+                        1
+                      ],
+                      "visible": [
+                        5,
+                        true
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [],
+                      "position": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        100,
+                        100,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1
+                      ],
+                      "scaleY": [
+                        3,
+                        1
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "interactive": [
+                        5,
+                        false
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": [],
+                      "texture": [
+                        10,
+                        "__builtin_resource__",
+                        "__builtin_resource__"
+                      ],
+                      "frame": [
+                        7,
+                        "empty.png"
+                      ],
+                      "defaultAnimation": [
+                        7,
+                        null
+                      ]
+                    }
+                  },
+                  {
+                    "class": "qc.Sprite",
+                    "data": {
+                      "uuid": "f06babc3-d2d8-45e4-bbad-2775da20f8ee",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "Sprite"
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        null
+                      ],
+                      "alpha": [
+                        3,
+                        1
+                      ],
+                      "visible": [
+                        5,
+                        true
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [],
+                      "position": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        100,
+                        100,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1
+                      ],
+                      "scaleY": [
+                        3,
+                        1
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "interactive": [
+                        5,
+                        false
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": [],
+                      "texture": [
+                        10,
+                        "__builtin_resource__",
+                        "__builtin_resource__"
+                      ],
+                      "frame": [
+                        7,
+                        "empty.png"
+                      ],
+                      "defaultAnimation": [
+                        7,
+                        null
+                      ]
+                    }
+                  }
+                ]
+              },
+              "__json": {
+                "e7426060-471c-46a1-95d5-73eb13bcedfb": {
+                  "class": "qc.engine.DesignPlanelUI",
+                  "data": {
+                    "uuid": [
+                      7,
+                      "e7426060-471c-46a1-95d5-73eb13bcedfb"
+                    ],
+                    "enable": true,
+                    "FallItemPrefab": null
+                  }
+                }
+              }
             }
           ]
         },
@@ -6470,10 +6744,10 @@
               "gameObjectRecord": [
                 4,
                 [
-                  0.428125,
-                  0.428125,
-                  640,
-                  1188.9051094890513
+                  0.6010416666666667,
+                  0.6010416666666667,
+                  683.8128249566724,
+                  960
                 ]
               ]
             }
@@ -6604,9 +6878,9 @@
       "key": "9158999a-63a7-4955-b919-065ff6a50690",
       "uuid": "9158999a-63a7-4955-b919-065ff6a50690"
     },
-    "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf": {
-      "key": "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf",
-      "uuid": "lf6c592d-c1c3-48ec-aaa7-e9de8f6330bf"
+    "ld6225ff-6196-47e0-8a05-33aad7caaf51": {
+      "key": "ld6225ff-6196-47e0-8a05-33aad7caaf51",
+      "uuid": "ld6225ff-6196-47e0-8a05-33aad7caaf51"
     },
     "b5d0905e-3f34-4702-bbe3-a64ed45f1330": {
       "key": "Assets/atlas/music.bin",

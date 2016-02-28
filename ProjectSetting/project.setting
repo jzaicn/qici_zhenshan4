@@ -6,7 +6,7 @@
   "gameInstance": "qc_game",
   "frameRate": {
     "mobile": 30,
-    "desktop": 60
+    "desktop": 30
   },
   "fixedGameSize": {
     "enabled": false,

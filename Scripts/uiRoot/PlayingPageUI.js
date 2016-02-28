@@ -7,6 +7,7 @@ var PlayingPageUI = qc.defineBehaviour('qc.engine.PlayingPageUI', qc.Behaviour, 
 
     self._onEffect = false;
 
+    self.timer = null;
 }, {
     FallCreateAreaNode: qc.Serializer.NODE,
     FallPoolNode: qc.Serializer.NODE,
@@ -47,6 +48,17 @@ PlayingPageUI.prototype.setup = function() {
     self.backcount.showBackCount(function(){
         qc.CatchGame.gameStart();
     });
+
+
+    if (self.timer) {
+        qc_game.timer.remove(self.timer);
+
+    };
+    self.timer = qc_game.timer.loop(qc.CatchGame.TIMER_ELAPSE, function() {
+        if (qc.CatchGame.isGameRunning()) {
+            self.fallPool.fallAll();  
+        };
+    })
 };
 
 //被上层调用，关闭相关地方
@@ -56,6 +68,10 @@ PlayingPageUI.prototype.clearup = function() {
         self.clearItems();
         qc.CatchGame.gameInit();
     });
+
+    if (self.timer) {
+        qc_game.timer.remove(self.timer);
+    };
 };
 
 
@@ -93,7 +109,7 @@ PlayingPageUI.prototype.update = function() {
 	//调用游戏类进行判断，游戏是否结束，是否碰撞得分，是否超出边界删除对象
     if (qc.CatchGame.isGameRunning()) {
         qc.CatchGame.checkStatus();
-        self.fallPool.fallAll();//TODO: 考虑到帧率问题，这里下落速度应该同帧率有关，待修改
+        // self.fallPool.fallAll();//TODO: 考虑到帧率问题，这里下落速度应该同帧率有关，待修改
         self.fallPool.fallOut();
         self.fallPool.crashUp();
         if (self.fallPool.need2Create()) {
