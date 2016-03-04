@@ -54,6 +54,6 @@ GetRewardBtnUI.prototype.onClick = function() {
         });
 
     };
-
+    var title = qc.Ca
 
 };
