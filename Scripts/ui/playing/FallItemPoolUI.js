@@ -5,7 +5,6 @@ var FallItemPoolUI = qc.defineBehaviour('qc.engine.FallItemPoolUI', qc.Behaviour
 
     var self = this;
 
-    self.fallSpeed = qc.CatchGame.FALL_SPEED;
 }, {
     FallItemPrefab: qc.Serializer.PREFAB,
 });
@@ -39,12 +38,19 @@ FallItemPoolUI.prototype.additem = function(datainfo) {
     datainfo.o = fallitem;
 };
 
-FallItemPoolUI.prototype.fallAll = function() {
+FallItemPoolUI.prototype.fallAll = function(deltaTime) {
     var self = this;
-    qc.CatchGame.fallitemPool.updateAllPoolObject({
-        x:0,
-        y:self.fallSpeed,
-    });
+    if (deltaTime) {
+        if (deltaTime > 1000) {
+            deltaTime = 1000;
+        }
+
+        var fallSpeed = qc.CatchGame.Speed * deltaTime / 1000;
+        qc.CatchGame.fallitemPool.updateAllPoolObject({
+            x:0,
+            y:fallSpeed,
+        });
+    }
 };
 
 FallItemPoolUI.prototype.fallOut = function() {

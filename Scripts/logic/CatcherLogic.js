@@ -30,6 +30,18 @@ Object.defineProperties(CatcherLogic.prototype, {
 });
 
 //计算当前偏差值，创建时一次即可
+CatcherLogic.prototype.countBoxOffsetX = function() {
+    var self = this;
+    self._countOffset.x = self.x - self.detectArea.x;
+};
+
+//计算当前偏差值，创建时一次即可
+CatcherLogic.prototype.countBoxOffsetY = function() {
+    var self = this;
+    self._countOffset.y = self.y - self.detectArea.y;
+};
+
+//计算当前偏差值，创建时一次即可
 CatcherLogic.prototype.countBoxOffset = function() {
     var self = this;
 	self._countOffset.x = self.x - self.detectArea.x;

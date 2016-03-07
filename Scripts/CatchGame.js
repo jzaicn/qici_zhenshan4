@@ -6,8 +6,6 @@
 ////
 window.CatchGame = qc.CatchGame = {
 
-    TIMER_ELAPSE : 20,
-    FALL_SPEED : 6,
     RAISE_LEVEL : -20,
     SEA_LEVEL : 980,
     SPEAK_BOX_MIX_WIDTH : 600,
@@ -22,9 +20,9 @@ window.CatchGame = qc.CatchGame = {
         { id: 1, icon: "12.png", score: 10, noRepeatRadius: 1500, noOtherRadius: 160 },
         { id: 2, icon: "11.png", score: 10, noRepeatRadius: 1500, noOtherRadius: 160 },
         { id: 3, icon: "10.png", score: 10, noRepeatRadius: 1500, noOtherRadius: 160 },
-        { id: 4, icon: "7.png", score: 1, noRepeatRadius: 150, noOtherRadius: 160 },
+        // { id: 4, icon: "7.png", score: 1, noRepeatRadius: 150, noOtherRadius: 160 },
         { id: 5, icon: "8.png", score: 1, noRepeatRadius: 150, noOtherRadius: 160 },
-        { id: 6, icon: "9.png", score: 1, noRepeatRadius: 150, noOtherRadius: 160 },
+        // { id: 6, icon: "9.png", score: 1, noRepeatRadius: 150, noOtherRadius: 160 },
         { id: 7, icon: "1.png", score: -3, noRepeatRadius: 150, noOtherRadius: 160 },
         { id: 8, icon: "2.png", score: -3, noRepeatRadius: 150, noOtherRadius: 160 },
         { id: 9, icon: "3.png", score: -3, noRepeatRadius: 150, noOtherRadius: 160 },
@@ -46,6 +44,14 @@ window.CatchGame = qc.CatchGame = {
     _running : false,
     _gameStatus : "running",
 
+
+    _speed : 250,
+    set Speed(v){
+        this._speed = v;
+    },
+    get Speed(){
+        return this._speed;
+    },
 
     _status : "",
     set Status(v) {

@@ -13,6 +13,10 @@
       7,
       "world"
     ],
+    "uniqueName": [
+      7,
+      ""
+    ],
     "ignoreDestroy": [
       5,
       false
@@ -37,10 +41,10 @@
     "position": [
       0,
       0,
-      1.9819819819819884,
-      2.8873873873873777,
-      1.9819819819819884,
-      2.8873873873873777,
+      1.9712230215827447,
+      3.661870503597129,
+      1.9712230215827447,
+      3.661870503597129,
       440,
       641,
       0,
@@ -54,11 +58,11 @@
     ],
     "scaleX": [
       3,
-      0.990990990990991
+      0.9856115107913669
     ],
     "scaleY": [
       3,
-      0.990990990990991
+      0.9856115107913669
     ],
     "rotation": [
       3,
@@ -88,6 +92,10 @@
           "name": [
             7,
             "UIRoot"
+          ],
+          "uniqueName": [
+            7,
+            ""
           ],
           "ignoreDestroy": [
             5,
@@ -174,6 +182,10 @@
                   7,
                   "welcome_page"
                 ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
                 "ignoreDestroy": [
                   5,
                   false
@@ -255,9 +267,13 @@
                         7,
                         "welImage"
                       ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
                       "ignoreDestroy": [
                         5,
-                        null
+                        false
                       ],
                       "alpha": [
                         3,
@@ -318,12 +334,21 @@
                       "texture": [
                         10,
                         "Assets/texture/welcome_page.bin",
-                        "79e29219-b312-4614-956b-5d13128b81c5"
+                        "79e29219-b312-4614-956b-5d13128b81c5",
+                        0
                       ],
                       "frame": null,
                       "imageType": [
                         3,
                         0
+                      ],
+                      "skewX": [
+                        3,
+                        null
+                      ],
+                      "skewY": [
+                        3,
+                        null
                       ]
                     }
                   },
@@ -343,9 +368,13 @@
                         7,
                         "gameBegin"
                       ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
                       "ignoreDestroy": [
                         5,
-                        null
+                        false
                       ],
                       "alpha": [
                         3,
@@ -415,7 +444,8 @@
                       "texture": [
                         10,
                         "Assets/texture/welcome_fix.bin",
-                        "b3dd5e17-bf7d-41c8-8f10-bba33f2c64b3"
+                        "b3dd5e17-bf7d-41c8-8f10-bba33f2c64b3",
+                        0
                       ],
                       "frame": null,
                       "defaultAnimation": [
@@ -546,9 +576,13 @@
                         7,
                         "btnIntroduce"
                       ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
                       "ignoreDestroy": [
                         5,
-                        null
+                        false
                       ],
                       "alpha": [
                         3,
@@ -614,7 +648,8 @@
                       "texture": [
                         10,
                         "Assets/texture/question.bin",
-                        "08ad82b7-9f46-44a5-bb59-d46672818b54"
+                        "08ad82b7-9f46-44a5-bb59-d46672818b54",
+                        0
                       ],
                       "frame": null,
                       "defaultAnimation": [
@@ -665,6 +700,10 @@
                 "name": [
                   7,
                   "introduce_page"
+                ],
+                "uniqueName": [
+                  7,
+                  ""
                 ],
                 "ignoreDestroy": [
                   5,
@@ -747,9 +786,13 @@
                         7,
                         "teachImage"
                       ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
                       "ignoreDestroy": [
                         5,
-                        null
+                        false
                       ],
                       "alpha": [
                         3,
@@ -815,12 +858,21 @@
                       "texture": [
                         10,
                         "Assets/texture/info_page.bin",
-                        "d81cf82e-143d-4501-a2ed-52448e649ec7"
+                        "d81cf82e-143d-4501-a2ed-52448e649ec7",
+                        0
                       ],
                       "frame": null,
                       "imageType": [
                         3,
                         0
+                      ],
+                      "skewX": [
+                        3,
+                        null
+                      ],
+                      "skewY": [
+                        3,
+                        null
                       ]
                     },
                     "__json": {
@@ -866,6 +918,10 @@
                 "name": [
                   7,
                   "reward_page"
+                ],
+                "uniqueName": [
+                  7,
+                  ""
                 ],
                 "ignoreDestroy": [
                   5,
@@ -948,9 +1004,13 @@
                         7,
                         "rewardBG"
                       ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
                       "ignoreDestroy": [
                         5,
-                        null
+                        false
                       ],
                       "alpha": [
                         3,
@@ -1011,12 +1071,21 @@
                       "texture": [
                         10,
                         "Assets/texture/end_page.bin",
-                        "7af7c128-e5ff-447f-afe0-6e52c9d247a2"
+                        "7af7c128-e5ff-447f-afe0-6e52c9d247a2",
+                        0
                       ],
                       "frame": null,
                       "imageType": [
                         3,
                         0
+                      ],
+                      "skewX": [
+                        3,
+                        null
+                      ],
+                      "skewY": [
+                        3,
+                        null
                       ]
                     }
                   },
@@ -1035,6 +1104,10 @@
                       "name": [
                         7,
                         "rewardArea"
+                      ],
+                      "uniqueName": [
+                        7,
+                        ""
                       ],
                       "ignoreDestroy": [
                         5,
@@ -1117,6 +1190,10 @@
                               7,
                               "showReward"
                             ],
+                            "uniqueName": [
+                              7,
+                              ""
+                            ],
                             "ignoreDestroy": [
                               5,
                               false
@@ -1198,9 +1275,13 @@
                                     7,
                                     "fastReward"
                                   ],
+                                  "uniqueName": [
+                                    7,
+                                    ""
+                                  ],
                                   "ignoreDestroy": [
                                     5,
-                                    null
+                                    false
                                   ],
                                   "alpha": [
                                     3,
@@ -1270,7 +1351,8 @@
                                   "texture": [
                                     10,
                                     "Assets/atlas/reward.bin",
-                                    "24a7afa8-34b5-4c77-8581-d006adb13bee"
+                                    "24a7afa8-34b5-4c77-8581-d006adb13bee",
+                                    "jiang0.png"
                                   ],
                                   "frame": [
                                     7,
@@ -1279,6 +1361,14 @@
                                   "imageType": [
                                     3,
                                     0
+                                  ],
+                                  "skewX": [
+                                    3,
+                                    null
+                                  ],
+                                  "skewY": [
+                                    3,
+                                    null
                                   ]
                                 },
                                 "__json": {
@@ -1409,9 +1499,13 @@
                                     7,
                                     "lastReward"
                                   ],
+                                  "uniqueName": [
+                                    7,
+                                    ""
+                                  ],
                                   "ignoreDestroy": [
                                     5,
-                                    null
+                                    false
                                   ],
                                   "alpha": [
                                     3,
@@ -1477,7 +1571,8 @@
                                   "texture": [
                                     10,
                                     "Assets/atlas/reward.bin",
-                                    "24a7afa8-34b5-4c77-8581-d006adb13bee"
+                                    "24a7afa8-34b5-4c77-8581-d006adb13bee",
+                                    "jiang0.png"
                                   ],
                                   "frame": [
                                     7,
@@ -1486,6 +1581,14 @@
                                   "imageType": [
                                     3,
                                     0
+                                  ],
+                                  "skewX": [
+                                    3,
+                                    null
+                                  ],
+                                  "skewY": [
+                                    3,
+                                    null
                                   ]
                                 },
                                 "__json": {
@@ -1758,6 +1861,10 @@
                         7,
                         "rewardStick"
                       ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
                       "ignoreDestroy": [
                         5,
                         false
@@ -1834,9 +1941,13 @@
                               7,
                               "stick"
                             ],
+                            "uniqueName": [
+                              7,
+                              ""
+                            ],
                             "ignoreDestroy": [
                               5,
-                              null
+                              false
                             ],
                             "alpha": [
                               3,
@@ -1902,12 +2013,21 @@
                             "texture": [
                               10,
                               "Assets/texture/stick.bin",
-                              "80fa0472-ed97-4a2c-acbd-cacee88b2b23"
+                              "80fa0472-ed97-4a2c-acbd-cacee88b2b23",
+                              0
                             ],
                             "frame": null,
                             "imageType": [
                               3,
                               0
+                            ],
+                            "skewX": [
+                              3,
+                              null
+                            ],
+                            "skewY": [
+                              3,
+                              null
                             ]
                           },
                           "__json": {
@@ -2103,9 +2223,13 @@
                               7,
                               "ball"
                             ],
+                            "uniqueName": [
+                              7,
+                              ""
+                            ],
                             "ignoreDestroy": [
                               5,
-                              null
+                              false
                             ],
                             "alpha": [
                               3,
@@ -2171,12 +2295,21 @@
                             "texture": [
                               10,
                               "Assets/texture/ball.bin",
-                              "25093981-d084-485e-a10e-fdba9d8594a0"
+                              "25093981-d084-485e-a10e-fdba9d8594a0",
+                              0
                             ],
                             "frame": null,
                             "imageType": [
                               3,
                               0
+                            ],
+                            "skewX": [
+                              3,
+                              null
+                            ],
+                            "skewY": [
+                              3,
+                              null
                             ]
                           },
                           "__json": {
@@ -2296,6 +2429,10 @@
                               7,
                               "btnReward"
                             ],
+                            "uniqueName": [
+                              7,
+                              ""
+                            ],
                             "ignoreDestroy": [
                               5,
                               false
@@ -2410,9 +2547,13 @@
                         7,
                         "shadow"
                       ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
                       "ignoreDestroy": [
                         5,
-                        null
+                        false
                       ],
                       "alpha": [
                         3,
@@ -2473,12 +2614,21 @@
                       "texture": [
                         10,
                         "Assets/texture/mask.bin",
-                        "d734af0c-5165-4d84-b0cc-f3b57fa3c2c4"
+                        "d734af0c-5165-4d84-b0cc-f3b57fa3c2c4",
+                        0
                       ],
                       "frame": null,
                       "imageType": [
                         3,
                         0
+                      ],
+                      "skewX": [
+                        3,
+                        null
+                      ],
+                      "skewY": [
+                        3,
+                        null
                       ]
                     },
                     "__json": {
@@ -2533,9 +2683,13 @@
                         7,
                         "shareImg"
                       ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
                       "ignoreDestroy": [
                         5,
-                        null
+                        false
                       ],
                       "alpha": [
                         3,
@@ -2596,12 +2750,21 @@
                       "texture": [
                         10,
                         "Assets/texture/clicking-share.bin",
-                        "32b609ab-49b6-4b20-a0cb-c8f55c47c054"
+                        "32b609ab-49b6-4b20-a0cb-c8f55c47c054",
+                        0
                       ],
                       "frame": null,
                       "imageType": [
                         3,
                         0
+                      ],
+                      "skewX": [
+                        3,
+                        null
+                      ],
+                      "skewY": [
+                        3,
+                        null
                       ]
                     }
                   },
@@ -2621,9 +2784,13 @@
                         7,
                         "getReward"
                       ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
                       "ignoreDestroy": [
                         5,
-                        null
+                        false
                       ],
                       "alpha": [
                         3,
@@ -2693,7 +2860,8 @@
                       "texture": [
                         10,
                         "Assets/texture/btn_reward.bin",
-                        "fd89b3f9-a6c4-4d7c-95e6-08253348bd3b"
+                        "fd89b3f9-a6c4-4d7c-95e6-08253348bd3b",
+                        0
                       ],
                       "frame": null,
                       "defaultAnimation": [
@@ -2824,9 +2992,13 @@
                         7,
                         "getReplay"
                       ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
                       "ignoreDestroy": [
                         5,
-                        null
+                        false
                       ],
                       "alpha": [
                         3,
@@ -2896,7 +3068,8 @@
                       "texture": [
                         10,
                         "Assets/texture/btn_replay.bin",
-                        "c649dc06-fd76-4943-8bd7-a1e3ca85c6e7"
+                        "c649dc06-fd76-4943-8bd7-a1e3ca85c6e7",
+                        0
                       ],
                       "frame": null,
                       "defaultAnimation": [
@@ -3239,6 +3412,10 @@
                   7,
                   "playing_page"
                 ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
                 "ignoreDestroy": [
                   5,
                   false
@@ -3249,7 +3426,7 @@
                 ],
                 "visible": [
                   5,
-                  false
+                  true
                 ],
                 "colorTint": [
                   14,
@@ -3319,6 +3496,10 @@
                       "name": [
                         7,
                         "catcherArea"
+                      ],
+                      "uniqueName": [
+                        7,
+                        ""
                       ],
                       "ignoreDestroy": [
                         5,
@@ -3425,6 +3606,10 @@
                         7,
                         "world"
                       ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
                       "ignoreDestroy": [
                         5,
                         false
@@ -3519,6 +3704,10 @@
                       "name": [
                         7,
                         "fallCreateArea"
+                      ],
+                      "uniqueName": [
+                        7,
+                        ""
                       ],
                       "ignoreDestroy": [
                         5,
@@ -3615,9 +3804,13 @@
                         7,
                         "background"
                       ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
                       "ignoreDestroy": [
                         5,
-                        null
+                        false
                       ],
                       "alpha": [
                         3,
@@ -3678,12 +3871,21 @@
                       "texture": [
                         10,
                         "Assets/texture/play_page.bin",
-                        "d2826ac9-c5b4-4dbd-81cf-bf05ca6d41e6"
+                        "d2826ac9-c5b4-4dbd-81cf-bf05ca6d41e6",
+                        0
                       ],
                       "frame": null,
                       "imageType": [
                         3,
                         0
+                      ],
+                      "skewX": [
+                        3,
+                        null
+                      ],
+                      "skewY": [
+                        3,
+                        null
                       ]
                     }
                   },
@@ -3703,9 +3905,13 @@
                         7,
                         "TestSprite1"
                       ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
                       "ignoreDestroy": [
                         5,
-                        null
+                        false
                       ],
                       "alpha": [
                         3,
@@ -3771,7 +3977,8 @@
                       "texture": [
                         10,
                         "__builtin_resource__",
-                        "__builtin_resource__"
+                        "__builtin_resource__",
+                        "empty.png"
                       ],
                       "frame": [
                         7,
@@ -3823,6 +4030,10 @@
                       "name": [
                         7,
                         "catcher"
+                      ],
+                      "uniqueName": [
+                        7,
+                        ""
                       ],
                       "ignoreDestroy": [
                         5,
@@ -3905,9 +4116,13 @@
                               7,
                               "colorHand"
                             ],
+                            "uniqueName": [
+                              7,
+                              ""
+                            ],
                             "ignoreDestroy": [
                               5,
-                              null
+                              false
                             ],
                             "alpha": [
                               3,
@@ -3968,12 +4183,21 @@
                             "texture": [
                               10,
                               "Assets/texture/hand.bin",
-                              "1c282d99-0404-4e4c-ad8c-c817a1950dfd"
+                              "1c282d99-0404-4e4c-ad8c-c817a1950dfd",
+                              0
                             ],
                             "frame": null,
                             "imageType": [
                               3,
                               0
+                            ],
+                            "skewX": [
+                              3,
+                              null
+                            ],
+                            "skewY": [
+                              3,
+                              null
                             ]
                           },
                           "__json": {
@@ -4090,6 +4314,10 @@
                             "name": [
                               7,
                               "detect"
+                            ],
+                            "uniqueName": [
+                              7,
+                              ""
                             ],
                             "ignoreDestroy": [
                               5,
@@ -4227,6 +4455,10 @@
                         7,
                         "fallingPool"
                       ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
                       "ignoreDestroy": [
                         5,
                         false
@@ -4250,7 +4482,7 @@
                       "scripts": [
                         {
                           "clazz": "qc.engine.FallItemPoolUI",
-                          "data": "e103b896-a743-478f-ac34-a79f839c28f0"
+                          "data": "61736576-29e7-4348-a0be-7f365b5c0262"
                         }
                       ],
                       "position": [
@@ -4351,6 +4583,20 @@
                             "9158999a-63a7-4955-b919-065ff6a50690"
                           ]
                         }
+                      },
+                      "61736576-29e7-4348-a0be-7f365b5c0262": {
+                        "class": "qc.engine.FallItemPoolUI",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "61736576-29e7-4348-a0be-7f365b5c0262"
+                          ],
+                          "enable": true,
+                          "FallItemPrefab": [
+                            16,
+                            "9158999a-63a7-4955-b919-065ff6a50690"
+                          ]
+                        }
                       }
                     }
                   },
@@ -4369,6 +4615,10 @@
                       "name": [
                         7,
                         "speaker"
+                      ],
+                      "uniqueName": [
+                        7,
+                        ""
                       ],
                       "ignoreDestroy": [
                         5,
@@ -4450,6 +4700,10 @@
                             "name": [
                               7,
                               "word"
+                            ],
+                            "uniqueName": [
+                              7,
+                              ""
                             ],
                             "ignoreDestroy": [
                               5,
@@ -4698,6 +4952,10 @@
                       "name": [
                         7,
                         "backCount"
+                      ],
+                      "uniqueName": [
+                        7,
+                        ""
                       ],
                       "ignoreDestroy": [
                         5,
@@ -5128,6 +5386,10 @@
                   7,
                   "debug"
                 ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
                 "ignoreDestroy": [
                   5,
                   false
@@ -5228,7 +5490,7 @@
                 ],
                 "text": [
                   7,
-                  "FPS: 30.0\nDraw Calls: 0\nTotal: 0.9 ms\nLogic: 0.4 ms\nRender: 0.4 ms\nPreUpdate: 0.2 ms\nUpdate: 0.0 ms\nPostUpdate: 0.1 ms\nTransformCalc: 0"
+                  "FPS: 0.0\nDraw Calls: 0\nTotal: 2.3 ms\nLogic: 0.2 ms\nRender: 2.0 ms\nPreUpdate: 2.3 ms\nUpdate: 0.3 ms\nPostUpdate: 0.1 ms\nTransformCalc: 0"
                 ],
                 "lineSpacing": [
                   3,
@@ -5382,6 +5644,10 @@
                   7,
                   "maskup"
                 ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
                 "ignoreDestroy": [
                   5,
                   false
@@ -5392,7 +5658,7 @@
                 ],
                 "visible": [
                   5,
-                  false
+                  true
                 ],
                 "colorTint": [
                   14,
@@ -5458,9 +5724,13 @@
                         7,
                         "mask1"
                       ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
                       "ignoreDestroy": [
                         5,
-                        null
+                        false
                       ],
                       "alpha": [
                         3,
@@ -5521,12 +5791,21 @@
                       "texture": [
                         10,
                         "Assets/texture/mask.bin",
-                        "d734af0c-5165-4d84-b0cc-f3b57fa3c2c4"
+                        "d734af0c-5165-4d84-b0cc-f3b57fa3c2c4",
+                        0
                       ],
                       "frame": null,
                       "imageType": [
                         3,
                         1
+                      ],
+                      "skewX": [
+                        3,
+                        null
+                      ],
+                      "skewY": [
+                        3,
+                        null
                       ]
                     }
                   },
@@ -5546,9 +5825,13 @@
                         7,
                         "mask2"
                       ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
                       "ignoreDestroy": [
                         5,
-                        null
+                        false
                       ],
                       "alpha": [
                         3,
@@ -5609,12 +5892,21 @@
                       "texture": [
                         10,
                         "Assets/texture/mask.bin",
-                        "d734af0c-5165-4d84-b0cc-f3b57fa3c2c4"
+                        "d734af0c-5165-4d84-b0cc-f3b57fa3c2c4",
+                        0
                       ],
                       "frame": null,
                       "imageType": [
                         3,
                         0
+                      ],
+                      "skewX": [
+                        3,
+                        null
+                      ],
+                      "skewY": [
+                        3,
+                        null
                       ]
                     }
                   }
@@ -5804,9 +6096,13 @@
                   7,
                   "btnMusic"
                 ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
                 "ignoreDestroy": [
                   5,
-                  null
+                  false
                 ],
                 "alpha": [
                   3,
@@ -5872,7 +6168,8 @@
                 "texture": [
                   10,
                   "Assets/atlas/music.bin",
-                  "b5d0905e-3f34-4702-bbe3-a64ed45f1330"
+                  "b5d0905e-3f34-4702-bbe3-a64ed45f1330",
+                  "music_off.png"
                 ],
                 "frame": [
                   7,
@@ -5978,9 +6275,13 @@
                   7,
                   "AAAwelcome"
                 ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
                 "ignoreDestroy": [
                   5,
-                  null
+                  false
                 ],
                 "alpha": [
                   3,
@@ -6046,7 +6347,8 @@
                 "texture": [
                   10,
                   "__builtin_resource__",
-                  "__builtin_resource__"
+                  "__builtin_resource__",
+                  "empty.png"
                 ],
                 "frame": [
                   7,
@@ -6096,9 +6398,13 @@
                   7,
                   "AAAintroduce"
                 ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
                 "ignoreDestroy": [
                   5,
-                  null
+                  false
                 ],
                 "alpha": [
                   3,
@@ -6164,7 +6470,8 @@
                 "texture": [
                   10,
                   "__builtin_resource__",
-                  "__builtin_resource__"
+                  "__builtin_resource__",
+                  "empty.png"
                 ],
                 "frame": [
                   7,
@@ -6214,9 +6521,13 @@
                   7,
                   "AAAplaying"
                 ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
                 "ignoreDestroy": [
                   5,
-                  null
+                  false
                 ],
                 "alpha": [
                   3,
@@ -6282,7 +6593,8 @@
                 "texture": [
                   10,
                   "__builtin_resource__",
-                  "__builtin_resource__"
+                  "__builtin_resource__",
+                  "empty.png"
                 ],
                 "frame": [
                   7,
@@ -6332,9 +6644,13 @@
                   7,
                   "AAAreward"
                 ],
+                "uniqueName": [
+                  7,
+                  ""
+                ],
                 "ignoreDestroy": [
                   5,
-                  null
+                  false
                 ],
                 "alpha": [
                   3,
@@ -6400,7 +6716,8 @@
                 "texture": [
                   10,
                   "__builtin_resource__",
-                  "__builtin_resource__"
+                  "__builtin_resource__",
+                  "empty.png"
                 ],
                 "frame": [
                   7,
@@ -6465,10 +6782,10 @@
               "gameObjectRecord": [
                 4,
                 [
-                  0.6677083333333333,
-                  0.6677083333333333,
-                  658.9703588143526,
-                  960
+                  0.428125,
+                  0.428125,
+                  640,
+                  1188.9051094890513
                 ]
               ]
             }
