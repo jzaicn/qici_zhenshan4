@@ -1,7 +1,7 @@
 'use strict';
 
 
-var SpeakerUI = qc.defineBehaviour('qc.engine.SpeakerUI', qc.Behaviour, function() {
+var TotalScoreUI = qc.defineBehaviour('qc.engine.TotalScoreUI', qc.Behaviour, function() {
 
     var self = this;
 
@@ -12,25 +12,25 @@ var SpeakerUI = qc.defineBehaviour('qc.engine.SpeakerUI', qc.Behaviour, function
 });
 
 
-SpeakerUI.prototype.awake = function() {
+TotalScoreUI.prototype.awake = function() {
     var self = this,
         o = self.gameObject;
 
     
     //关联本对象和逻辑对象
-    qc.CatchGame.speaker.init(self);
+    qc.CatchGame.score.init(self);
 };
 
 
 //绑定自己到游戏实际逻辑对象
-SpeakerUI.prototype.init = function(logicObj,detectArea) {
+TotalScoreUI.prototype.init = function(logicObj,detectArea) {
     var self = this,
         o = self.gameObject;
 
 
 };
 //更新游戏实际逻辑对象位置
-SpeakerUI.prototype.setWord = function(text){
+TotalScoreUI.prototype.setWord = function(text){
     var self = this;
 
 

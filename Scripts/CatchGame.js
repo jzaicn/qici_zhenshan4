@@ -66,10 +66,19 @@ window.CatchGame = qc.CatchGame = {
     _score : 0,
     set Score(v){
         this._score = v;
-        qc.CatchGame.speaker.setScore(this._score);
+        qc.CatchGame.score.setScore(this._score);
     },
     get Score(){
         return this._score;
+    },
+
+    _time : 0,
+    set Time(v){
+        this._time = v;
+        qc.CatchGame.score.setTime(this._time);
+    },
+    get Time(){
+        return this._time;
     },
 
     // 所有的操作指令集合
@@ -92,7 +101,9 @@ qc.initGame = function(game) {
     // 初始化下落物
     CatchGame.fallitemPool = new qc.CatchGame.FallItemPoolLogic();
     //初始化提示语言
-    CatchGame.speaker = new qc.CatchGame.SpeakerLogic();
+    CatchGame.score = new qc.CatchGame.ScoreLogic();
+    //初始化提示语言
+    CatchGame.time = new qc.CatchGame.TimeLogic();
 
 
 
