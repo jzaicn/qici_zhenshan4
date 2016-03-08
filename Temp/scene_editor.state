@@ -41,12 +41,12 @@
     "position": [
       0,
       0,
-      1.9819819819819884,
-      3.1531531531531414,
-      1.9819819819819884,
-      3.1531531531531414,
-      440,
-      700,
+      1.972881355932202,
+      3.450847457627134,
+      1.972881355932202,
+      3.450847457627134,
+      291,
+      509,
       0,
       0,
       0,
@@ -58,11 +58,11 @@
     ],
     "scaleX": [
       3,
-      0.990990990990991
+      0.9864406779661017
     ],
     "scaleY": [
       3,
-      0.990990990990991
+      0.9864406779661017
     ],
     "rotation": [
       3,
@@ -135,7 +135,7 @@
             0,
             0,
             640,
-            1018.1818181818181,
+            1119.4501718213057,
             0,
             0,
             0,
@@ -147,11 +147,11 @@
           ],
           "scaleX": [
             3,
-            0.6875
+            0.4546875
           ],
           "scaleY": [
             3,
-            0.6875
+            0.4546875
           ],
           "rotation": [
             3,
@@ -4614,7 +4614,7 @@
                       ],
                       "name": [
                         7,
-                        "speaker"
+                        "score"
                       ],
                       "uniqueName": [
                         7,
@@ -5342,6 +5342,343 @@
                         }
                       }
                     }
+                  },
+                  {
+                    "class": "qc.Node",
+                    "data": {
+                      "uuid": "f5715da7-ffd5-4253-b846-3f0cd97e937f",
+                      "_prefab": [
+                        7,
+                        ""
+                      ],
+                      "__lock": [
+                        5,
+                        null
+                      ],
+                      "name": [
+                        7,
+                        "time"
+                      ],
+                      "uniqueName": [
+                        7,
+                        ""
+                      ],
+                      "ignoreDestroy": [
+                        5,
+                        false
+                      ],
+                      "alpha": [
+                        3,
+                        1
+                      ],
+                      "visible": [
+                        5,
+                        true
+                      ],
+                      "colorTint": [
+                        14,
+                        16777215
+                      ],
+                      "static": [
+                        5,
+                        false
+                      ],
+                      "scripts": [
+                        {
+                          "clazz": "qc.engine.SpeakerUI",
+                          "data": "f96536c9-487d-40db-8141-f2560ff7d991"
+                        }
+                      ],
+                      "position": [
+                        0,
+                        0,
+                        22.37349536950994,
+                        15.11994889803302,
+                        22.37349536950994,
+                        15.11994889803302,
+                        100,
+                        80,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                      ],
+                      "scaleX": [
+                        3,
+                        1.0000000627663874
+                      ],
+                      "scaleY": [
+                        3,
+                        1.0000000627663874
+                      ],
+                      "rotation": [
+                        3,
+                        0
+                      ],
+                      "interactive": [
+                        5,
+                        false
+                      ],
+                      "isFiltersThrough": [
+                        5,
+                        null
+                      ],
+                      "children": [
+                        {
+                          "class": "qc.UIText",
+                          "data": {
+                            "uuid": "0f3562c5-0738-49e1-932e-d4b7266e8836",
+                            "_prefab": [
+                              7,
+                              ""
+                            ],
+                            "__lock": [
+                              5,
+                              null
+                            ],
+                            "name": [
+                              7,
+                              "word"
+                            ],
+                            "uniqueName": [
+                              7,
+                              ""
+                            ],
+                            "ignoreDestroy": [
+                              5,
+                              false
+                            ],
+                            "alpha": [
+                              3,
+                              1
+                            ],
+                            "visible": [
+                              5,
+                              true
+                            ],
+                            "colorTint": [
+                              14,
+                              16777215
+                            ],
+                            "static": [
+                              5,
+                              false
+                            ],
+                            "scripts": [
+                              {
+                                "clazz": "qc.NodeMask",
+                                "data": "e206df0d-6fc3-457e-a685-986e4a5bebf6"
+                              }
+                            ],
+                            "position": [
+                              0,
+                              0,
+                              0,
+                              3.4,
+                              0,
+                              3.4,
+                              530,
+                              50,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0
+                            ],
+                            "scaleX": [
+                              3,
+                              1
+                            ],
+                            "scaleY": [
+                              3,
+                              1
+                            ],
+                            "rotation": [
+                              3,
+                              0
+                            ],
+                            "interactive": [
+                              5,
+                              false
+                            ],
+                            "isFiltersThrough": [
+                              5,
+                              null
+                            ],
+                            "children": [],
+                            "fontFamily": [
+                              3,
+                              1
+                            ],
+                            "alignH": [
+                              3,
+                              0
+                            ],
+                            "alignV": [
+                              3,
+                              0
+                            ],
+                            "font": [
+                              32,
+                              null,
+                              null
+                            ],
+                            "bold": [
+                              5,
+                              true
+                            ],
+                            "fontSize": [
+                              3,
+                              50
+                            ],
+                            "color": [
+                              14,
+                              4278190080
+                            ],
+                            "text": [
+                              7,
+                              "time：0"
+                            ],
+                            "lineSpacing": [
+                              3,
+                              0
+                            ],
+                            "wrap": [
+                              5,
+                              false
+                            ],
+                            "enableGlow": [
+                              5,
+                              false
+                            ],
+                            "startColor": [
+                              14,
+                              4294901760
+                            ],
+                            "endColor": [
+                              14,
+                              4278190080
+                            ],
+                            "gradient": [
+                              5,
+                              false
+                            ],
+                            "stroke": [
+                              14,
+                              4278190080
+                            ],
+                            "strokeThickness": [
+                              3,
+                              0
+                            ],
+                            "glowColor": [
+                              14,
+                              4294901760
+                            ],
+                            "autoSize": [
+                              5,
+                              false
+                            ],
+                            "overflow": [
+                              5,
+                              true
+                            ],
+                            "shadowColor": [
+                              14,
+                              2147483648
+                            ],
+                            "shadowBlur": [
+                              3,
+                              0
+                            ],
+                            "shadowOffsetX": [
+                              3,
+                              3
+                            ],
+                            "shadowOffsetY": [
+                              3,
+                              3
+                            ],
+                            "enableShadow": [
+                              5,
+                              false
+                            ]
+                          },
+                          "__json": {
+                            "e206df0d-6fc3-457e-a685-986e4a5bebf6": {
+                              "class": "qc.NodeMask",
+                              "data": {
+                                "uuid": [
+                                  7,
+                                  "e206df0d-6fc3-457e-a685-986e4a5bebf6"
+                                ],
+                                "enable": false,
+                                "checkInField": [
+                                  5,
+                                  false
+                                ],
+                                "minAnchor": [
+                                  24,
+                                  "qc.Point",
+                                  [
+                                    0,
+                                    0
+                                  ]
+                                ],
+                                "maxAnchor": [
+                                  24,
+                                  "qc.Point",
+                                  [
+                                    1,
+                                    1
+                                  ]
+                                ],
+                                "minRotation": [
+                                  3,
+                                  0
+                                ],
+                                "maxRotation": [
+                                  3,
+                                  6.283185307179586
+                                ],
+                                "clipType": [
+                                  3,
+                                  1
+                                ],
+                                "mode": [
+                                  3,
+                                  0
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "__json": {
+                      "f96536c9-487d-40db-8141-f2560ff7d991": {
+                        "class": "qc.engine.SpeakerUI",
+                        "data": {
+                          "uuid": [
+                            7,
+                            "f96536c9-487d-40db-8141-f2560ff7d991"
+                          ],
+                          "enable": true,
+                          "BackgroundNode": null,
+                          "TextNode": [
+                            18,
+                            "0f3562c5-0738-49e1-932e-d4b7266e8836"
+                          ]
+                        }
+                      }
+                    }
                   }
                 ]
               },
@@ -5490,7 +5827,7 @@
                 ],
                 "text": [
                   7,
-                  "FPS: 30.0\nDraw Calls: 0\nTotal: 1.1 ms\nLogic: 0.5 ms\nRender: 0.5 ms\nPreUpdate: 0.2 ms\nUpdate: 0.2 ms\nPostUpdate: 0.1 ms\nTransformCalc: 0"
+                  "FPS: 29.9\nDraw Calls: 0\nTotal: 1.1 ms\nLogic: 0.2 ms\nRender: 0.9 ms\nPreUpdate: 0.1 ms\nUpdate: 0.1 ms\nPostUpdate: 0.0 ms\nTransformCalc: 0"
                 ],
                 "lineSpacing": [
                   3,
@@ -5677,7 +6014,7 @@
                   -0.000012189390133698907,
                   -0.0000016345123867722577,
                   640.0000121893902,
-                  1018.181818181818,
+                  1119.4501718213055,
                   -0.000012189390133698907,
                   0,
                   -0.0000016345123867722577,
@@ -5858,7 +6195,7 @@
                         0,
                         960,
                         640,
-                        58.18181818181802,
+                        159.4501718213055,
                         0,
                         0,
                         960,
@@ -6782,10 +7119,10 @@
               "gameObjectRecord": [
                 4,
                 [
-                  0.6677083333333333,
-                  0.6677083333333333,
-                  658.9703588143526,
-                  960
+                  0.428125,
+                  0.428125,
+                  640,
+                  1188.9051094890513
                 ]
               ]
             }

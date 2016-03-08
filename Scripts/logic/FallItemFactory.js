@@ -32,7 +32,7 @@ FallItemFactory.prototype.fillPoolWithArea = function(area,pool) {
     var self = this;
 
     //这里可以更改方法
-    var bigPool = self.randomPoolWithArea(area,pool);
+    var bigPool = self.randLinePoolWithArea(area,pool);
 
     //先排序，方便后续使用
     bigPool.sort(function(a, b) {
@@ -113,7 +113,7 @@ FallItemFactory.prototype.putCheck = function(id, pos ,pool) {
 };
 
 ///////////////////////////////////////////////////////////////////
-///  功能函数
+///  x 功能函数
 
 //按设计关卡取出物品
 FallItemFactory.prototype.chapterPoolWithArea = function(area,pool) {
@@ -138,4 +138,27 @@ FallItemFactory.prototype.chapterPoolWithArea = function(area,pool) {
     };
     
     return pools;
+};
+
+
+///////////////////////////////////////////////////////////////////
+///  功能函数
+
+//按设计关卡取出物品
+FallItemFactory.prototype.randLinePoolWithArea = function(area,pool) {
+    var self = this;
+    var bigPool = [];
+
+    var maxLength = 6;
+    var currLength = pool.length + bigPool.length
+    if (currLength < maxLength) {
+        //随意创建一个ID索引
+        var everyElement = qc_game.math.getRandom(self.data);
+        //随意创建一个位置
+        everyElement.x= Math.random() * area.width + area.x;
+        everyElement.y= 1 * area.height + area.y;
+
+        bigPool.push(everyElement.clone());
+    };
+    return bigPool;
 };

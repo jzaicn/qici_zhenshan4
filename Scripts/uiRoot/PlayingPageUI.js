@@ -42,10 +42,10 @@ PlayingPageUI.prototype.setup = function() {
     var self = this;
 
     self.clearItems();
-    self.createItems();
     qc.CatchGame.gameInit();
     
     self.backcount.showBackCount(function(){
+        self.createItems();
         qc.CatchGame.gameStart();
     });
 
