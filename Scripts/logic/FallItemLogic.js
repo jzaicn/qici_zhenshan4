@@ -6,7 +6,7 @@
 var FallItemLogic = qc.CatchGame.FallItemLogic = function() {
     var self = this;
 
-    self.icon = "";
+    self._icon = "";
     self.id = "";
     self._x = 0;
     self._y = 0;
@@ -39,6 +39,17 @@ Object.defineProperties(FallItemLogic.prototype, {
             this._y = v;
             if (this.o) {
                 this.o.y = v;
+            };
+        }
+    },
+    icon: {
+        get: function(){
+            return this._icon;
+        },
+        set: function(v){
+            this._icon = v;
+            if (this.o) {
+                this.o.frame = v;
             };
         }
     }
@@ -96,13 +107,8 @@ FallItemLogic.prototype.getInfo = function(status) {
 
 
 //如果是某种表情则替换
-FallItemLogic.prototype.onChangeEvent = function() {
+FallItemLogic.prototype.onChangeToDuring = function(toIcon) {
     var self = this;
-    if (self.icon == "7.png" || self.icon == "8.png") {
-        self.o.frame = "9.png";
-        self.timer = setTimeout(function(){
-            clearTimeout(self.timer);
-            self.o.frame = self.icon;
-        }, 1000);
-    };
+    self.icon = toIcon;
 };
+

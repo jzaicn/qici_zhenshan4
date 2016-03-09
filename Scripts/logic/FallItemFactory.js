@@ -32,7 +32,7 @@ FallItemFactory.prototype.fillPoolWithArea = function(area,pool) {
     var self = this;
 
     //这里可以更改方法
-    var bigPool = self.randLinePoolWithArea(area,pool);
+    var bigPool = self.randomPoolWithArea(area,pool);
 
     //先排序，方便后续使用
     bigPool.sort(function(a, b) {

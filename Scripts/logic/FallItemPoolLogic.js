@@ -53,11 +53,19 @@ FallItemPoolLogic.prototype.isPoolNeedNew = function() {
 //////////////////////////////////////////////////////////////////////////////////////////////
 //    基本操作
 
+FallItemPoolLogic.prototype.addItemHook = function(item) {
+    // body...
+};
+
+FallItemPoolLogic.prototype.eachItemHook = function(item) {
+    
+};
 
 //增加元素
 FallItemPoolLogic.prototype.additem = function(item) {
     var self = this;
     
+    self.addItemHook(item);
     self.currentPool.push(item);
 
     self.uiObj.additem(item);
@@ -179,7 +187,7 @@ FallItemPoolLogic.prototype.checkCrashPoolObject = function() {
             // value.selfDispatch(qc.CatchGame.itemSignal);
             qc.CatchGame.itemSignal.dispatch({
                 eventType : "crash",
-                score: value.score,
+                score : value.score,
                 obj : value,
             });
             qc.CatchGame.itemSignal.dispatch(value.getInfo());
@@ -187,4 +195,63 @@ FallItemPoolLogic.prototype.checkCrashPoolObject = function() {
     };
     doPoolObject(self.currentPool,check_crash);
     self.delItemIndexArr(indexgroup);
+};
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+////  
+////  游戏逻辑控制部分
+////
+
+//下落中的大米变微笑两秒
+FallItemPoolLogic.prototype.riceFaceSmile = function() {
+    var self = this;
+
+    //处理位置偏移
+    var riceFaceChange = function(operaPool,index,value){
+        if (value.id === "rice") {
+            value.onChangeToDuring("7.png");
+        }
+    };
+    doPoolObject(self.currentPool,riceFaceChange);
+};
+
+FallItemPoolLogic.prototype.riceFaceCry = function() {
+    this.setItemFaceTimeout("rice","9.png","8.png" , 2000);
+};
+
+//公共函数设置图标变化
+FallItemPoolLogic.prototype.setItemFace = function(targetID , setIcon) {
+    var self = this;
+
+    //设置图标
+    var riceFaceChange = function(operaPool,index,value){
+        if (value.id === targetID) {
+            value.onChangeToDuring(setIcon);
+        }
+    };
+    doPoolObject(self.currentPool,riceFaceChange);
+    //var old_addItemHook = self.addItemHook;
+    self.addItemHook = function(item){
+        if (item.id === targetID) {
+            item.onChangeToDuring(setIcon);
+        }
+    };
+};
+
+//公共函数设置图标变化
+FallItemPoolLogic.prototype.setItemFaceTimeout = function(targetID , setIcon , revertIcon , timeout) {
+    var self = this;
+
+    self.setItemFace(targetID,setIcon);
+
+    if (self.timer) {
+        clearTimeout(self.timer);
+    }
+
+    self.timer = setTimeout(function(){
+        self.setItemFace(targetID,revertIcon);
+        self.addItemHook = function(item){};
+    }, timeout);
 };

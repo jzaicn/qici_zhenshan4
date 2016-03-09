@@ -1,17 +1,4 @@
 {
-  "Assets/atlas/monster.bin": "97a5352a-bdb6-4fc7-9631-638cc49346de",
-  "Assets/atlas/monster@atlas/m1.bin": "fd51252c-7dd9-4f3f-ad42-fe194dced35c",
-  "Assets/atlas/monster@atlas/m2.bin": "bea332b8-b60d-43c2-adec-4e8ad9e0e03f",
-  "Assets/atlas/monster@atlas/m3.bin": "c75e707a-dede-4f86-ad0e-0279567d308d",
-  "Assets/atlas/monster@atlas/m4.bin": "1a61edf0-c64a-4a2c-a5d2-17a503d607fb",
-  "Assets/atlas/monster@atlas/m5.bin": "527eae3c-c4f8-4c85-8e20-57437b224eca",
-  "Assets/atlas/monster@atlas/m6.bin": "f1f6545c-b47c-4c80-8981-7a54f207fbfb",
-  "Assets/atlas/monster@atlas/m7.bin": "bd3ba82e-6965-4a8b-ac5a-acf6a9852e52",
-  "Assets/excel/config.bin": "cc38c01f-3dd3-444c-b7a4-d4cc606c1710",
-  "Assets/prefab/monster.bin": "a187aac9-cc14-43cd-9724-bd7f138ee10a",
-  "Assets/scene/Game.bin": "48678c8a-40bd-4d8f-ab69-aee18d9cd9ec",
-  "Assets/scene/Start.bin": "864402eb-9c44-4bb3-8c9b-51c2080fc949",
-  "Temp/scene_editor.bin": "a8664fa2-117e-4c9e-8a0f-6f92e0bc3a71",
   "Assets/atlas/fall.bin": "1dd652f0-00dc-49f2-b045-3b58336d2e4e",
   "Assets/atlas/fall@atlas/0.bin": "8d84c75b-d3be-46da-b9cf-533eee3edab5",
   "Assets/atlas/fall@atlas/1.bin": "07de0b89-22b6-49e7-99e1-d181e78e9b2d",
@@ -37,6 +24,7 @@
   "Assets/atlas/reward@atlas/jiang3.bin": "70a9f05a-5c22-44bd-b9c7-9ccfab9e0c11",
   "Assets/atlas/reward@atlas/jiang4.bin": "354546d4-a71c-445e-b267-9e8ad462f6dd",
   "Assets/atlas/reward@atlas/jiang5.bin": "ff93d6c9-bfeb-447b-bb05-3f2b986aeaf0",
+  "Assets/excel/config.bin": "cc38c01f-3dd3-444c-b7a4-d4cc606c1710",
   "Assets/font/hbt.bin": "ld6225ff-6196-47e0-8a05-33aad7caaf51",
   "Assets/prefab/FallItem.bin": "9158999a-63a7-4955-b919-065ff6a50690",
   "Assets/prefab/score.bin": "2be0761b-40f7-4b40-9c78-c8605e1fc357",
@@ -53,5 +41,6 @@
   "Assets/texture/question.bin": "08ad82b7-9f46-44a5-bb59-d46672818b54",
   "Assets/texture/stick.bin": "80fa0472-ed97-4a2c-acbd-cacee88b2b23",
   "Assets/texture/welcome_fix.bin": "b3dd5e17-bf7d-41c8-8f10-bba33f2c64b3",
-  "Assets/texture/welcome_page.bin": "79e29219-b312-4614-956b-5d13128b81c5"
+  "Assets/texture/welcome_page.bin": "79e29219-b312-4614-956b-5d13128b81c5",
+  "Temp/scene_editor.bin": "a8664fa2-117e-4c9e-8a0f-6f92e0bc3a71"
 }
