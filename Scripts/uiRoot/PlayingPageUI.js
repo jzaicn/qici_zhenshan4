@@ -109,7 +109,7 @@ PlayingPageUI.prototype.update = function() {
 	//调用游戏类进行判断，游戏是否结束，是否碰撞得分，是否超出边界删除对象
     if (qc.CatchGame.isGameRunning()) {
         qc.CatchGame.checkStatus();
-        self.fallPool.fallAll(qc_game.time.deltaTime);//TODO: 考虑到帧率问题，这里下落速度应该同帧率有关，待修改
+        self.fallPool.fallAll(qc_game.time.deltaTime);//下落多少和帧率挂钩（每一帧间隔等比表示到下落速度当中）
         self.fallPool.fallOut();
         self.fallPool.crashUp();
         if (self.fallPool.need2Create()) {

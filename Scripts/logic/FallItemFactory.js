@@ -32,7 +32,7 @@ FallItemFactory.prototype.fillPoolWithArea = function(area,pool) {
     var self = this;
 
     //这里可以更改方法
-    var bigPool = self.randomPoolWithArea(area,pool);
+    var bigPool = self.randLinePoolWithArea(area,pool);
 
     //先排序，方便后续使用
     bigPool.sort(function(a, b) {
@@ -113,35 +113,6 @@ FallItemFactory.prototype.putCheck = function(id, pos ,pool) {
 };
 
 ///////////////////////////////////////////////////////////////////
-///  x 功能函数
-
-//按设计关卡取出物品
-FallItemFactory.prototype.chapterPoolWithArea = function(area,pool) {
-    var self = this;
-    var itemPools = [
-        [[320,0],[320,-100],[320,-200],[320,-300],[320,-400],[320,-500],[320,-600],[320,-700],[320,-800],[320,-900],[320,-1000]],
-    ];
-    var thisPool = itemPools[this._chapter];
-    var pools = [];
-
-
-    this._chapter = (this._chapter ++ )% itemPools.length;
-
-
-    for (var i = 0; i < thisPool.length; i++) {
-        var everyElement = self.data[0];
-
-        everyElement.x = thisPool[i][0];
-        everyElement.y = thisPool[i][1];
-
-        pools.push(everyElement.clone());
-    };
-    
-    return pools;
-};
-
-
-///////////////////////////////////////////////////////////////////
 ///  功能函数
 
 //按设计关卡取出物品
@@ -149,16 +120,78 @@ FallItemFactory.prototype.randLinePoolWithArea = function(area,pool) {
     var self = this;
     var bigPool = [];
 
-    var maxLength = 6;
+    var maxLength = 15;
     var currLength = pool.length + bigPool.length
     if (currLength < maxLength) {
         //随意创建一个ID索引
         var everyElement = qc_game.math.getRandom(self.data);
         //随意创建一个位置
         everyElement.x= Math.random() * area.width + area.x;
-        everyElement.y= 1 * area.height + area.y;
+        everyElement.y= Math.random() * area.height + area.y;
 
         bigPool.push(everyElement.clone());
     };
     return bigPool;
+};
+
+
+
+
+///////////////////////////////////////////////////////////////////
+///  x 功能函数
+
+
+
+//TODO: 最终要得到下落过程中每一段随机出现一个认证标记
+//认证标记不需要固定顺序
+//认证标记出现区间不重合
+
+//传入时间轴节点，转换为具体空间坐标
+FallItemFactory.prototype.getAreaFromTimePoint = function(createArea , timePos) {
+    var timePos = {
+        begin : 5,
+        end: 10,
+    };
+    var speed = qc.CatchGame.Speed;
+    var rarea = {
+        x : createArea.x,
+        width : createArea.width,
+        y : timePos.end * speed * -1,
+        height : (timePos.end - timePos.begin) * speed * -1,
+    };
+    return rarea;
+};
+
+//在Area中取出一个点
+FallItemFactory.prototype.pickupInArea = function(area) {
+    var pos = {
+        x: Math.random() * area.width + area.x,
+        y: Math.random() * area.height + area.y,
+    };
+    return pos;
+};
+
+FallItemFactory.prototype.getID = function(first_argument) {
+    // body...
+};
+
+FallItemFactory.prototype.loadValuableItem = function(area,pool) {
+    var self = this;
+    var timeSpace = [
+        { range : [0,10], insert : [ ["",3], ] },     //10
+        { range : [10,25], insert : [ ["",1], ] },    //25
+        { range : [25,50], insert : [ ["",1], ] },    //25
+        { range : [50,75], insert : [ ["",1], ] },    //25
+        { range : [75,100], insert : [ ["",1], ] },   //25
+        { range : [100,110], insert : [ ] },   //10
+    ];
+    var valuePool = [];
+
+    for (var i = 0; i < timeSpace.length; i++) {
+        var area = self.getAreaFromTimePoint()
+
+        
+    };
+
+    return valuePool;
 };

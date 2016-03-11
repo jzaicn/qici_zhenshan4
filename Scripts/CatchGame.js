@@ -11,6 +11,8 @@ window.CatchGame = qc.CatchGame = {
     SPEAK_BOX_MIX_WIDTH: 600,
     DEFAULT_MUSIC_PLAYING: false,
 
+    GAME_PLAY_TIME : 120000,//秒
+
     DEFAULT_PAGE: "welcome", //TODO: welcome
 
 
@@ -138,6 +140,7 @@ qc.CatchGame.gameInit = function() {
     this.Score = 0;
     this._running = false;
     this._gameStatus = "";
+    this._gameLeftTime = this.GAME_PLAY_TIME;
 };
 
 //游戏操作-游戏开始
@@ -145,6 +148,7 @@ qc.CatchGame.gameStart = function() {
     this.Score = 0;
     this._running = true;
     this._gameStatus = "running";
+    this._gameLeftTime = this.GAME_PLAY_TIME;
 };
 
 //游戏操作-游戏结束
@@ -220,6 +224,9 @@ qc.CatchGame.getLoseTitle = function() {
 ////  游戏逻辑控制部分
 ////
 
+qc.CatchGame.timePass = function(deltaTime){
+    this._gameLeftTime -= deltaTime;
+};
 
 //坐标是否和当前捕获者有碰撞
 qc.CatchGame.isCrash = function(pos) {
@@ -261,6 +268,10 @@ qc.CatchGame.onItemSignal = function(obj) {
 //检测当前状态是否获胜
 qc.CatchGame.checkStatus = function() {
     var self = this;
+    if (self._gameLeftTime <= 0) {
+        self.gameOver();//TODO: 终结条件之一
+    }
+
     if (self.Score > 200) {
         self.gameWin();
     } else if (self.Score < -200) {

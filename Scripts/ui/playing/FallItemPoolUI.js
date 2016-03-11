@@ -41,9 +41,11 @@ FallItemPoolUI.prototype.additem = function(datainfo) {
 FallItemPoolUI.prototype.fallAll = function(deltaTime) {
     var self = this;
     if (deltaTime) {
-        if (deltaTime > 1000) {
-            deltaTime = 1000;
-        }
+        // 切换界面出去游戏继续进行，否则就有问题了
+        // if (deltaTime > 1000) {
+        //     deltaTime = 1000;
+        // }
+        qc.CatchGame.
 
         var fallSpeed = qc.CatchGame.Speed * deltaTime / 1000;
         qc.CatchGame.fallitemPool.updateAllPoolObject({
