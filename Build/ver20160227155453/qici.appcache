@@ -1,0 +1,34 @@
+CACHE MANIFEST
+#VERSION 20160228155454
+Assets/meta/globalUrlMap.js
+Assets/css/style.css
+http://engine.zuoyouxi.com/lib/1.0.7/phaser.min.js
+http://engine.zuoyouxi.com/lib/1.0.7/webfontloader.js
+http://engine.zuoyouxi.com/lib/1.0.7/qc-core.js
+http://engine.zuoyouxi.com/lib/1.0.7/qc-loading.js
+http://engine.zuoyouxi.com/lib/qc-webgl.js
+
+js/game-scripts-mini-0.0.1.js
+Assets/scene/game_playing.bin
+Assets/texture/welcome_page.bin
+Assets/texture/welcome_fix.bin
+Assets/texture/question.bin
+Assets/texture/info_page.bin
+Assets/texture/end_page.bin
+Assets/atlas/reward.bin
+Assets/texture/stick.bin
+Assets/texture/ball.bin
+Assets/texture/mask.bin
+Assets/texture/clicking-share.bin
+Assets/texture/btn_reward.bin
+Assets/texture/btn_replay.bin
+Assets/texture/play_page.bin
+Assets/texture/hand.bin
+Assets/prefab/FallItem.bin
+Assets/prefab/score.bin
+Assets/font/hua.bin
+Assets/atlas/fall.bin
+Assets/atlas/music.bin
+
+NETWORK:
+*
